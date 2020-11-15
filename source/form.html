@@ -27,7 +27,7 @@
               <a class="cite-navigation__link cite-navigation__link--active" href="#">направления</a>              
             </li>
             <li class="cite-navigation__item">
-              <a class="cite-navigation__link" href="#">попутчики</a>              
+              <a class="cite-navigation__link" href="source/catalog.html">попутчики</a>              
             </li>
           </ul>
           <ul class="main-navigation__list user-navigation">
@@ -337,41 +337,83 @@
               <a name="second-step"><h3 class="route__tittle tittle-of-step">Шаг 2.<br>Маршрут</h3></a>              
               <p class="route__description description-of-step">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
               <div class="add-country-block">
-                <div class="add-country-block__1 add-country">
-                  <div class="add-country__element name-of-country">
-                    <h4 class="name-of-country__title">босния и герцеговина</h4>
-                    <button class="name-of-country__open-modal" type="button">Открыть модальное окно</button>
-                    <button class="name-of-country__button-of-something name-of-country__button-of-something--down" type="button"></button><!-- черная точка вроде как кнопка, но что она делает, я не понимаю -->
+                <div class="add-country add-country--chosen add-country--next">
+                  <div class="add-country__element name-of-country name-of-country--chosen">
+                    <h4 class="name-of-country__title">босния и герцеговина</h4>                    
                   </div>
                   <div class="add-country__element flag-of-country">
-                    <!-- <img class="flag-of-country__image"> здесь будет флаг страны</img> -->
+                    <button class="add-country__open-modal add-country__open-modal--chosen" type="button">Открыть модальное окно</button>                 
                   </div>
                   <button class="add-country__close">Закрыть поле добавления страны</button>
                 </div>
-                <div class="add-country-block__1 add-country">
-                  <div class="add-country__element name-of-country">
-                    <h4 class="name-of-country__title">чехия</h4>
-                    <button class="name-of-country__open-modal" type="button">Открыть модальное окно</button>
-                    <button class="name-of-country__button-of-something name-of-country__button-of-something--down" type="button"></button><!-- черная точка вроде как кнопка, но что она делает, я не понимаю -->
+                <div class="add-country add-country--chosen add-country--next">
+                  <div class="add-country__element name-of-country name-of-country--chosen">
+                    <h4 class="name-of-country__title">чехия</h4>                                       
                   </div>
-                  <div class="add-country__element flag-of-country">
-                    <!-- <img class="flag-of-country__image"> здесь будет флаг страны</img> -->
+                  <div class="add-country__element flag-of-country flag-of-country--chosen">
+                    <button class="add-country__open-modal add-country__open-modal--chosen" type="button">Открыть модальное окно</button>
                   </div>
                   <button class="add-country__close">Закрыть поле добавления страны</button>
                 </div>
-                <div class="add-country-block__1 add-country">
-                  <div class="add-country__element name-of-country name-of-country--empy">
-                    <h4 class="name-of-country__title">выберите страну</h4>
-                    <button class="name-of-country__open-modal name-of-country__open-modal--opened " type="button">Открыть модальное окно</button>
-                    <button class="name-of-country__button-of-something" type="button"></button><!-- черная точка вроде как кнопка, но что она делает, я не понимаю -->
+                <div class="add-country-wrapper">
+                  <div class="add-country add-country--next">
+                    <div class="add-country__element name-of-country">
+                      <h4 class="name-of-country__title">выберите страну</h4>                 
+                    </div>
+                    <div class="add-country__element flag-of-country">
+                      <button class="add-country__open-modal" type="button">Открыть модальное окно</button>
+                    </div>
+                    <button class="add-country__close" type="button">Закрыть поле добавления страны</button>
                   </div>
-                  <div class="add-country__element flag-of-country flag-of-country--empty">
-                    <!-- <img class="flag-of-country__image"> здесь будет флаг страны</img> -->
+                  <div class="add-country-modal add-country-modal--modal-show">
+                    <div class="add-country-modal__content">
+                      <p class="add-country-modal__tittle">Выберите страну</p>
+                      <button class="add-country-modal__button">Закрыть модальное окно</button>
+                      <ul class="alphabet">
+                        <li class="alphabet__item 1-letter">а</li>
+                        <li class="alphabet__item 2-letter">б</li>
+                        <li class="alphabet__item 3-letter">в</li>
+                        <li class="alphabet__item 4-letter">г</li>
+                        <li class="alphabet__item 5-letter">д</li>
+                        <li class="alphabet__item 6-letter">е</li>
+                        <li class="alphabet__item 7-letter">з</li>
+                        <li class="alphabet__item 8-letter">и</li>
+                        <li class="alphabet__item 9-letter">к</li>
+                        <li class="alphabet__item 10-letter">л</li>
+                        <li class="alphabet__item 11-letter">м</li>
+                        <li class="alphabet__item 12-letter">н</li>
+                        <li class="alphabet__item 13-letter">о</li>
+                        <li class="alphabet__item 14-letter">п</li>
+                        <li class="alphabet__item 15-letter">р</li>
+                        <li class="alphabet__item 16-letter">с</li>
+                        <li class="alphabet__item 17-letter">т</li>
+                        <li class="alphabet__item 18-letter">у</li>
+                        <li class="alphabet__item 19-letter">ф</li>
+                        <li class="alphabet__item 20-letter">х</li>
+                        <li class="alphabet__item 21-letter">ч</li>
+                        <li class="alphabet__item 22-letter">ш</li>
+                        <li class="alphabet__item 23-letter">щ</li>
+                        <li class="alphabet__item 24-letter">э</li>
+                        <li class="alphabet__item 25-letter">ю</li>
+                      </ul>
+                      <ul class="fit-country__list">
+                        <li class="fit-country">Австралия</li>
+                        <li class="fit-country">Австрия</li>
+                        <li class="fit-country">Азербайджан</li>
+                        <li class="fit-country">Албания</li>
+                        <li class="fit-country">Алжир</li>
+                        <li class="fit-country">Ангола</li>
+                        <li class="fit-country">Андорра</li>
+                        <li class="fit-country">Антигуа и Барбуда</li>
+                        <li class="fit-country">Аргентина</li>
+                        <li class="fit-country">Армения</li>
+                        <li class="fit-country">Афганистан</li>
+                      </ul>
+                    </div>
                   </div>
-                  <button class="add-country__close" type="button">Закрыть поле добавления страны</button>
-                </div>
-                <div class="new-block">
-                  <button class="new-block__button">добавить страну</button><!-- по идее вся эта кнопка должна быть кликабельна или только "+"?-->
+                </div>               
+                <div class="add-country new-block">
+                  <button class="new-block__button">добавить страну</button>
                 </div>              
               </div>
               <a class="button add-plan__button" href="#third-step">следующий шаг</a>
