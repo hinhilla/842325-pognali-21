@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html class="page-form" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body class="page page-form__body">
+    <header class="page-header page-header--form">
+      <div class="page-header__default">
+        <a class="logo page-header__logo page-header__logo--link-active" href="source/index.html">
+          <img class="page-header__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
+        </a>
+        <button class="page-header__toggle page-header__toggle--open"><span class="visually-hidden">Открыть меню</span></button>
+        <h1 class="page-header__tittle"> Направления</h1>
+      </div>
+      <div class="modal page-header__modal page-header__modal--active">
+        <nav class="main-navigation">
+          <a class="logo page-header__logo page-header__logo--link-active page-header__logo--modal-active" href="source/index.html">
+            <img class="page-header__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
+          </a>
+          <button class="page-header__toggle page-header__toggle--close"><span class="visually-hidden">Закрыть меню</span></button>
+          <ul class="main-navigation__list cite-navigation">
+            <li class="cite-navigation__item">
+              <a class="cite-navigation__link" href="#">о сервисе</a>              
+            </li>
+            <li class="cite-navigation__item">
+              <a class="cite-navigation__link cite-navigation__link--active" href="#">направления</a>              
+            </li>
+            <li class="cite-navigation__item">
+              <a class="cite-navigation__link" href="#">попутчики</a>              
+            </li>
+          </ul>
+          <ul class="main-navigation__list user-navigation">
+            <li class="user-navigation__item">
+              <a class="user-navigation__link" href="#">Авторизация</a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link" href="tel:88005558628" aria-label="Позвоните нам">                        
+                <span class="user-navigation__telephone">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link" href="#" aria-label="Напишите нам">              
+                <span class="user-navigation__email">mail@htmlacademy.ru</span>
+              </a>
+            </li>            
+          </ul>
+          <ul class="main-navigation__list social-navigation">
+            <li class="social-navigation__item header-social">
+              <a class="social-navigation__link" href="#">
+                <span class="visually-hidden">Фейсбук</span>                     
+              </a>
+            </li>
+            <li class="social-navigation__item header-social">
+              <a class="social-navigation__link" href="#">
+                <span class="visually-hidden">Вконтакте</span>               
+              </a>
+            </li>
+            <li class="social-navigation__item header-social">
+              <a class="social-navigation__link" href="#">
+                <span class="visually-hidden">Инстаграм</span>            
+              </a>
+            </li>
+          </ul>  
+        </nav>  
+      </div> 
+    </header>
+    <main class="page-main page-main__form-block">
+      <form class="page-main__form" action="https://echo.htmlacademy.ru">
+        <section class="user">
+          <h2 class="visually-hidden">Информация о пользователе</h2>
+          <div class="level level--80">            <!-- а разве тут не нужен level--80 чтобы задавать фоновое изображение? -->
+              <span class="level__number">80</span>
+              <span class="level__text">level</span>
+          </div>
+          <img class="user__image" src="#" alt="Фотография пользователя" width="100" height="100">
+          <a class="button button--image" href="#">Сменить фото</a>
+          <div class="user-tags field">
+            <h3 class="user-tags__tittle field__tittle">Тэги</h3>
+            <textarea class="user-tags__textarea" placeholder="Коротко о себе в виде 5-8 хештэгов">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</textarea>           
+          </div>
+          <div class="transport field">
+            <h3 class="transport__tittle field__tittle">Транспорт</h3>
+            <ul class="transport__list">
+              <li class="transport__item transport__item--plane transport__item--choosed">
+                <!-- <svg class="transport__icon"></svg> -->
+                <span class="visually-hidden">На самолете</span>
+              </li>
+              <li class="transport__item transport__item--bus transport__item--choosed">
+                <!-- <svg class="transport__icon transport__icon"></svg> -->
+                <span class="visually-hidden">На автобусе</span>
+              </li>
+              <li class="transport__item transport__item--bicycle">
+                <!-- <svg class="transport__icon"></svg> -->
+                <span class="visually-hidden">На велосипеде</span>
+              </li>
+              <li class="transport__item transport__item--walk transport__item--choosed">
+                <!-- <svg class="transport__icon"></svg> -->
+                <span class="visually-hidden">Пешком</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="plans">
+          <h2 class="plans__tittle tittle">Мои планы:</h2>
+          <ol class="plans__list">
+            <li class="plans__item">
+                <h3 class="plans__country">Франция, Италия</h3>
+                <span class="plans__companions plans-description">3 попутчика</span>
+                <span class="plans__dates plans-description">26 мар — 29 мар</span>
+                <a class="plans__change" href="">изменить</a>
+            </li>
+            <li class="plans__item">
+                <h3 class="plans__country">Таиланд, Индонезия</h3>
+                <span class="plans__companions plans-description">1 попутчик</span>
+                <span class="plans__dates plans-description">1 июл — 15 июл</span>
+                <a class="plans__change" href="">изменить</a>
+            </li>
+          </ol>
+        </section>
+        <section class="add-plan">
+          <h2 class="add-plan__tittle tittle">Добавить план:</h2>
+          <ol class="add-plan__list">
+            <li class="add-plan__item dates-of-stay">
+              <a name="first-step"><h3 class="dates-of-stay__tittle tittle-of-step">Шаг 1.<br>Даты пребывания</h3></a>              
+              <p class="dates-of-stay__description description-of-step">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+              <div class="dates-of-stay__numbers numbers">
+                <div class="numbers__block">
+                  <label class="label numbers__label" for="numbers__companions">
+                    <span class="label__tittle">ищу попутчиков:</span>
+                    <span class="label__unit">чел.</span>
+                  </label>
+                  <input class="numbers__companions" id="numbers__companions" name="numbers__companions" type="number" value="2">
+                  <button class="numbers__button numbers__button--minus" type="button" aria-label="Уменьшить количество попутчиков"><span class="visually-hidden">Уменьшить количество попутчиков</span></button>
+                  <button class="numbers__button numbers__button--plus" type="button" aria-label="Увеличить количество попутчиков"><span class="visually-hidden">Увеличить количество попутчиков</span></button>
+                </div>
+                <div class="numbers__block">
+                  <label class="label numbers__label" for="numbers__duration">
+                    <span class="label__tittle">длительность:</span>
+                    <span class="label__unit">дн.</span>
+                  </label>
+                  <input class="numbers__duration" id="numbers__duration" name="numbers__duration" type="number" value="3">
+                  <button class="numbers__button numbers__button--minus" type="button" aria-label="Уменьшить количество дней"><span class="visually-hidden">Уменьшить количество дней</span></button>
+                  <button class="numbers__button numbers__button--plus" type="button" aria-label="Увеличить количество дней"><span class="visually-hidden">Увеличить количество дней</span></button>
+                </div>               
+              </div>
+              <div class="field-for-kids">
+                <input class="field-for-kids__input field-for-kids__input--checked" type="checkbox" name="kids" id="kids">
+                <label class="field-for-kids__label" for="kids">Можно с детьми</label>                
+              </div>
+              <div class="dates-of-stay-form__calendar calendar">
+                <header class="calendar__header">
+                  <time class="calendar__tittle" datetime="2019-03">Март 2019</time>
+                  <button class="calendar__button calendar__button--back" type="button" aria-label="На месяц назад"><span class="visually-hidden">На месяц назад</span></button>
+                  <button class="calendar__button calendar__button--next" type="button" aria-label="На месяц вперед"><span class="visually-hidden">На месяц вперед</span></button>
+                </header>
+                <ul class="calendar__list">
+                  <li class="calendar__item day-of-week monday">п</li>
+                  <li class="calendar__item day-of-week tuesday">в</li>
+                  <li class="calendar__item day-of-week wednesday">с</li>
+                  <li class="calendar__item day-of-week thursday">ч</li>
+                  <li class="calendar__item day-of-week friday">п</li>
+                  <li class="calendar__item day-of-week day-of-week--weekend saturday">с</li>
+                  <li class="calendar__item day-of-week day-of-week--weekend sunday">в</li>
+                  <li class="calendar__item"> 
+                    <label class="day-of-month 23 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      23
+                    </label>
+                    <label class="day-of-month 24 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      24
+                    </label>
+                    <label class="day-of-month 25 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      25
+                    </label>
+                    <label class="day-of-month 26 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      26
+                    </label>
+                    <label class="day-of-month 27 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      27
+                    </label>
+                    <label class="day-of-month 28 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      28
+                    </label>
+                    <label class="day-of-month 1 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      1
+                    </label>
+                    <label class="day-of-month 2 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      2
+                    </label>
+                    <label class="day-of-month 3 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      3
+                    </label>
+                    <label class="day-of-month 4 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      4
+                    </label>
+                    <label class="day-of-month 5 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      5
+                    </label>
+                    <label class="day-of-month 6 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      6
+                    </label>
+                    <label class="day-of-month 7 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      7
+                    </label>
+                    <label class="day-of-month 8 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      8
+                    </label>
+                    <label class="day-of-month 9 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      9
+                    </label>
+                    <label class="day-of-month 10 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      10
+                    </label>
+                    <label class="day-of-month 11 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      11
+                    </label>
+                    <label class="day-of-month 12 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      12
+                    </label>
+                    <label class="day-of-month 13 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      13
+                    </label>
+                    <label class="day-of-month 14 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      14
+                    </label>
+                    <label class="day-of-month 15 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      15
+                    </label>
+
+                    <label class="day-of-month 16 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      16
+                    </label>
+                    <label class="day-of-month 17 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      17
+                    </label>
+                    <label class="day-of-month 18 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      18
+                    </label>
+                    <label class="day-of-month 19 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      19
+                    </label>
+                    <label class="day-of-month 20 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      20
+                    </label>
+                    <label class="day-of-month 21 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      21
+                    </label>
+                    <label class="day-of-month 22 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      22
+                    </label>
+                    <label class="day-of-month 23 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      23
+                    </label>
+                    <label class="day-of-month 24 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      24
+                    </label>
+                    <label class="day-of-month 25 day-of-month--disabled">
+                      <input class="visually-hidden" type="checkbox">
+                      25
+                    </label>
+                    <label class="day-of-month 26 day-of-month--choosed day-of-month--hover">
+                      <input class="visually-hidden" type="checkbox">
+                      26
+                    </label>
+                    <label class="day-of-month 27 day-of-month--choosed">
+                      <input class="visually-hidden" type="checkbox">
+                      27
+                    </label>
+                    <label class="day-of-month 28 day-of-month--choosed">
+                      <input class="visually-hidden" type="checkbox">
+                      28
+                    </label>
+                    <label class="day-of-month 29">
+                      <input class="visually-hidden" type="checkbox">
+                      29
+                    </label>
+                    <label class="day-of-month 30">
+                      <input class="visually-hidden" type="checkbox">
+                      30
+                    </label>
+                    <label class="day-of-month 1">
+                      <input class="visually-hidden" type="checkbox">
+                      1
+                    </label>
+                    <label class="day-of-month 2">
+                      <input class="visually-hidden" type="checkbox">
+                      2
+                    </label>
+                    <label class="day-of-month 3">
+                      <input class="visually-hidden" type="checkbox">
+                      3
+                    </label>
+                    <label class="day-of-month 4">
+                      <input class="visually-hidden" type="checkbox">
+                      4
+                    </label>
+                    <label class="day-of-month 5">
+                      <input class="visually-hidden" type="checkbox">
+                      5
+                    </label>
+                  </li>
+                </ul>
+              </div>              
+              <a class="button add-plan__button " href="#second-step">Следующий шаг</a>
+            </li>
+            <li class="add-plan__item route">
+              <a name="second-step"><h3 class="route__tittle tittle-of-step">Шаг 2.<br>Маршрут</h3></a>              
+              <p class="route__description description-of-step">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+              <div class="add-country-block">
+                <div class="add-country-block__1 add-country">
+                  <div class="add-country__element name-of-country">
+                    <h4 class="name-of-country__title">босния и герцеговина</h4>
+                    <button class="name-of-country__open-modal" type="button">Открыть модальное окно</button>
+                    <button class="name-of-country__button-of-something name-of-country__button-of-something--down" type="button"></button><!-- черная точка вроде как кнопка, но что она делает, я не понимаю -->
+                  </div>
+                  <div class="add-country__element flag-of-country">
+                    <!-- <img class="flag-of-country__image"> здесь будет флаг страны</img> -->
+                  </div>
+                  <button class="add-country__close">Закрыть поле добавления страны</button>
+                </div>
+                <div class="add-country-block__1 add-country">
+                  <div class="add-country__element name-of-country">
+                    <h4 class="name-of-country__title">чехия</h4>
+                    <button class="name-of-country__open-modal" type="button">Открыть модальное окно</button>
+                    <button class="name-of-country__button-of-something name-of-country__button-of-something--down" type="button"></button><!-- черная точка вроде как кнопка, но что она делает, я не понимаю -->
+                  </div>
+                  <div class="add-country__element flag-of-country">
+                    <!-- <img class="flag-of-country__image"> здесь будет флаг страны</img> -->
+                  </div>
+                  <button class="add-country__close">Закрыть поле добавления страны</button>
+                </div>
+                <div class="add-country-block__1 add-country">
+                  <div class="add-country__element name-of-country name-of-country--empy">
+                    <h4 class="name-of-country__title">выберите страну</h4>
+                    <button class="name-of-country__open-modal name-of-country__open-modal--opened " type="button">Открыть модальное окно</button>
+                    <button class="name-of-country__button-of-something" type="button"></button><!-- черная точка вроде как кнопка, но что она делает, я не понимаю -->
+                  </div>
+                  <div class="add-country__element flag-of-country flag-of-country--empty">
+                    <!-- <img class="flag-of-country__image"> здесь будет флаг страны</img> -->
+                  </div>
+                  <button class="add-country__close" type="button">Закрыть поле добавления страны</button>
+                </div>
+                <div class="new-block">
+                  <button class="new-block__button">добавить страну</button><!-- по идее вся эта кнопка должна быть кликабельна или только "+"?-->
+                </div>              
+              </div>
+              <a class="button add-plan__button" href="#third-step">следующий шаг</a>
+              <a class="button add-plan__button add-plan__button--step-back" href="#first-step">на шаг назад</a>
+            </li >
+            <li class="add-plan__item entertainments">
+              <a name="third-step"><h3 class="entertainments__tittle tittle-of-step">Шаг 3.<br>Развлечения</h3></a>              
+              <p class="entertainments__description description-of-step">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+              <div class="entertainments__fields entertainments-plan ">
+                <div class="entertainments-plan__element">
+                  <h4 class="entertainments-plan__tittle">Босния и Герцеговина</h4>
+                  <!-- <img class="flag-of-country__image"> здесь будет флаг страны</img> -->
+                  <textarea class="entertainments-plan__textarea" name="entertainments-plan" id="entertainments-plan-first-country" cols="30" rows="10" placeholder="План действий"></textarea>
+                </div>
+                <div class="entertainments-plan__element">
+                  <h4 class="entertainments-plan__tittle">Чехия</h4>
+                  <!-- <img class="flag-of-country__image"> здесь будет флаг страны</img> -->
+                  <textarea class="entertainments-plan__textarea" name="entertainments-plan" id="entertainments-plan-second-country" cols="30" rows="10" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                </div>
+              </div>            
+            </li>
+          </ol>
+        </section>
+        <button class="button add-plan__button" type="submit">отправить</button>
+        <a class="button add-plan__button add-plan__button--step-back" href="#second-step">на шаг назад</a>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <a class=" logo page-footer__logo" href="source/index.html">
+        <img class="page-footer__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
+      </a>
+      <ul class="social-navigation">
+        <li class="social-navigation__item footer-social">
+          <a class="social-navigation__link" href="#">
+            <span class="visually-hidden">Фейсбук</span>                     
+          </a>
+        </li>
+        <li class="social-navigation__item footer-social">
+          <a class="social-navigation__link" href="#">
+            <span class="visually-hidden">Вконтакте</span>               
+          </a>
+        </li>
+        <li class="social-navigation__item footer-social">
+          <a class="social-navigation__link" href="#">
+            <span class="visually-hidden">Инстаграм</span>            
+          </a>
+        </li>
+      </ul>  
+      <div class="footer-copyright">
+        <span class="copyrigth__text">Разработано</span>
+        <a class="copyrigth__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>    
+  </body>
+</html>
