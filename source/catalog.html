@@ -67,7 +67,162 @@
         </nav>  
       </div> 
     </header>
-    <main class="page-main page-main__catalog-block">      
+    <main class="page-main page-main__catalog-block">
+      <section class="filter">
+        <div class="header-filter">
+          <h2 class="field__title field__title--catalog">Фильтрация по странам:</h2>
+          <button class="header-filter__toggle"><span class="visually-hidden">Открыть фильтр</span></button>
+        </div>        
+        <div class="filter__content">
+          <h3 class="filter__title">Подберите идеального попутчика</h3>
+          <form action="filter__form">
+            <fieldset class="filter__fieldset">
+              <ul class="filter__list">
+                <li class="filter__item preferences">
+                  <div class="preferences__header">
+                    <h4 class="preferences__title">хобби</h4>
+                    <button class="preferences__button">Открыть список предпочтений</button>
+                  </div>
+                  <ul class="preferences__checkbox visually-hidden">
+                    <li>
+                      <label class="preferences__label">
+                        Спортзал
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                      </li>
+                    <li>
+                      <label class="preferences__label">
+                        Кальян
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li>
+                      <label class="preferences__label">
+                        Диван
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter__item preferences">
+                  <div class="preferences__header">
+                    <h4 class="preferences__title">музыка</h4>
+                    <button class="preferences__button">Открыть список предпочтений</button>
+                  </div>
+                  <ul class="preferences__checkbox visually-hidden">
+                    <li>
+                      <label class="preferences__label">
+                        Тяжелый рок
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                      </li>
+                    <li>
+                      <label class="preferences__label">
+                        Русский рэп
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li>
+                      <label class="preferences__label">
+                        Евроденс
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter__item preferences">
+                  <div class="preferences__header">
+                    <h4 class="preferences__title">еда</h4>
+                    <button class="preferences__button">Открыть список предпочтений</button>
+                  </div>
+                  <ul class="preferences__checkbox visually-hidden">
+                    <li>
+                      <label class="preferences__label">
+                        Мясоед
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                      </li>
+                    <li>
+                      <label class="preferences__label">
+                        Сидит на ПП
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li>
+                      <label class="preferences__label">
+                        Веган-сыроед
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter__item preferences">
+                  <div class="preferences__header">
+                    <h4 class="preferences__title">транспорт</h4>
+                    <button class="preferences__button">Открыть список предпочтений</button>
+                  </div>
+                  <ul class="transport__list">
+                    <li class="transport__item transport__item--choosed">                      
+                      <label class="transport__label">
+                        <!-- <svg class="transport__icon"></svg> -->                        
+                        <span class="visually-hidden">На самолете</span>                         
+                        <input class="visually-hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li class="transport__item transport__item--choosed">
+                      <label class="transport__label">
+                        <!-- <svg class="transport__icon"></svg> -->                        
+                        <span class="visually-hidden">На автобусе</span>                         
+                        <input class="visually-hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li class="transport__item">
+                      <label class="transport__label">
+                        <!-- <svg class="transport__icon"></svg> -->                        
+                        <span class="visually-hidden">На велосипеде</span>                         
+                        <input class="visually-hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li class="transport__item transport__item--choosed">
+                      <label class="transport__label">
+                        <!-- <svg class="transport__icon"></svg> -->                        
+                        <span class="visually-hidden">Пешком</span>                         
+                        <input class="visually-hidden" type="checkbox">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter__item preferences">
+                  <div class="preferences__header">
+                    <h4 class="preferences__title">Левел</h4>
+                    <button class="preferences__button">Открыть список предпочтений</button>
+                  </div>
+                  <div class="range">
+                    <div class="range__output">
+                      <label class="visually-hidden" for="">
+                        минимальный левел
+                        <input type="number" min="0" max="100">
+                      </label>
+                      <label class="visually-hidden"for="">
+                        максимальный левел
+                        <input type="number" min="0" max="100">
+                      </label>
+                    </div>
+                    <div class="range__controls">
+                      <div class="range__scale">
+                        <div class="range__bar"></div>
+                      </div>
+                      <div class="range__toggle range__toggle--left"></div>
+                      <div class="range__toggle range__toggle--right"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button">показать</button>
+          </form>
+        </div>
+      </section>      
       
     </main>
     <footer class="page-footer">
