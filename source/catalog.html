@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html class="page-form" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body class="page page-form__body">
+    <header class="page-header page-header--catalog">
+      <div class="page-header__default">
+        <nav class="scroll-container">
+          <a class="logo page-header__logo page-header__logo--scroll" href="index.html">
+            <img class="page-header__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
+          </a>
+          <button class="page-header__toggle page-header__toggle--open page-header__toggle--scroll"><span class="visually-hidden">Открыть меню</span></button>
+        </nav>        
+        <h1 class="page-header__title">Попутчики</h1>
+      </div>
+      <div class="modal menu menu--modal-active">
+        <nav class="main-navigation">
+          <a class="logo page-header__logo page-header__logo--modal-active" href="index.html">
+            <img class="page-header__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
+          </a>
+          <button class="page-header__toggle page-header__toggle--close"><span class="visually-hidden">Закрыть меню</span></button>
+          <ul class="main-navigation__list cite-navigation">
+            <li class="cite-navigation__item">
+              <a class="cite-navigation__link" href="#">о сервисе</a>
+            </li>
+            <li class="cite-navigation__item">
+              <a class="cite-navigation__link" href="form.html">направления</a>              
+            </li>
+            <li class="cite-navigation__item">
+              <a class="cite-navigation__link cite-navigation__link--active">попутчики</a>              
+            </li>
+          </ul>
+          <ul class="main-navigation__list user-navigation user-navigation--column">
+            <li class="user-navigation__item">
+              <a class="user-navigation__link button" href="#">Авторизация</a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link" href="tel:88005558628" aria-label="Позвоните нам">
+                <span class="user-navigation__content">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link" href="#" aria-label="Напишите нам">              
+                <span class="user-navigation__content">mail@htmlacademy.ru</span>
+              </a>
+            </li>            
+          </ul>
+          <ul class="main-navigation__list social-navigation">
+            <li class="social-navigation__item header-social">
+              <a class="social-navigation__link" href="#">
+                <span class="visually-hidden">Фейсбук</span>                     
+              </a>
+            </li>
+            <li class="social-navigation__item header-social">
+              <a class="social-navigation__link" href="#">
+                <span class="visually-hidden">Вконтакте</span>               
+              </a>
+            </li>
+            <li class="social-navigation__item header-social">
+              <a class="social-navigation__link" href="#">
+                <span class="visually-hidden">Инстаграм</span>            
+              </a>
+            </li>
+          </ul>  
+        </nav>  
+      </div> 
+    </header>
+    <main class="page-main page-main__catalog-block">
+      <section class="filter">
+        <div class="header-filter">
+          <h2 class="field__title field__title--catalog">Фильтрация по странам:</h2>
+          <button class="header-filter__toggle"><span class="visually-hidden">Открыть фильтр</span></button>
+        </div>        
+        <div class="filter__content">
+          <h3 class="filter__title">Подберите идеального попутчика</h3>
+          <form action="filter__form">
+            <fieldset class="filter__fieldset">
+              <ul class="filter__list">
+                <li class="filter__item preferences">
+                  <div class="preferences__header">
+                    <h4 class="preferences__title">хобби</h4>
+                    <button class="preferences__button">Открыть список предпочтений</button>
+                  </div>
+                  <ul class="preferences__checkbox visually-hidden">
+                    <li>
+                      <label class="preferences__label">
+                        Спортзал
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                      </li>
+                    <li>
+                      <label class="preferences__label">
+                        Кальян
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li>
+                      <label class="preferences__label">
+                        Диван
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter__item preferences">
+                  <div class="preferences__header">
+                    <h4 class="preferences__title">музыка</h4>
+                    <button class="preferences__button">Открыть список предпочтений</button>
+                  </div>
+                  <ul class="preferences__checkbox visually-hidden">
+                    <li>
+                      <label class="preferences__label">
+                        Тяжелый рок
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                      </li>
+                    <li>
+                      <label class="preferences__label">
+                        Русский рэп
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li>
+                      <label class="preferences__label">
+                        Евроденс
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter__item preferences">
+                  <div class="preferences__header">
+                    <h4 class="preferences__title">еда</h4>
+                    <button class="preferences__button">Открыть список предпочтений</button>
+                  </div>
+                  <ul class="preferences__checkbox visually-hidden">
+                    <li>
+                      <label class="preferences__label">
+                        Мясоед
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                      </li>
+                    <li>
+                      <label class="preferences__label">
+                        Сидит на ПП
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li>
+                      <label class="preferences__label">
+                        Веган-сыроед
+                        <input class="visually hidden" type="checkbox">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter__item preferences">
+                  <div class="preferences__header">
+                    <h4 class="preferences__title">транспорт</h4>
+                    <button class="preferences__button">Открыть список предпочтений</button>
+                  </div>
+                  <ul class="transport__list">
+                    <li class="transport__item transport__item--choosed">                      
+                      <label class="transport__label">
+                        <!-- <svg class="transport__icon"></svg> -->                        
+                        <span class="visually-hidden">На самолете</span>                         
+                        <input class="visually-hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li class="transport__item transport__item--choosed">
+                      <label class="transport__label">
+                        <!-- <svg class="transport__icon"></svg> -->                        
+                        <span class="visually-hidden">На автобусе</span>                         
+                        <input class="visually-hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li class="transport__item">
+                      <label class="transport__label">
+                        <!-- <svg class="transport__icon"></svg> -->                        
+                        <span class="visually-hidden">На велосипеде</span>                         
+                        <input class="visually-hidden" type="checkbox">
+                      </label>
+                    </li>
+                    <li class="transport__item transport__item--choosed">
+                      <label class="transport__label">
+                        <!-- <svg class="transport__icon"></svg> -->                        
+                        <span class="visually-hidden">Пешком</span>                         
+                        <input class="visually-hidden" type="checkbox">
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="filter__item preferences">
+                  <div class="preferences__header">
+                    <h4 class="preferences__title">Левел</h4>
+                    <button class="preferences__button">Открыть список предпочтений</button>
+                  </div>
+                  <div class="range">
+                    <div class="range__output">
+                      <label class="visually-hidden">
+                        минимальный левел
+                        <input type="number" min="0" max="100">
+                      </label>
+                      <label class="visually-hidden">
+                        максимальный левел
+                        <input type="number" min="0" max="100">
+                      </label>
+                    </div>
+                    <div class="range__controls">
+                      <div class="range__scale">
+                        <div class="range__bar"></div>
+                      </div>
+                      <div class="range__toggle range__toggle--left"></div>
+                      <div class="range__toggle range__toggle--right"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="button">показать</button>
+          </form>
+        </div>
+        <div class="add-country-modal add-country-modal--modal-show">
+          <div class="add-country-modal__content">
+            <p class="add-country-modal__tittle visually-hidden">Выберите страну</p>
+            <button class="add-country-modal__button">Закрыть модальное окно</button>
+            <ul class="aria">
+              <li class="aria__item"><a class="aria__link" href="">европа</a></li>
+              <li class="aria__item"><a class="aria__link" href="">азия</a></li>
+              <li class="aria__item"><a class="aria__link" href="">америка</a></li>
+              <li class="aria__item"><a class="aria__link" href="">острова</a></li>
+            </ul>
+            <table class="alphabet">
+              <tr>
+                <td class="alphabet__item"><button class="letter"> а</button></td>
+                <td class="alphabet__item"><button class="letter"> б</button></td>
+                <td class="alphabet__item"><button class="letter"> в</button></td>
+                <td class="alphabet__item"><button class="letter"> г</button></td>
+                <td class="alphabet__item"><button class="letter"> д</button></td>
+              </tr>
+              <tr>
+                <td class="alphabet__item"><button class="letter"> е</button></td>
+                <td class="alphabet__item"><button class="letter"> з</button></td>
+                <td class="alphabet__item"><button class="letter"> и</button></td>
+                <td class="alphabet__item"><button class="letter"> к</button></td>
+                <td class="alphabet__item"><button class="letter"> л</button></td>
+              </tr>
+              <tr>
+                <td class="alphabet__item"><button class="letter"> м</button></td>
+                <td class="alphabet__item"><button class="letter"> н</button></td>
+                <td class="alphabet__item"><button class="letter"> о</button></td>
+                <td class="alphabet__item"><button class="letter"> п</button></td>
+                <td class="alphabet__item"><button class="letter"> р</button></td>
+              </tr>
+              <tr>
+                <td class="alphabet__item"><button class="letter"> с</button></td>
+                <td class="alphabet__item"><button class="letter"> т</button></td>
+                <td class="alphabet__item"><button class="letter"> у</button></td>
+                <td class="alphabet__item"><button class="letter"> ф</button></td>
+                <td class="alphabet__item"><button class="letter"> х</button></td>
+              </tr>
+              <tr>
+                <td class="alphabet__item"><button class="letter"> ч</button></td>
+                <td class="alphabet__item"><button class="letter"> ш</button></td>
+                <td class="alphabet__item"><button class="letter"> щ</button></td>
+                <td class="alphabet__item"><button class="letter"> э</button></td>
+                <td class="alphabet__item"><button class="letter"> ю</button></td>
+              </tr>
+            </table>                      
+            <ul class="fit-country__list">
+              <li class="fit-country"><button class="country">Австралия</button></li>
+              <li class="fit-country"><button class="country">Австрия</button></li>
+              <li class="fit-country"><button class="country">Азербайджан</button></li>
+              <li class="fit-country"><button class="country">Албания</button></li>
+              <li class="fit-country"><button class="country">Алжир</button></li>
+              <li class="fit-country"><button class="country">Ангола</button></li>
+              <li class="fit-country"><button class="country">Андорра</button></li>
+              <li class="fit-country"><button class="country">Антигуа и Барбуда</button></li>
+              <li class="fit-country"><button class="country">Аргентина</button></li>
+              <li class="fit-country"><button class="country">Армения</button></li>
+              <li class="fit-country"><button class="country">Афганистан</button></li>
+            </ul>
+          </div>
+          <button class="button">Свернуть</button>
+        </div>
+      </section>
+      <section class="cards">
+        <h2 class="visually-hidden">Карточки попутчиков</h2>
+        <ul class="cards__list">
+          <li class="companions__item">
+            <h3 class="companions__name">Таня Фирсова</h3>
+            <img class="companions__image companions__image--mini" src="#" alt="Фотография попутчика" width="270" height="270">
+            <div class="likes">
+              <button class="likes__button likes__button--liked"><span class="visually-hidden">поставить лайк</span></button>
+              <span class="likes__text">1,5 м</span>
+            </div>
+            <div class="info">
+              <div class="companions__tags">
+                <h4 class="visually-hidden">Теги попутчика</h4>
+                <p class="tags__text">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              </div>
+              <div class="companions__flags companions__flags--column">
+                <h4 class="cards__title">Хочет посетить:</h4>
+                <ul class="flags__list">
+                  <li class="flags__item flags__item--sri-Lanka">
+                    <img class="flags__image" src="#" aria-label="Шри-Ланка" alt="Флаг Шри-Ланки" width="35" height="25">
+                    <span class="flags__text">шри-ланка</span>
+                  </li>
+                  <li class="flags__item flags__item--thailand">
+                    <img class="flags__image" src="#" aria-label="Тайланд" alt="Флаг Тайланда" width="35" height="25">
+                    <span class="flags__text">тайланд</span>
+                  </li>
+                  <li class="flags__item flags__item--seychelles">
+                    <img class="flags__image" src="#" aria-label="Сейшелы" alt="Флаг Сейшел" width="35" height="25">
+                    <span class="flags__text">сейшелы</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="transport">
+                <h4 class="cards__title">транспорт:</h4>
+                <ul class="transport__list">
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--plane transport__icon-choosed"></svg> -->
+                    <span class="visually-hidden">На самолете</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--bus"></svg> -->
+                    <span class="visually-hidden">На автобусе</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--bicycle"></svg> -->
+                    <span class="visually-hidden">На велосипеде</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--walk"></svg> -->
+                    <span class="visually-hidden">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="level-block">
+                <h4 class="cards__title">левел:</h4>
+                <span class="level__number">99</span>
+              </div>
+            </div>
+            <button class="button">позвать!</button>
+          </li>
+          <li class="companions__item">
+            <h3 class="companions__name">Петя Демин</h3>
+            <img class="companions__image companions__image--mini" src="#" alt="Фотография попутчика" width="270" height="270">
+            <div class="likes">
+              <button class="likes__button"><span class="visually-hidden">поставить лайк</span></button>
+              <span class="likes__text">1500</span>
+            </div>
+            <div class="info">
+              <div class="companions__tags">
+                <h4 class="visually-hidden">Теги попутчика</h4>
+                <p class="tags__text">#бургер #бар #футбол #концерт #крафт</p>
+              </div>
+              <div class="companions__flags companions__flags--column">
+                <h4 class="cards__title">Хочет посетить:</h4>
+                <ul class="flags__list">
+                  <li class="flags__item flags__item--sri-Lanka">
+                    <img class="flags__image" src="#" aria-label="Бельгия" alt="Флаг Бельгии" width="35" height="25">
+                    <span class="flags__text">бельгия</span>
+                  </li>
+                  <li class="flags__item flags__item--thailand">
+                    <img class="flags__image" src="#" aria-label="Чехия" alt="Флаг Чехии" width="35" height="25">
+                    <span class="flags__text">чехия</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="transport">
+                <h4 class="cards__title">транспорт:</h4>
+                <ul class="transport__list">
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--plane transport__icon-choosed"></svg> -->
+                    <span class="visually-hidden">На самолете</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--bus transport__icon-choosed"></svg> -->
+                    <span class="visually-hidden">На автобусе</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--bicycle"></svg> -->
+                    <span class="visually-hidden">На велосипеде</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--walk transport__icon-choosed"></svg> -->
+                    <span class="visually-hidden">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="level-block">
+                <h4 class="cards__title">левел:</h4>
+                <span class="level__number">80</span>
+              </div>
+            </div>
+            <button class="button">позвать!</button>
+          </li>
+          <li class="companions__item">
+            <h3 class="companions__name">Марк Смолов</h3>
+            <img class="companions__image companions__image--mini" src="#" alt="Фотография попутчика" width="270" height="270">
+            <div class="likes">
+              <button class="likes__button"><span class="visually-hidden">поставить лайк</span></button>
+              <span class="likes__text">170</span>
+            </div>
+            <div class="info">
+              <div class="companions__tags">
+                <h4 class="visually-hidden">Теги попутчика</h4>
+                <p class="tags__text">#рэп #тату #хайпбист #кроссовки #суприм</p>
+              </div>
+              <div class="companions__flags companions__flags--column">
+                <h4 class="cards__title">Хочет посетить:</h4>
+                <ul class="flags__list">
+                  <li class="flags__item flags__item--sri-Lanka">
+                    <img class="flags__image" src="#" aria-label="США" alt="Флаг США" width="35" height="25">
+                    <span class="flags__text">сша</span>
+                  </li>
+                  <li class="flags__item flags__item--thailand">
+                    <img class="flags__image" src="#" aria-label="Австралия" alt="Флаг Австралии" width="35" height="25">
+                    <span class="flags__text">австралия</span>
+                  </li>
+                  <li class="flags__item flags__item--thailand">
+                    <img class="flags__image" src="#" aria-label="Доминикана" alt="Флаг Доминикана" width="35" height="25">
+                    <span class="flags__text">доминикана</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="transport">
+                <h4 class="cards__title">транспорт:</h4>
+                <ul class="transport__list">
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--plane transport__icon-choosed"></svg> -->
+                    <span class="visually-hidden">На самолете</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--bus></svg> -->
+                    <span class="visually-hidden">На автобусе</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--bicycle transport__icon-choosed""></svg> -->
+                    <span class="visually-hidden">На велосипеде</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--walk"></svg> -->
+                    <span class="visually-hidden">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="level-block">
+                <h4 class="cards__title">левел:</h4>
+                <span class="level__number">25</span>
+              </div>
+            </div>
+            <button class="button">позвать!</button>
+          </li>
+          <li class="companions__item">
+            <h3 class="companions__name">Лариса Роговая</h3>
+            <img class="companions__image companions__image--mini" src="#" alt="Фотография попутчика" width="270" height="270">
+            <div class="likes">
+              <button class="likes__button"><span class="visually-hidden">поставить лайк</span></button>
+              <span class="likes__text">23</span>
+            </div>
+            <div class="info">
+              <div class="companions__tags">
+                <h4 class="visually-hidden">Теги попутчика</h4>
+                <p class="tags__text">#образование #карьера #учеба #линкедин</p>
+              </div>
+              <div class="companions__flags companions__flags--column">
+                <h4 class="cards__title">Хочет посетить:</h4>
+                <ul class="flags__list">
+                  <li class="flags__item flags__item--sri-Lanka">
+                    <img class="flags__image" src="#" aria-label="Великобритания" alt="Флаг Великобритании" width="35" height="25">
+                    <span class="flags__text">великобритания</span>
+                  </li>
+                  <li class="flags__item flags__item--thailand">
+                    <img class="flags__image" src="#" aria-label="Германия" alt="Флаг Германии" width="35" height="25">
+                    <span class="flags__text">германия</span>
+                  </li>
+                  <li class="flags__item flags__item--thailand">
+                    <img class="flags__image" src="#" aria-label="Доминикана" alt="Флаг Доминикана" width="35" height="25">
+                    <span class="flags__text">доминикана</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="transport">
+                <h4 class="cards__title">транспорт:</h4>
+                <ul class="transport__list">
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--plane transport__icon-choosed"></svg> -->
+                    <span class="visually-hidden">На самолете</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--bus transport__icon-choosed></svg> -->
+                    <span class="visually-hidden">На автобусе</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--bicycle""></svg> -->
+                    <span class="visually-hidden">На велосипеде</span>
+                  </li>
+                  <li class="transport__item">
+                    <!-- <svg class="transport__icon transport__icon--walk"></svg> -->
+                    <span class="visually-hidden">Пешком</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="level-block">
+                <h4 class="cards__title">левел:</h4>
+                <span class="level__number">50</span>
+              </div>
+            </div>
+            <button class="button">позвать!</button>
+          </li>
+        </ul>
+      </section>
+      <div class="pagination">
+        <button class="button pagination__button">показать еще</button>
+        <div class="new-page">
+          <a class="new-page__link new-page__next" href="">на следущую страницу</a>
+          <a class="new-page__link new-page__back" href="">на предыдущую страницу</a>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <a class=" logo page-footer__logo" href="source/index.html">
+        <img class="page-footer__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
+      </a>
+      <ul class="social-navigation">
+        <li class="social-navigation__item footer-social">
+          <a class="social-navigation__link" href="#">
+            <span class="visually-hidden">Фейсбук</span>                     
+          </a>
+        </li>
+        <li class="social-navigation__item footer-social">
+          <a class="social-navigation__link" href="#">
+            <span class="visually-hidden">Вконтакте</span>               
+          </a>
+        </li>
+        <li class="social-navigation__item footer-social">
+          <a class="social-navigation__link" href="#">
+            <span class="visually-hidden">Инстаграм</span>            
+          </a>
+        </li>
+      </ul>  
+      <div class="footer-copyright copyright">
+        <span class="copyrigth__text">Разработано</span>
+        <a class="copyrigth__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>    
+  </body>
+</html>
