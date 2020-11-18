@@ -13,7 +13,7 @@
           </a>
           <button class="page-header__toggle page-header__toggle--open page-header__toggle--scroll"><span class="visually-hidden">Открыть меню</span></button>
         </nav>        
-        <h1 class="page-header__title">Попутчики</h1>
+        <!-- <h1 class="page-header__title">Попутчики</h1>исправить название везде -->
       </div>
       <div class="modal menu menu--modal-active">
         <nav class="main-navigation">
@@ -69,9 +69,9 @@
     </header>
     <main class="page-main page-main__catalog-block">
       <section class="filter">
-        <div class="header-filter">
-          <h2 class="field__title field__title--catalog">Фильтрация по странам:</h2>
-          <button class="header-filter__toggle"><span class="visually-hidden">Открыть фильтр</span></button>
+        <div class="filter__header">
+          <h2 class="field-title">Фильтрация по странам:</h2>
+          <button class="filter__toggle"><span class="visually-hidden">Открыть фильтр</span></button>
         </div>        
         <div class="filter__content">
           <h3 class="filter__title">Подберите идеального попутчика</h3>
@@ -83,20 +83,20 @@
                     <h4 class="preferences__title">хобби</h4>
                     <button class="preferences__button">Открыть список предпочтений</button>
                   </div>
-                  <ul class="preferences__checkbox visually-hidden">
-                    <li>
+                  <ul class="preferences__list">
+                    <li class="preferences__item">
                       <label class="preferences__label">
                         Спортзал
-                        <input class="visually hidden" type="checkbox">
+                        <input class="visually-hidden" type="checkbox">
                       </label>
-                      </li>
-                    <li>
+                    </li>
+                    <li class="preferences__item">
                       <label class="preferences__label">
                         Кальян
                         <input class="visually hidden" type="checkbox">
                       </label>
                     </li>
-                    <li>
+                    <li class="preferences__item">
                       <label class="preferences__label">
                         Диван
                         <input class="visually hidden" type="checkbox">
