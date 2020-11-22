@@ -1,358 +1,379 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="page-header">
-      <div class="page-header__default">
-        <nav class="page-header__active-container page-header__active-container--active">
-          <span class="logo page-header__logo page-header__logo--active">
-            <img class="page-header__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
-          </span>
-          <button class="page-header__toggle page-header__toggle--open page-header__toggle--close page-header__toggle--scroll"><span class="visually-hidden">Открыть меню</span></button>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__default">
+      <nav class="page-header__active-container page-header__active-container--active">
+        <span class="logo page-header__logo page-header__logo--active">
+          <img class="page-header__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
+        </span>
+        <button
+          class="page-header__toggle page-header__toggle--open page-header__toggle--close page-header__toggle--scroll"><span
+            class="visually-hidden">Открыть меню</span></button>
+      </nav>
+      <div class="page-header__container">
+        <h1 class="header-title header-title--main">В путешествие с крутыми попутчиками!</h1>
+        <nav class="user-navigation">
+          <ul class="user-navigation__list user-navigation__list--row">
+            <li class="user-navigation__item user-navigation__item--call-us user-navigation__item--row">
+              <a class="user-navigation__link" href="#">
+                <span class="visually-hidden">Позвоните нам</span>
+              </a>
+            </li>
+            <li class="user-navigation__item user-navigation__item--text-us user-navigation__item--row">
+              <a class="user-navigation__link" href="#">
+                <span class="visually-hidden">Напишите нам</span>
+              </a>
+            </li>
+            <li class="user-navigation__item user-navigation__item--authorize user-navigation__item--row">
+              <a class="user-navigation__link button" href="#">Авторизация</a>
+            </li>
+          </ul>
         </nav>
-        <div class="page-header__container">
-          <h1 class="header-title header-title--main">В путешествие с крутыми попутчиками!</h1>
-          <nav class="user-navigation">
-            <ul class="user-navigatin__list user-navigation__list--row">
-              <li class="user-navigation__item user-navigation__item--call-us user-navigation__item--row">
-                <a class="user-navigation__link" href="#">               
-                  <span class="visually-hidden">Позвоните нам</span>
-                </a>
-              </li>
-              <li class="user-navigation__item user-navigation__item--text-us user-navigation__item--row">
-                <a class="user-navigation__link" href="#">
-                  <span class="visually-hidden">Напишите нам</span>
-                </a>
-              </li>
-              <li class="user-navigation__item user-navigation__item--authorize user-navigation__item--row">
-                <a class="user-navigation__link button" href="#">Авторизация</a>
-              </li>
-            </ul>
-          </nav>
-          <blockquote class="page-header__blockquote">
-            <q class="page-header__quote section-paragraph">Лучшее приложение, <br>что я видел в жизни!</q>
-            <cite class="page-header__cite section-important">Мурат Эльтазин <br>главный редактор <br>газеты «гаджетлайф»</cite>          
-          </blockquote>
-        </div>
+        <blockquote class="page-header__blockquote">
+          <q class="page-header__quote section-paragraph">Лучшее приложение, <br>что я видел в жизни!</q>
+          <cite class="page-header__cite section-important">Мурат Эльтазин <br>главный редактор <br>газеты
+            «гаджетлайф»</cite>
+        </blockquote>
       </div>
-      <div class="modal page-header__modal page-header__modal--active">
-        <nav class="main-navigation">
-          <div class="main-navigation__list cite-navigation">
-            <ul class="cite-navigation__list">
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="#">о сервисе</a>              
-              </li>
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="form.html">направления</a>              
-              </li>
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="catalog.html">попутчики</a>              
-              </li>
-            </ul>
-          </div>            
-          <div class="main-navigation__list user-navigation">
-            <ul class="user-navigation__list user-navigation__list--column">
-              <li class="user-navigation__item user-navigation__item--authorize user-navigation__item--column">
-                <a class="user-navigation__link" href="#">Авторизация</a>
-              </li>
-              <li class="user-navigation__item user-navigation__item--call-us user-navigation__item--column">
-                <a class="user-navigation__link" href="tel:88005558628" aria-label="Позвоните нам">                        
-                  <span class="user-navigation__telephone">8 800 555-86-28</span>
-                </a>
-              </li>
-              <li class="user-navigation__item user-navigation__item--text-us user-navigation__item--column">
-                <a class="user-navigation__link" href="#" aria-label="Напишите нам">              
-                  <span class="user-navigation__email">mail@htmlacademy.ru</span>
-                </a>
-              </li>            
-            </ul>
-          </div>
-          <div class="main-navigation__list social-navigation">
-            <ul class="social-navigation__list">
-              <li class="social-navigation__item social-navigation__item--facebook social-navigation__item--header-social">
-                <a class="social-navigation__link" href="#">
-                  <span class="visually-hidden">Фейсбук</span>                     
-                </a>
-              </li>
-              <li class="social-navigation__item social-navigation__item--vkontakte social-navigation__item--header-social">
-                <a class="social-navigation__link" href="#">
-                  <span class="visually-hidden">Вконтакте</span>               
-                </a>
-              </li>
-              <li class="social-navigation__item social-navigation__item--instagram social-navigation__item--header-social">
-                <a class="social-navigation__link" href="#">
-                  <span class="visually-hidden">Инстаграм</span>            
-                </a>
-              </li>
-            </ul>
-          </div>
-        </nav>  
-      </div> 
-    </header>
-    <main class="page-main">
-      <section class="page-main__section strategy-of-using">
-        <h2 class="visually-hidden">Как пользоваться приложением</h2>    
-        <ol class="strategy-of-using__list">
-          <li class="strategy-of-using__item">
-            <span class="strategy-of-using__text">Выберите направление</span>            
-          </li>
-          <li class="strategy-of-using__item">
-            <span class="strategy-of-using__text">Изучите идеи путешественников</span>
-          </li>
-          <li class="strategy-of-using__item">
-            <span class="strategy-of-using__text">Находите тех, кто похож на вас</span>
-          </li>
-          <li class="strategy-of-using__item">
-            <span class="strategy-of-using__text">Путешествуйте вместе!</span>
-          </li>
-        </ol>
-      </section>
-      <section class="page-main__section about-service">
-        <h2 class="about-service__title section-title">О сервисе</h2>
-        <p class="about-service__text section-paragraph">
-          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. 
-        </p>
-        <p class="about-service__call section-important">
-          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
-        </p>
-      </section>
-      <section class="page-main__section directions">
-        <h2 class="direcions__title section-title">Направления</h2>
-        <p class="directions__text section-paragraph">
-          Мы не продаем туры <br>и ничего не рекламируем. <br>Люди сами пишут о странах, <br>куда хотели бы отправиться <br>и чем можно там заняться.            
-        </p>
-        <ul class="directions__list">
-          <li class="directions__item">
-            <figure>
-              <img class="directions__image" src="#" alt="Тайское море" width="270" height="190">
-              <figcaption>
-                <h3 class="direction__city">Таиланд</h3>
-                <p class="direction__call">Джунгли зовут!</p>
-                <span class="direction__number">18321</span>
-              </figcaption>
-            </figure>            
-          </li>
-          <li class="directions__item">
-            <figure>
-              <img class="directions__image" src="#" alt="Французские улицы" width="270" height="190">
-              <figcaption>
-                <h3 class="direction__city">Франция</h3>
-                <p class="direction__call">Трэ бьен, манифик!</p>
-                <span class="direction__number">12518</span>
-              </figcaption>
-            </figure>            
-          </li>
-          <li class="directions__item">
-            <figure>
-              <img class="directions__image" src="#" alt="Чешские каналы" width="270" height="190">
-              <figcaption>
-                <h3 class="direction__city">Чехия</h3>
-                <p class="direction__call">Закоулки старой Европы</p>
-                <span class="direction__number">5326</span>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-        <a  class="directions__link button button--square" href="#">Показать все</a>
-      </section>
-      <section class="page-main__section companions">
-        <h2 class="companions__title section-title">Попутчики</h2>
-        <p class="companions__text section-paragraph">
-          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. 
-        </p>
-        <p class="companions__call section-important">
-          Теперь можно легко найти единомышленников!
-        </p>
-        <ul class="companions__list">
-          <li class="companions__item">
-            <h3 class="companions__name">Таня Фирсова</h3> 
-            <img class="companions__image" src="#" alt="Фотография попутчика" width="270" height="270">
-            <div class="companions__level">
-              <span class="companions__level-number">99</span>
-              <span class="companions__level-text">level</span>
-            </div>
-            <div class="companions__flags">
-              <h4 class="visually-hidden">Хочет посетить:</h4>
-              <ul class="companions__flags-list">
-                <li class="companions__flags-item companions__flags-item--sri-Lanka">
-                  <img class="companions__flags-image" src="#" aria-label="Шри-Ланка" alt="Флаг Шри-Ланки" width="35" height="25">
-                </li>
-                <li class="companions__flags-item companions__flags-item--thailand">
-                  <img class="companions__flags-mage" src="#" aria-label="Тайланд" alt="Флаг Тайланда" width="35" height="25">
-                </li>
-                <li class="companions__flags-item companions__flags-item--seychelles">
-                  <img class="companions__flags-image" src="#" aria-label="Сейшелы" alt="Флаг Сейшел" width="35" height="25">
-                </li>
-              </ul>
-            </div>
-            <div class="companions__tags">
-              <h4 class="visually-hidden">Теги попутчика</h4>
-              <p class="companions__tags-text">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-            </div>
-            <div class="companions__transport">
-              <h4 class="visually-hidden">Транспорт:</h4>
-              <ul class="transport-list">
-                <li class="transport-list__item">
-                  <!-- <svg class="transport__icon transport__icon--plane transport__icon-choosed"></svg> -->
-                  <span class="visually-hidden">На самолете</span>
-                </li>
-                <li class="transport-list__item">
-                  <!-- <svg class="transport__icon transport__icon--bus"></svg> -->
-                  <span class="visually-hidden">На автобусе</span>
-                </li>
-                <li class="transport-list__item">
-                  <!-- <svg class="transport__icon transport__icon--bicycle"></svg> -->
-                  <span class="visually-hidden">На велосипеде</span>
-                </li>
-                <li class="transport-list__item">
-                  <!-- <svg class="transport__icon transport__icon--walk"></svg> -->
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="companions__item">
-            <h3 class="companions__name">Петя Демин</h3>
-            <img class="companions__image" src="#" alt="Фотография попутчика" width="270" height="270">>
-            <div class="companions__level">
-              <span class="companions__level-number">80</span>
-              <span class="companions__level-text">level</span>
-            </div>
-            <div class="companions__flags">
-              <h4 class="visually-hidden">Хочет посетить:</h4>
-              <ul class="companions__flags-list">
-                <li class="companions__flags-item companions__flags-item--belgium">
-                  <img class="companions__flags-image" src="#" aria-label="Бельгия" alt="Флаг Бельгии" width="35" height="25">
-                </li>
-                <li class="companions__flags-item companions__flags-item--czech">
-                  <img class="companions__flags-image" src="#" aria-label="Чехия" alt="Флаг Чехии" width="35" height="25">
-                </li>        
-              </ul>
-            </div>
-            <div class="companions__tags">
-              <h4 class="visually-hidden">Теги попутчика</h4>
-              <p class="companions__tags-text">#бургер #бар #футбол #концерт #крафт</p>
-            </div>
-            <div class="companions__transport">
-              <h4 class="visually-hidden">Транспорт:</h4>
-              <ul class="transport-list">
-                <li class="transport-list__item">
-                  <!-- <svg class="transport__icon transport__icon--plane transport__icon--choosed"></svg> -->
-                  <span class="visually-hidden">На самолете</span>
-                </li>
-                <li class="transport-list__item">
-                  <!-- <svg class="transport__icon transport__icon--bus transport__icon--choosed"></svg> -->
-                  <span class="visually-hidden">На автобусе</span>
-                </li>
-                <li class="transport-list__item">
-                  <!-- <svg class="transport__icon transport__icon--bicycle"></svg> -->
-                  <span class="visually-hidden">На велосипеде</span>
-                </li>
-                <li class="transport-list__item">
-                  <!-- <svg class="transport__icon transport__icon--walk transport__icon--choosed"></svg> -->
-                  <span class="visually-hidden">Пешком</span>
-                </li>
-              </ul>
-            </div>
-          </li>          
-        </ul>
-        <a class="companions__link button button--square"  href="#">Показать всех</a>
-      </section>
-      <section class="page-main__section add-profile">
-        <h2 class="add-profile__title section-title">Добавьте свой профиль</h2>
-        <div class="add-profile__rates">
-          <h3 class="visually-hidden">Предлагаемые тарифы</h3>
-          <dl class="add-profile__rates-list">
-            <dt class="add-profile__rates-offer section-paragraph">Базовое размещение</dt>
-            <dd class="add-profile__rates-price section-paragraph">Бесплатно</dd>                   
-            <dt class="add-profile__rates-offer section-paragraph">Вывод на первых позициях</dt>
-            <dd class="add-profile__rates-price section-paragraph">99 руб./мес</dd>               
-            <dt class="add-profile__rates-offer section-paragraph">Кастомный цвет карточки</dt>
-            <dd class="add-profile__rates-price section-paragraph">59 руб./мес</dd> 
-          </dl>
-          <a class="add-profile__rates-link" href="#">Показать тарифы для бизнеса</a>              
+    </div>
+    <div class="modal page-header__modal page-header__modal--active">
+      <nav class="main-navigation">
+        <div class="main-navigation__list cite-navigation">
+          <ul class="cite-navigation__list">
+            <li class="cite-navigation__item">
+              <a class="cite-navigation__link" href="#">о сервисе</a>
+            </li>
+            <li class="cite-navigation__item">
+              <a class="cite-navigation__link" href="form.html">направления</a>
+            </li>
+            <li class="cite-navigation__item">
+              <a class="cite-navigation__link" href="catalog.html">попутчики</a>
+            </li>
+          </ul>
         </div>
-      </section>
-      <div class="rates-modal-wrapper rates-modal-wrapper--active">
-        <section class="page-main__section rates-modal">          
-          <h3 class="rates-modal__title section-title">Бизнес-тарифы</h3>
-          <dl class="rates-modal__list">
-            <dt class="rates-modal__offer section-paragraph">Реклама у блоггера</dt>
-            <dd class="rates-modalrates-price section-paragraph">300 000 руб./пост</dd>                   
-            <dt class="rates-modal__offer section-paragraph">Накрутка подписчиков</dt>
-            <dd class="rates-modal__rates-price section-paragraph">от 1 руб./шт.</dd>               
-            <dt class="rates-modal__offer section-paragraph">Лайки от ботов</dt>
-            <dd class="rates-modal__rates-price section-paragraph">от 20 коп./лайк</dd>
-            <dt class="rates-modal__offer section-paragraph">Ваш продакт-плейсмент</dt>
-            <dd class="rates-modal__rates-price section-paragraph">Индивидуально</dd> 
-          </dl>
-          <a class="rates-modal__link" href="#">Закрыть окно</a>
-        </section>
-      </div>      
-      <section class="page-main__section info">
-        <h2 class="visually-hidden">Регистрация и контакты</h2>
-        <p class="info__title section-title">Заинтересовались?</p>
-        <p class="info__call section-paragraph">Зарегистрируйтесь, <br>это быстро и бесплатно! <br>Уже зарегистрированы? Тогда <br>скорее <a class="info__call--link">авторизуйтесь.</a></p>
-        <form class="info__form form-email" action="https://echo.htmlacademy.ru">
-          <input class="form-email__input" type="email" placeholder="E-mail">
-          <button class="form-email__button" type="submit"><span class="visually-hidden">Зарегистрироваться</span></button>
-        </form>
-        <p class="info__call section-paragraph section-paragraph--questions">Остались вопросы? <br>Мы с радостью на них ответим!</p>
-        <div class="user-navigation user-navigation--column">
-          <ul class="user-navigation__list user-navigation__item--call-us user-navigation__item--column">          
-            <li class="user-navigation__item ">
+        <div class="main-navigation__list user-navigation">
+          <ul class="user-navigation__list user-navigation__list--column">
+            <li class="user-navigation__item user-navigation__item--authorize user-navigation__item--column">
+              <a class="user-navigation__link button" href="#">Авторизация</a>
+            </li>
+            <li class="user-navigation__item user-navigation__item--call-us user-navigation__item--column">
               <a class="user-navigation__link" href="tel:88005558628" aria-label="Позвоните нам">
-                <!-- <svg class="user-navigation__icon"></svg>           -->
-                <span class="user-navigation__telephone">8 800 555-86-28</span>
+                <span class="user-navigation__info">8 800 555-86-28</span>
               </a>
             </li>
             <li class="user-navigation__item user-navigation__item--text-us user-navigation__item--column">
               <a class="user-navigation__link" href="#" aria-label="Напишите нам">
-                <!-- <svg class="user-navigation__icon"></svg>  -->
-                <span class="user-navigation__email">mail@htmlacademy.ru</span>
+                <span class="user-navigation__info">mail@htmlacademy.ru</span>
               </a>
-            </li>            
+            </li>
           </ul>
-        </div>        
-      </section>
-      <section class="page-main__section location">
-        <h2 class="visually-hidden">Наше местоположение</h2>
-        <address class="location__address">ул. Большая <br>Конюшенная, 19/8</address>
-        <a class="location__button button button--square" href="#">Проложить маршрут</a>
-        <iframe class="location__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.32085871607062!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605357948864!5m2!1sru!2sru" width="320" height="424" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </section>      
-    </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo logo">
-        <img class="page-footer__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
-      </a>
-      <div class="page-footer__social-navigation social-navigation">
-        <ul class="social-navigation__list">
-          <li class="social-navigation__item social-navigation__item--facebook social-navigation__item--footer">
-            <a class="social-navigation__link" href="#">
-              <span class="visually-hidden">Фейсбук</span>                     
-            </a>
-          </li>
-          <li class="social-navigation__item social-navigation__item--vkontakte social-navigation__item--footer">
-            <a class="social-navigation__link" href="#">
-              <span class="visually-hidden">Вконтакте</span>               
-            </a>
-          </li>
-          <li class="social-navigation__item social-navigation__item--instagram social-navigation__item--footer">
-            <a class="social-navigation__link" href="#">
-              <span class="visually-hidden">Инстаграм</span>            
-            </a>
-          </li>
-        </ul>  
-      </div>      
-      <div class="page-footer__copyright copyright">
-        <span class="copyrigth__text">Разработано</span>
-        <a class="copyrigth__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+        <div class="main-navigation__list social-navigation">
+          <ul class="social-navigation__list">
+            <li
+              class="social-navigation__item social-navigation__item--facebook social-navigation__item--header-social">
+              <a class="social-navigation__link" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li
+              class="social-navigation__item social-navigation__item--vkontakte social-navigation__item--header-social">
+              <a class="social-navigation__link" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li
+              class="social-navigation__item social-navigation__item--instagram social-navigation__item--header-social">
+              <a class="social-navigation__link" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <section class="page-main__section strategy-of-using">
+      <h2 class="visually-hidden">Как пользоваться приложением</h2>
+      <ol class="strategy-of-using__list">
+        <li class="strategy-of-using__item">
+          <span class="strategy-of-using__text">Выберите направление</span>
+        </li>
+        <li class="strategy-of-using__item">
+          <span class="strategy-of-using__text">Изучите идеи путешественников</span>
+        </li>
+        <li class="strategy-of-using__item">
+          <span class="strategy-of-using__text">Находите тех, кто похож на вас</span>
+        </li>
+        <li class="strategy-of-using__item">
+          <span class="strategy-of-using__text">Путешествуйте вместе!</span>
+        </li>
+      </ol>
+    </section>
+    <section class="page-main__section about-service">
+      <h2 class="about-service__title section-title">О сервисе</h2>
+      <p class="about-service__text section-paragraph">
+        Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и
+        черпайте вдохновение в чужих.
+      </p>
+      <p class="about-service__call section-important">
+        А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+      </p>
+    </section>
+    <section class="page-main__section directions">
+      <h2 class="directions__title section-title">Направления</h2>
+      <p class="directions__text section-paragraph">
+        Мы не продаем туры <br>и ничего не рекламируем. <br>Люди сами пишут о странах, <br>куда хотели бы отправиться
+        <br>и чем можно там заняться.
+      </p>
+      <ul class="directions__list">
+        <li class="directions__item">
+          <figure class="directions__figure">
+            <img class="directions__image" src="#" alt="Тайское море" width="270" height="190">
+            <figcaption class="directions__figcaption">
+              <h3 class="direction__city">Таиланд</h3>
+              <p class="direction__call">Джунгли зовут!</p>
+              <span class="direction__number">18321</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="directions__item">
+          <figure class="directions__figure">
+            <img class="directions__image" src="#" alt="Французские улицы" width="270" height="190">
+            <figcaption class="directions__figcaption">
+              <h3 class="direction__city">Франция</h3>
+              <p class="direction__call">Трэ бьен, манифик!</p>
+              <span class="direction__number">12518</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="directions__item">
+          <figure class="directions__figure">
+            <img class="directions__image" src="#" alt="Чешские каналы" width="270" height="190">
+            <figcaption class="directions__figcaption">
+              <h3 class="direction__city">Чехия</h3>
+              <p class="direction__call">Закоулки старой Европы</p>
+              <span class="direction__number">5326</span>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+      <a class="directions__link button button--square" href="#">Показать все</a>
+    </section>
+    <section class="page-main__section companions">
+      <h2 class="companions__title section-title">Попутчики</h2>
+      <p class="companions__text section-paragraph">
+        Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут
+        для хайкинга.
+      </p>
+      <p class="companions__call section-important">
+        Теперь можно легко найти единомышленников!
+      </p>
+      <ul class="companions__list">
+        <li class="companions__item">
+          <img class="companions__image" src="#" alt="Фотография попутчика" width="270" height="270">
+          <div class="companions__level">
+            <span class="companions__level-number">99</span>
+            <span class="companions__level-text">level</span>
+          </div>
+          <div class="companions__flags">
+            <h4 class="visually-hidden">Хочет посетить:</h4>
+            <ul class="companions__flags-list">
+              <li class="companions__flags-item companions__flags-item--sri-Lanka">
+                <img class="companions__flags-image" src="#" aria-label="Шри-Ланка" alt="Флаг Шри-Ланки" width="35"
+                  height="25">
+              </li>
+              <li class="companions__flags-item companions__flags-item--thailand">
+                <img class="companions__flags-mage" src="#" aria-label="Тайланд" alt="Флаг Тайланда" width="35"
+                  height="25">
+              </li>
+              <li class="companions__flags-item companions__flags-item--seychelles">
+                <img class="companions__flags-image" src="#" aria-label="Сейшелы" alt="Флаг Сейшел" width="35"
+                  height="25">
+              </li>
+            </ul>
+          </div>
+          <h3 class="companions__name">Таня Фирсова</h3>
+          <div class="companions__tags">
+            <h4 class="visually-hidden">Теги попутчика</h4>
+            <p class="companions__tags-text">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          </div>
+          <div class="companions__transport">
+            <h4 class="visually-hidden">Транспорт:</h4>
+            <ul class="transport-list">
+              <li class="transport-list__item">
+                <!-- <svg class="transport__icon transport__icon--plane transport__icon-choosed"></svg> -->
+                <span class="visually-hidden">На самолете</span>
+              </li>
+              <li class="transport-list__item">
+                <!-- <svg class="transport__icon transport__icon--bus"></svg> -->
+                <span class="visually-hidden">На автобусе</span>
+              </li>
+              <li class="transport-list__item">
+                <!-- <svg class="transport__icon transport__icon--bicycle"></svg> -->
+                <span class="visually-hidden">На велосипеде</span>
+              </li>
+              <li class="transport-list__item">
+                <!-- <svg class="transport__icon transport__icon--walk"></svg> -->
+                <span class="visually-hidden">Пешком</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="companions__item">
+          <img class="companions__image" src="#" alt="Фотография попутчика" width="270" height="270">>
+          <div class="companions__level">
+            <span class="companions__level-number">80</span>
+            <span class="companions__level-text">level</span>
+          </div>
+          <div class="companions__flags">
+            <h4 class="visually-hidden">Хочет посетить:</h4>
+            <ul class="companions__flags-list">
+              <li class="companions__flags-item companions__flags-item--belgium">
+                <img class="companions__flags-image" src="#" aria-label="Бельгия" alt="Флаг Бельгии" width="35"
+                  height="25">
+              </li>
+              <li class="companions__flags-item companions__flags-item--czech">
+                <img class="companions__flags-image" src="#" aria-label="Чехия" alt="Флаг Чехии" width="35" height="25">
+              </li>
+            </ul>
+          </div>
+          <h3 class="companions__name">Петя Демин</h3>
+          <div class="companions__tags">
+            <h4 class="visually-hidden">Теги попутчика</h4>
+            <p class="companions__tags-text">#бургер #бар #футбол #концерт #крафт</p>
+          </div>
+          <div class="companions__transport">
+            <h4 class="visually-hidden">Транспорт:</h4>
+            <ul class="transport-list">
+              <li class="transport-list__item">
+                <!-- <svg class="transport__icon transport__icon--plane transport__icon--choosed"></svg> -->
+                <span class="visually-hidden">На самолете</span>
+              </li>
+              <li class="transport-list__item">
+                <!-- <svg class="transport__icon transport__icon--bus transport__icon--choosed"></svg> -->
+                <span class="visually-hidden">На автобусе</span>
+              </li>
+              <li class="transport-list__item">
+                <!-- <svg class="transport__icon transport__icon--bicycle"></svg> -->
+                <span class="visually-hidden">На велосипеде</span>
+              </li>
+              <li class="transport-list__item">
+                <!-- <svg class="transport__icon transport__icon--walk transport__icon--choosed"></svg> -->
+                <span class="visually-hidden">Пешком</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <a class="companions__link button button--square" href="#">Показать всех</a>
+    </section>
+    <section class="page-main__section add-profile">
+      <h2 class="add-profile__title section-title">Добавьте свой профиль</h2>
+      <div class="add-profile__rates">
+        <h3 class="visually-hidden">Предлагаемые тарифы</h3>
+        <dl class="add-profile__rates-list">
+          <dt class="add-profile__rates-offer section-paragraph">Базовое размещение</dt>
+          <dd class="add-profile__rates-price section-paragraph">Бесплатно</dd>
+          <dt class="add-profile__rates-offer section-paragraph">Вывод на первых позициях</dt>
+          <dd class="add-profile__rates-price section-paragraph">99 руб./мес</dd>
+          <dt class="add-profile__rates-offer section-paragraph">Кастомный цвет карточки</dt>
+          <dd class="add-profile__rates-price section-paragraph">59 руб./мес</dd>
+        </dl>
+        <a class="add-profile__rates-link" href="#">Показать тарифы для бизнеса</a>
       </div>
-    </footer>    
-  </body>
+    </section>
+    <div class="rates-modal-wrapper rates-modal-wrapper--active">
+      <section class="page-main__section rates-modal">
+        <h3 class="rates-modal__title section-title">Бизнес-тарифы</h3>
+        <dl class="rates-modal__list">
+          <dt class="rates-modal__offer section-paragraph">Реклама у блоггера</dt>
+          <dd class="rates-modal__rates-price section-paragraph">300 000 руб./пост</dd>
+          <dt class="rates-modal__offer section-paragraph">Накрутка подписчиков</dt>
+          <dd class="rates-modal__rates-price section-paragraph">от 1 руб./шт.</dd>
+          <dt class="rates-modal__offer section-paragraph">Лайки от ботов</dt>
+          <dd class="rates-modal__rates-price section-paragraph">от 20 коп./лайк</dd>
+          <dt class="rates-modal__offer section-paragraph">Ваш продакт-плейсмент</dt>
+          <dd class="rates-modal__rates-price section-paragraph">Индивидуально</dd>
+        </dl>
+        <button class="rates-modal__button">Закрыть окно</button>
+      </section>
+    </div>
+    <section class="page-main__section info">
+      <h2 class="visually-hidden">Регистрация и контакты</h2>
+      <p class="info__title section-title">Заинтересовались?</p>
+      <p class="info__call section-paragraph">Зарегистрируйтесь, <br>это быстро и бесплатно! <br>Уже зарегистрированы?
+        Тогда <br>скорее <a href="#" class="info__call--link">авторизуйтесь.</a></p>
+      <form class="info__form form-email" action="https://echo.htmlacademy.ru">
+        <input class="form-email__input" type="email" placeholder="E-mail">
+        <button class="form-email__button" type="submit"><span
+            class="visually-hidden">Зарегистрироваться</span></button>
+      </form>
+      <p class="info__call section-paragraph section-paragraph--questions">Остались вопросы? <br>Мы с радостью на них
+        ответим!</p>
+      <div class="user-navigation user-navigation--column">
+        <ul class="user-navigation__list user-navigation__item--call-us user-navigation__item--column">
+          <li class="user-navigation__item ">
+            <a class="user-navigation__link" href="tel:88005558628" aria-label="Позвоните нам">
+              <!-- <svg class="user-navigation__icon"></svg>           -->
+              <span class="user-navigation__info user-navigation--info">8 800 555-86-28</span>
+            </a>
+          </li>
+          <li class="user-navigation__item user-navigation__item--text-us user-navigation__item--column">
+            <a class="user-navigation__link" href="#" aria-label="Напишите нам">
+              <!-- <svg class="user-navigation__icon"></svg>  -->
+              <span class="user-navigation__info user-navigation--info">mail@htmlacademy.ru</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-main__section location">
+      <h2 class="visually-hidden">Наше местоположение</h2>
+      <address class="location__address">ул. Большая <br>Конюшенная, 19/8</address>
+      <a class="location__button button button--square" href="#">Проложить маршрут</a>
+      <iframe class="location__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.32085871607062!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605357948864!5m2!1sru!2sru"
+        width="320" height="424" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo logo">
+      <img class="page-footer__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
+    </a>
+    <div class="page-footer__social-navigation social-navigation">
+      <ul class="social-navigation__list">
+        <li class="social-navigation__item social-navigation__item--facebook social-navigation__item--footer">
+          <a class="social-navigation__link" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social-navigation__item social-navigation__item--vkontakte social-navigation__item--footer">
+          <a class="social-navigation__link" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-navigation__item social-navigation__item--instagram social-navigation__item--footer">
+          <a class="social-navigation__link" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <span class="copyrigth__text">Разработано</span>
+      <a class="copyrigth__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+</body>
+
 </html>
