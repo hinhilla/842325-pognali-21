@@ -18,3 +18,16 @@
   font-weight: 700;
   text-decoration: none;
 }
+.add-profile__rates-list {
+  display: grid;
+  grid-template-columns: auto;
+  @media (min-width: @tablet) {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+  }
+}
+.add-profile__title {
+  @media (min-width: @tablet) {
+    text-align: center;
+  }
+}

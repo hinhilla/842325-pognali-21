@@ -19,3 +19,37 @@
 .user-navigation__list--row {
   display: flex;
 }
+.user-navigation--hidden {
+  display: none;
+  @media (min-width: @tablet) {
+    display: block;
+  }
+}
+.user-navigation__item--hidden {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+    @media (min-width: @desctop) {
+    display: block;
+  }
+}
+.user-navigation--shown {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+
+}
+.user-navigation__item--modal {
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+.user-navigation__item--info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @media (min-width: @desctop) {
+    flex-direction: row;
+  }
+}

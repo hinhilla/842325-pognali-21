@@ -13,17 +13,49 @@
     <div class="center">
       <div class="page-header__default">
         <nav class="page-header__active-container page-header__active-container--active">
-          <!-- мне это название удобно, но могу ничего лучше пока придумать -->
           <span class="logo page-header__logo page-header__logo--active">
             <img class="page-header__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
           </span>
           <button
-            class="page-header__toggle page-header__toggle--open page-header__toggle--close page-header__toggle--scroll"><span
-              class="visually-hidden">Открыть меню</span></button>
+            class="page-header__toggle page-header__toggle--open page-header__toggle--close page-header__toggle--scroll page-header__toggle--hidden"><span
+              class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="cite-navigation cite-navigation--hidden">
+            <ul class="cite-navigation__list">
+              <li class="cite-navigation__item">
+                <a class="cite-navigation__link" href="#">о сервисе</a>
+              </li>
+              <li class="cite-navigation__item">
+                <a class="cite-navigation__link" href="form.html">направления</a>
+              </li>
+              <li class="cite-navigation__item">
+                <a class="cite-navigation__link" href="catalog.html">попутчики</a>
+              </li>
+            </ul>
+          </div>
+          <nav class="user-navigation user-navigation--hidden">
+            <ul class="user-navigation__list user-navigation__list--row">
+              <li
+                class="user-navigation__item user-navigation__item--call-us user-navigation__item--row user-navigation__item--hidden">
+                <a class="user-navigation__link" href="#">
+                  <span class="visually-hidden">Позвоните нам</span>
+                </a>
+              </li>
+              <li
+                class="user-navigation__item user-navigation__item--text-us user-navigation__item--row user-navigation__item--hidden">
+                <a class="user-navigation__link" href="#">
+                  <span class="visually-hidden">Напишите нам</span>
+                </a>
+              </li>
+              <li class="user-navigation__item user-navigation__item--authorize user-navigation__item--row">
+                <a class="user-navigation__link button" href="#">Авторизация</a>
+              </li>
+            </ul>
+          </nav>
         </nav>
         <div class="page-header__container">
           <h1 class="header-title header-title--main">В путешествие с крутыми попутчиками!</h1>
-          <nav class="user-navigation">
+          <nav class="user-navigation user-navigation--shown">
             <ul class="user-navigation__list user-navigation__list--row">
               <li class="user-navigation__item user-navigation__item--call-us user-navigation__item--row">
                 <a class="user-navigation__link" href="#">
@@ -50,29 +82,29 @@
       <div class="modal page-header__modal page-header__modal--active">
         <nav class="main-navigation">
           <div class="main-navigation__list cite-navigation">
-            <ul class="cite-navigation__list">
-              <li class="cite-navigation__item">
+            <ul class="cite-navigation__list cite-navigation__list--modal">
+              <li class="cite-navigation__item cite-navigation__item--modal">
                 <a class="cite-navigation__link" href="#">о сервисе</a>
               </li>
-              <li class="cite-navigation__item">
+              <li class="cite-navigation__item cite-navigation__item--modal">
                 <a class="cite-navigation__link" href="form.html">направления</a>
               </li>
-              <li class="cite-navigation__item">
+              <li class="cite-navigation__item cite-navigation__item--modal">
                 <a class="cite-navigation__link" href="catalog.html">попутчики</a>
               </li>
             </ul>
           </div>
           <div class="main-navigation__list user-navigation">
-            <ul class="user-navigation__list user-navigation__list--column">
-              <li class="user-navigation__item user-navigation__item--authorize user-navigation__item--column">
+            <ul class="user-navigation__list user-navigation__list--modal">
+              <li class="user-navigation__item user-navigation__item--authorize user-navigation__item--modal">
                 <a class="user-navigation__link button" href="#">Авторизация</a>
               </li>
-              <li class="user-navigation__item user-navigation__item--call-us user-navigation__item--column">
+              <li class="user-navigation__item user-navigation__item--call-us">
                 <a class="user-navigation__link" href="tel:88005558628" aria-label="Позвоните нам">
                   <span class="user-navigation__info">8 800 555-86-28</span>
                 </a>
               </li>
-              <li class="user-navigation__item user-navigation__item--text-us user-navigation__item--column">
+              <li class="user-navigation__item user-navigation__item--text-us">
                 <a class="user-navigation__link" href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
                   <span class="user-navigation__info">mail@htmlacademy.ru</span>
                 </a>
@@ -80,7 +112,7 @@
             </ul>
           </div>
           <div class="main-navigation__list social-navigation">
-            <ul class="social-navigation__list">
+            <ul class="social-navigation__list social-navigation__list--modal">
               <li
                 class="social-navigation__item social-navigation__item--facebook social-navigation__item--header-social">
                 <a class="social-navigation__link" href="#">
@@ -108,7 +140,7 @@
   <main class="page-main">
     <section class="page-main__section strategy-of-using center">
       <h2 class="visually-hidden">Как пользоваться приложением</h2>
-      <ol class="strategy-of-using__list">
+      <ol class="strategy-of-using__list center">
         <li class="strategy-of-using__item strategy-of-using__item--orange">
           <span class="strategy-of-using__text">Выберите направление</span>
         </li>
@@ -124,15 +156,18 @@
       </ol>
     </section>
     <section class="page-main__section about-service center">
-      <h2 class="about-service__title section-title">О сервисе</h2>
-      <p class="about-service__text section-paragraph">
-        Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий
-        и
-        черпайте вдохновение в чужих.
-      </p>
-      <p class="about-service__call section-headline">
-        А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
-      </p>
+      <div>
+        <h2 class="about-service__title section-title">О сервисе</h2>
+        <p class="about-service__text section-paragraph">
+          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий
+          и
+          черпайте вдохновение в чужих.
+        </p>
+        <p class="about-service__call section-headline">
+          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
+        </p>
+        <a class="about-service__link button button--square" href="#">Подробнее</a>
+      </div>
     </section>
     <section class="page-main__section directions center">
       <h2 class="directions__title section-title">Направления</h2>
@@ -331,8 +366,8 @@
         них
         ответим!</p>
       <div class="user-navigation user-navigation--column">
-        <ul class="user-navigation__list user-navigation__item--call-us user-navigation__item--column">
-          <li class="user-navigation__item ">
+        <ul class="user-navigation__list user-navigation__item--info">
+          <li class="user-navigation__item user-navigation__item--call-us">
             <a class="user-navigation__link" href="tel:88005558628" aria-label="Позвоните нам">
               <!-- <svg class="user-navigation__icon"></svg>           -->
               <span class="user-navigation__info user-navigation--info">8 800 555-86-28</span>
@@ -359,7 +394,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="center">
+    <div class="center page-footer__flex">
       <a class="page-footer__logo logo">
         <img class="page-footer__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
       </a>

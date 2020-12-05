@@ -43,3 +43,22 @@
 .directions__figure {
   margin: 0;
 }
+.directions {
+  display: grid;
+  grid-template-columns: auto;
+  @media (min-width: @desctop) {
+    grid-template-columns: auto auto;
+
+
+  }
+}
+.directions__list {
+
+  @media (min-width: @desctop) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
+}
