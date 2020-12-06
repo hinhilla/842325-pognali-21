@@ -23,17 +23,17 @@
 .page-header__quote {
   margin-bottom: 18px;
 }
-.page-header__active-container {
+.page-header__wrapper {
   display: flex;
   justify-content: space-between;
 }
 .page-header__toggle--hidden {
-  @media (min-width: @desctop) {
+  @media (min-width: @desktop) {
     display: none;
 
   }
 }
-.page-header__active-container {
+.page-header__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -43,7 +43,7 @@
     display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  @media (min-width: @desctop) {
+  @media (min-width: @desktop) {
     flex-direction: row;
     justify-content: space-between;
 
