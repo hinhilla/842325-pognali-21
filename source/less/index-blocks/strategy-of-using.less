@@ -7,7 +7,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 270px;
 }
 
 .strategy-of-using__item {
@@ -38,4 +37,15 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+}
+.strategy-of-using__list {
+  display: grid;
+  @media (min-width: @tablet) {
+    grid-template-columns: auto auto;
+
+  }
+  @media (min-width: @desktop) {
+    grid-template-columns: repeat(4, auto);
+
+  }
 }

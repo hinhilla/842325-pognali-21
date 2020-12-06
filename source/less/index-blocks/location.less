@@ -20,3 +20,16 @@
   border: 3px solid @basic-blue-light;
   border-radius: 10px;
 }
+.location__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @media (min-width: @desktop) {
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+}
+.location__iframe {
+  width: 100%;
+}

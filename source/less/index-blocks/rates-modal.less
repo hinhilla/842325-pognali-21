@@ -21,4 +21,18 @@
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+.rates-modal__list {
+  display: grid;
+  grid-template-columns: auto;
+  @media (min-width: @tablet) {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+
+  }
+}
+.rates-modal__title {
+  text-align: center;
 }
