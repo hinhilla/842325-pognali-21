@@ -1,0 +1,40 @@
+.filter-header {
+  background-color: @like-background-gray;
+}
+.filter-header__toggle {
+  border: none;
+  background-color: transparent;
+  @media (min-width: @desktop) {
+    display: none;
+
+  }
+}
+
+.filter-header__country-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+  @media (min-width: @tablet) {
+    display: flex;
+
+  }
+
+}
+.filter-header__country-link {
+    text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(@main-blue , 30%);
+
+}
+.filter-header__flex {
+  display: flex;
+  flex-wrap: wrap;
+
+
+}

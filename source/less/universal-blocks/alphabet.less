@@ -9,13 +9,32 @@
   font-weight: 500;
   color: @basic-blue-light;
   text-transform: uppercase;
+  @media (min-width: @tablet) {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: rgba(@main-blue, 30%);
+    background-color: transparent;
+    border: none;
+  }
+    @media (min-width: @desktop) {
+      color: @main-blue;
+      background-color: transparent;
+
+  }
 }
 .alphabet__item {
+  vertical-align: top;
   padding: 0;
 }
 .alphabet__button--current {
   background-color: @basic-background-blue-light;
   border-bottom: none;
+    @media (min-width: @tablet) {
+    color: @main-blue;
+    background-color: transparent;
+  }
+
   // в макете активное состояние убирает нижний border. как это стилизовать, есть у нижней ячейки тоже есть бордер сверху?
 }
 .alphabet {

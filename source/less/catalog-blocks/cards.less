@@ -63,6 +63,11 @@
   line-height: 24px;
 color: @basic-blue-light;
 }
+.cards__level-level {
+  font-size: 14px;
+line-height: 14px;
+color: rgba(@basic-black, 40%)
+}
 .cards__item {
   background-color: @basic-white;
   border-radius: 20px;
@@ -78,4 +83,51 @@ color: @basic-blue-light;
   background-color: @basic-white;
   border-radius: 20px;
 
+}
+.cards__name {
+  grid-area: name;
+}
+.cards__image {
+  grid-area: photo;
+}
+.cards__likes {
+  grid-area: like;
+}
+.cards__tags {
+  grid-area: tags;
+}
+.cards__flags {
+  grid-area: flags;
+}
+.cards__transport {
+  grid-area: transport;
+}
+.cards__level {
+  grid-area: level;
+}
+.cards__button {
+  grid-area: button;
+}
+.cards__item {
+  display: grid;
+  grid-template-areas:
+  "photo name name"
+   "photo like like"
+   "tags tags tags"
+   "flags flags flags"
+   "transport transport level"
+   "button button button";
+   @media (min-width: @tablet) {
+     grid-template-areas:
+     "photo name name transport"
+     "photo tags tags transport"
+     "photo button like level"
+     "flags flags flags flags";
+   }
+   @media (min-width: @desktop) {
+     grid-template-areas:
+     "photo name name flags flags"
+     "photo tags tags flags flags"
+     "photo button like transport level";
+   }
 }
