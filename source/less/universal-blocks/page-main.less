@@ -6,3 +6,13 @@
   background-color: @basic-background-blue-light;
 
 }
+.page-main__catalog-flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @media (min-width: @desktop) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+  }
+}

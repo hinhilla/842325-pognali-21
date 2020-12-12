@@ -1,6 +1,6 @@
 .add-country {
   display: flex;
-  background-color: @basic-white;
+  // background-color: @basic-white;
 
 
 }
@@ -40,4 +40,15 @@ background-color: transparent;
   border-radius: 4px;
 
 
+}
+.add-country--hidden-small {
+  display: none;
+  @media (min-width: @desktop) {
+    display: block;
+  }
+}
+.add-country__output-country {
+  @media (min-width: @desktop) {
+    display: none;
+  }
 }
