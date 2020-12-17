@@ -1,5 +1,9 @@
+.cite-navigation {
+  position: relative;
+}
 .cite-navigation__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
     @media (min-width: @desktop) {
     flex-direction: row;
@@ -17,6 +21,8 @@
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
+  margin-right: 34px;
+  padding-bottom: 10px;
 }
 
 .cite-navigation__link {
@@ -41,4 +47,17 @@
 @media (min-width: @tablet) {
   text-align: left;
 }
+}
+@media (min-width: @desktop) {
+  .cite-navigation::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: @basic-white;
+    top: 20px;
+    left: -105px;
+
+
+  }
 }
