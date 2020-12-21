@@ -1,28 +1,71 @@
 .companions {
   background-color: @basic-blue;
-  // padding-top: 34px;
-  // padding-left: 49px;
-  // padding-right: 54px;
+padding-top: 105px;
+margin-top: -20px;
+position: relative;
+      @media (min-width: @tablet) {
+      padding-top: 217px;
+
+
+  }
+        @media (min-width: @desktop) {
+      padding-top: 187px;
+
+
+  }
+
 }
 
 .companions__title {
-  margin-bottom: 19px;
+  margin-bottom: 32px;
+        @media (min-width: @tablet) {
+      margin-bottom: 73px;
+
+
+  }
+        @media (min-width: @desktop) {
+      margin-bottom: 75px;
+
+
+  }
 }
 
 .companions__text {
   color: @basic-white;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
+          @media (min-width: @tablet) {
+      margin-bottom: 55px;
+
+
+  }
+        @media (min-width: @desktop) {
+      margin-bottom: 57px;
+
+
+  }
 }
 
 .companions__call {
   color: @basic-white;
+  margin-bottom: 61px;
+    margin-bottom: 35px;
+          @media (min-width: @tablet) {
+      margin-bottom: 66px;
+
+
+  }
+        @media (min-width: @desktop) {
+      margin-bottom: 92px;
+
+
+  }
 }
 
 .companions__list {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: @basic-white;
+  margin-bottom: 20px;
 }
 
 .companions__name {
@@ -65,7 +108,7 @@
   display: grid;
   grid-template-columns: auto;
   @media (min-width: @desktop) {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 630px;
     grid-template-rows: auto auto;
 
   }
@@ -74,15 +117,63 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
+
   @media (min-width: @tablet) {
     flex-direction: row;
     justify-content: space-between;
   }
+  @media (min-width: @tablet+100) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
     @media (min-width: @desktop) {
+    justify-content: space-between;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 5;
+     padding-left: 30px;
 
+  }
+}
+.companions__item {
+  width: 270px;
+  min-height: 428px;
+  margin-bottom: 9px;
+  border-radius: 20px;
+
+  background-color: @basic-white;
+    @media (min-width: @tablet) {
+    width: 285px;
+    min-height: 483px;
+
+  }
+    @media (min-width: @desktop) {
+
+
+  }
+}
+.companions__link {
+  display: flex;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basic-blue-light;
+  padding-left: 23.1px;
+  padding-top: 22.48px;
+  padding-right: 32px;
+  min-height: 61px;
+  padding-bottom: 24px;
+  align-items: center;
+      @media (min-width: @tablet) {
+  min-height: 80px;
+
+}
+  @media (min-width: @desktop) {
+  width: 280px;
+  height: 80px;
   }
 }

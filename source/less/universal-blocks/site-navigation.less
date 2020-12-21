@@ -1,7 +1,7 @@
-.cite-navigation {
+.site-navigation {
   position: relative;
 }
-.cite-navigation__list {
+.site-navigation__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -9,13 +9,13 @@
     flex-direction: row;
   }
 }
-.cite-navigation__list {
+.site-navigation__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.cite-navigation__item {
+.site-navigation__item {
   font-size: 30px;
   line-height: 35px;
   font-weight: 500;
@@ -25,7 +25,7 @@
   padding-bottom: 10px;
 }
 
-.cite-navigation__link {
+.site-navigation__link {
   text-decoration: none;
   color: @main-blue;
   @media (min-width: @desktop) {
@@ -37,19 +37,19 @@
   }
 
 }
-.cite-navigation--hidden {
+.site-navigation--hidden {
   display: none;
   @media (min-width: @desktop) {
     display: block;
   }
 }
-.cite-navigation__item--modal {
+.site-navigation__item--modal {
 @media (min-width: @tablet) {
   text-align: left;
 }
 }
 @media (min-width: @desktop) {
-  .cite-navigation::before {
+  .site-navigation::before {
     content: "";
     position: absolute;
     width: 60px;

@@ -1,43 +1,122 @@
 .directions {
   background-color: @basic-background-blue-light;
-  padding-top: 71px;
+  margin-top: -25px;
+  z-index: -1;
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 2;
+        @media (min-width: @tablet) {
+
+
+  }
+
 }
 
 .directions__title {
   margin-bottom: 19px;
+      @media (min-width: @tablet) {
+      margin-bottom: 76px;
+
+
+  }
+  // @media (min-width: @desktop) {
+  //   grid-template-columns: auto auto;
+  //   margin-bottom: 76px;
+
+// возможно так и не понадобится
+  // }
+
 }
 
 .directions__text {
   color: @special-grey;
-  margin-bottom: 60px;
+  margin-bottom: 72px;
+      @media (min-width: @tablet) {
+      margin-bottom: 113px;
+
+
+  }
+  @media (min-width: @desktop) {
+    grid-template-columns: auto auto;
+    margin-bottom: 107px;
+
+
+  }
 }
 
 .directions__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 25px;
 }
 
 .directions__item {
   background-color: @basic-white;
   margin-bottom: 9px;
+        @media (min-width: @tablet) {
+      margin-bottom: 11px;
+
+
+  }
+  @media (min-width: @desktop) {
+    grid-template-columns: auto auto;
+    margin-bottom: 10px;
+
+
+  }
+
 }
 
-.direction__city {
+.directions__city {
   color: @basic-black;
 }
 
-.direction__call {
-  color: rgba(@special-grey, 70%);
-  // а зачем менять на fade? вроде же эта тоже работает
+.directions__call {
+  color: fade(@special-grey, 70%);
+  grid-column-start: 1;
+  margin: 0;
+    @media (min-width: @tablet) {
+  margin-bottom: 25px;
+
+
+  }
+  @media (min-width: @desktop) {
+    argin-bottom: 32px;
+
+
+
+  }
+
+
 }
 
-.direction__number {
-  color: rgba(@basic-blue, 70%);
+.directions__number {
+  color: fade(@basic-blue, 70%);
+  grid-column-start: 2;
+  grid-row-start: 1;
+      @media (min-width: @tablet) {
+     grid-column-start: 1;
+     grid-row-start: 3;
+
+
+  }
+
 }
 
 .directions__figcaption {
   padding: 24px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto 82px;
+      @media (min-width: @tablet) {
+     grid-template-columns: auto;
+     border-radius: 20px;
+
+
+  }
+
 }
 
 .directions__figure {
@@ -46,8 +125,19 @@
 .directions__wrapper {
   display: grid;
   grid-template-columns: auto;
+  padding-top: 101px;
+  padding-bottom: 34px;
+
+    @media (min-width: @tablet) {
+      padding-top: 149px;
+      padding-bottom: 80px;
+
+
+  }
   @media (min-width: @desktop) {
     grid-template-columns: auto auto;
+    padding-top: 246px;
+    padding-bottom: 138px;
 
 
   }
@@ -59,6 +149,44 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 4;
+  }
+
+}
+.directions__link {
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basic-blue-light;
+  padding-left: 23.1px;
+  padding-top: 22.48px;
+  padding-right: 32px;
+  min-height: 62px;
+  padding-bottom: 24px;
+        @media (min-width: @tablet) {
+  min-height: 82px;
+
+}
+  @media (min-width: @desktop) {
+  width: 275px;
+  height: 80px;
+  }
+
+}
+.directions__city {
+  margin-top: 0;
+  margin-bottom: 12px;
+      @media (min-width: @tablet) {
+  margin-bottom: 15px;
+
+
+  }
+  @media (min-width: @desktop) {
+
+
+
   }
 
 }

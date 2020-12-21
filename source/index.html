@@ -18,23 +18,23 @@
               height="15">
           </a>
           <button class="page-header__toggle">
-            <div class="page-header__toggle-element">
+            <span class="page-header__toggle-element">
               <!-- page-header__toggle-element--opened класс будет добавляться,
               если меню открыто-->
               <!-- page-header__toggle-element--scroll класс будет добавляться, если скролл -->
-            </div>
+            </span>
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <div class="cite-navigation cite-navigation--hidden page-header__cite-navigation">
-            <ul class="cite-navigation__list">
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="#">о сервисе</a>
+          <div class="site-navigation site-navigation--hidden page-header__site-navigation">
+            <ul class="site-navigation__list">
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">о сервисе</a>
               </li>
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="form.html">направления</a>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="form.html">направления</a>
               </li>
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="catalog.html">попутчики</a>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="catalog.html">попутчики</a>
               </li>
             </ul>
           </div>
@@ -43,17 +43,14 @@
             <ul class="user-navigation__list user-navigation__list--row">
               <li
                 class="user-navigation__item user-navigation__item--call-us user-navigation__item--row user-navigation__item--hidden">
-                <a class="user-navigation__link user-navigation__link--call-us" href="#">
-                  <span class="visually-hidden">Позвоните нам</span>
+                <a class="user-navigation__link user-navigation__link--call-us" href="#" title="Позвоните нам"></a>
                 </a>
               </li>
               <li
                 class="user-navigation__item user-navigation__item--write-us user-navigation__item--row user-navigation__item--hidden">
-                <a class="user-navigation__link user-navigation__link--text-us" href="#">
-                  <span class="visually-hidden">Напишите нам</span>
-                </a>
+                <a class="user-navigation__link user-navigation__link--text-us" href="#" title="Напишите нам"></a>
               </li>
-              <li class="user-navigation__item user-navigation__item--row">
+              <li class="user-navigation__item user-navigation__item--row user-navigation__item--authorize">
                 <a class="user-navigation__link user-navigation__link--authorize button" href="#">Авторизация</a>
               </li>
             </ul>
@@ -65,80 +62,35 @@
           </blockquote>
         </div>
       </div>
-      <!-- <div class="page-header__default">
-        <div class="page-header__wrapper page-header__wrapper--active">
-          <a class="logo page-header__logo">
-            <img class="page-header__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
-          </a>
-          <button class="page-header__toggle">
-            <div class="page-header__toggle-element"> -->
-      <!-- page-header__toggle-element--opened класс будет добавляться,
-                    если меню открыто-->
-      <!-- page-header__toggle-element--scroll класс будет добавляться, если скролл -->
-      <!-- </div>
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="cite-navigation cite-navigation--hidden page-header__cite-navigation">
-            <ul class="cite-navigation__list">
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="#">о сервисе</a>
-              </li>
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="form.html">направления</a>
-              </li>
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="catalog.html">попутчики</a>
-              </li>
-            </ul>
-          </div> -->
-
-      <!-- <nav class="page-header__user-navigation user-navigation user-navigation--hidden">
-        <ul class="user-navigation__list user-navigation__list--row">
-          <li
-            class="user-navigation__item user-navigation__item--call-us user-navigation__item--row user-navigation__item--hidden">
-            <a class="user-navigation__link--call-us" href="#">
-              <span class="visually-hidden">Позвоните нам</span>
-            </a>
-          </li>
-          <li class="user-navigation__item user-navigation__item--row user-navigation__item--hidden">
-            <a class="user-navigation__link user-navigation__link--text-us" href="#">
-              <span class="visually-hidden">Напишите нам</span>
-            </a>
-          </li>
-          <li class="user-navigation__item user-navigation__item--row">
-            <a class="user-navigation__link user-navigation__link--authorize button" href="#">Авторизация</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    </div>-->
       <div class="modal page-header__modal page-header__modal--active">
         <nav class="main-navigation">
-          <div class="main-navigation__list cite-navigation">
-            <ul class="cite-navigation__list cite-navigation__list--modal">
-              <li class="cite-navigation__item cite-navigation__item--modal">
-                <a class="cite-navigation__link" href="#">о сервисе</a>
+          <div class="main-navigation__list site-navigation">
+            <ul class="site-navigation__list site-navigation__list--modal">
+              <li class="site-navigation__item site-navigation__item--modal">
+                <a class="site-navigation__link" href="#">о сервисе</a>
               </li>
-              <li class="cite-navigation__item cite-navigation__item--modal">
-                <a class="cite-navigation__link" href="form.html">направления</a>
+              <li class="site-navigation__item site-navigation__item--modal">
+                <a class="site-navigation__link" href="form.html">направления</a>
               </li>
-              <li class="cite-navigation__item cite-navigation__item--modal">
-                <a class="cite-navigation__link" href="catalog.html">попутчики</a>
+              <li class="site-navigation__item site-navigation__item--modal">
+                <a class="site-navigation__link" href="catalog.html">попутчики</a>
               </li>
             </ul>
           </div>
           <div class="main-navigation__list user-navigation">
             <ul class="user-navigation__list user-navigation__list--modal">
               <li class="user-navigation__item user-navigation__item--authorize user-navigation__item--modal">
-                <a class="user-navigation__link button" href="#">Авторизация</a>
+                <a class="user-navigation__link user-navigation__link--authorize button" href="#">Авторизация</a>
               </li>
               <li class="user-navigation__item user-navigation__item--call-us">
-                <a class="user-navigation__link" href="tel:88005558628" aria-label="Позвоните нам">
+                <a class="user-navigation__link-wrapper" href="tel:88005558628" aria-label="Позвоните нам">
+                  <span class="user-navigation__link user-navigation__link-modal button"></span>
                   <span class="user-navigation__info">8 800 555-86-28</span>
                 </a>
               </li>
               <li class="user-navigation__item user-navigation__item--text-us">
-                <a class="user-navigation__link" href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
+                <a class="user-navigation__link-wrapper" href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
+                  <span class="user-navigation__link user-navigation__link-modal"></span>
                   <span class="user-navigation__info">mail@htmlacademy.ru</span>
                 </a>
               </li>
@@ -177,31 +129,38 @@
         <ol class="strategy-of-using__list">
           <li class="strategy-of-using__item strategy-of-using__item--orange">
             <span class="strategy-of-using__text">Выберите направление</span>
+            <span class="strategy-of-using__number">1</span>
           </li>
           <li class="strategy-of-using__item strategy-of-using__item--orange-light">
-            <span class="strategy-of-using__text">Изучите идеи путешественников</span>
+            <span class="strategy-of-using__text">Изучите идеи<br> путешественников</span>
+            <span class="strategy-of-using__number">2</span>
           </li>
           <li class="strategy-of-using__item strategy-of-using__item--yellow">
-            <span class="strategy-of-using__text">Находите тех, кто похож на вас</span>
+            <span class="strategy-of-using__text">Находите тех,<br> кто похож на вас</span>
+            <span class="strategy-of-using__number">3</span>
           </li>
           <li class="strategy-of-using__item strategy-of-using__item--yellow-light">
-            <span class="strategy-of-using__text">Путешествуйте вместе!</span>
+            <span class="strategy-of-using__text">Путешествуйте<br> вместе!</span>
+            <span class="strategy-of-using__number">4</span>
           </li>
         </ol>
       </div>
     </section>
     <section class="page-main__section about-service">
       <div class="center">
-        <h2 class="about-service__title section-title">О сервисе</h2>
-        <p class="about-service__text section-paragraph">
-          Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий
-          и
-          черпайте вдохновение в чужих.
-        </p>
-        <p class="about-service__call section-headline">
-          А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
-        </p>
-        <a class="about-service__link button button--square" href="#">Подробнее</a>
+        <div class="about-service__wrapper">
+          <h2 class="about-service__title section-title">О сервисе</h2>
+          <p class="about-service__text section-paragraph">
+            Любое путешествие веселее с&nbsp;попутчиками, которые на<br> одной волне с&nbsp;тобой! Делитесь<br> своими
+            идеями
+            путешествий
+            и черпайте вдохновение в&nbsp;чужих.
+          </p>
+          <p class="about-service__call section-headline">
+            А если найдете кого-то близкого по&nbsp;духу — скорее зовите в&nbsp;совместный трип!
+          </p>
+          <a class="about-service__link button button--square" href="#">Подробнее</a>
+        </div>
       </div>
     </section>
     <section class="page-main__section directions">
@@ -218,9 +177,9 @@
               <figure class="directions__figure">
                 <img class="directions__image" src="#" alt="Тайское море" width="270" height="190">
                 <figcaption class="directions__figcaption">
-                  <h3 class="direction__city">Таиланд</h3>
-                  <p class="direction__call">Джунгли зовут!</p>
-                  <span class="direction__number">18321</span>
+                  <h3 class="directions__city">Таиланд</h3>
+                  <p class="directions__call">Джунгли зовут!</p>
+                  <span class="directions__number">18321</span>
                 </figcaption>
               </figure>
             </li>
@@ -228,9 +187,9 @@
               <figure class="directions__figure">
                 <img class="directions__image" src="#" alt="Французские улицы" width="270" height="190">
                 <figcaption class="directions__figcaption">
-                  <h3 class="direction__city">Франция</h3>
-                  <p class="direction__call">Трэ бьен, манифик!</p>
-                  <span class="direction__number">12518</span>
+                  <h3 class="directions__city">Франция</h3>
+                  <p class="directions__call">Трэ бьен, манифик!</p>
+                  <span class="directions__number">12518</span>
                 </figcaption>
               </figure>
             </li>
@@ -238,14 +197,14 @@
               <figure class="directions__figure">
                 <img class="directions__image" src="#" alt="Чешские каналы" width="270" height="190">
                 <figcaption class="directions__figcaption">
-                  <h3 class="direction__city">Чехия</h3>
-                  <p class="direction__call">Закоулки старой Европы</p>
-                  <span class="direction__number">5326</span>
+                  <h3 class="directions__city">Чехия</h3>
+                  <p class="directions__call">Закоулки старой Европы</p>
+                  <span class="directions__number">5326</span>
                 </figcaption>
               </figure>
             </li>
           </ul>
-          <a class="directions__link button button--square" href="#">Показать все</a>
+          <a class="directions__link button button--square" href="#"><span>Показать все</span></a>
         </div>
       </div>
     </section>
@@ -254,12 +213,13 @@
         <div class="companions__wrapper">
           <h2 class="companions__title section-title">Попутчики</h2>
           <p class="companions__text section-paragraph">
-            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому
+            Все мы индивидуальны и у каждого<br> свой взгляд на идеальный отдых.<br> Одному нужен пляж и коктейль,<br> а
+            другому
             маршрут
             для хайкинга.
           </p>
           <p class="companions__call section-headline">
-            Теперь можно легко найти единомышленников!
+            Теперь можно легко<br> найти единомышленников!
           </p>
           <ul class="companions__list">
             <li class="companions__item">
@@ -359,7 +319,7 @@
               </div>
             </li>
           </ul>
-          <a class="companions__link button button--square" href="#">Показать всех</a>
+          <a class="companions__link button button--square" href="#"><span>Показать всех</span></a>
         </div>
       </div>
     </section>

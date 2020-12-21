@@ -4,7 +4,13 @@
 }
 
 .page-header__modal {
+  padding-right: 25px;
+  padding-left: 25px;
   background-color: @basic-white;
+  @media (min-width: @tablet) {
+    padding-right: 57px;
+    padding-left: 57px;
+  }
   @media (min-width: @desktop) {
     display: none;
 
@@ -40,9 +46,7 @@
 }
 }
 
-.page-header__default {
-  margin-bottom: 29px;
-}
+
 
 .page-header__quote {
   margin-bottom: 18px;
@@ -111,7 +115,7 @@
   border: none;
   background-color: transparent;
   margin: 0;
-  padding: 0;
+  padding-right: 0;
   padding-top: 4px;
   padding-bottom: 10px;
   padding-left: 10px;
@@ -128,6 +132,7 @@
   }
 }
 .page-header__toggle-element {
+  display: block;
   width: 25px;
   height: 3px;
   background-color: @basic-white;
@@ -135,8 +140,8 @@
   box-shadow: 0 5px 0 0 @basic-white;
 }
 .page-header__toggle-element--opened {
-background-color: transparent;
-box-shadow: none;
+  background-color: transparent;
+  box-shadow: none;
 }
 .page-header__toggle-element--opened::before {
   content: "";
