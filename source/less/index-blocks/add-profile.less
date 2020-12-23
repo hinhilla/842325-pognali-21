@@ -1,12 +1,20 @@
 .add-profile {
   background-color: @background-grey-light;
   padding-top: 37px;
+  margin-top: -20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.add-profile__wrapper {
+  padding-left: 25px;
+  padding-bottom: 42px;
 }
 
 .add-profile__rates-list {
   color: @special-grey;
-  margin: 0;
+  margin-top: 0;
   line-height: 16px;
+  margin-bottom: 17px;
 }
 
 .add-profile__rates-price {
@@ -14,11 +22,20 @@
 }
 
 .add-profile__rates-link {
+  font-size: 16px;
+  line-height: 16px;
   color: @bright-blue;
   font-weight: 700;
   text-decoration: none;
+    @media (min-width: @tablet) {
+  font-size: 20px;
+  line-height: 20px;
+  }
+
+
 }
 .add-profile__rates-list {
+  position: relative;
   display: grid;
   grid-template-columns: auto;
   @media (min-width: @tablet) {
@@ -27,7 +44,84 @@
   }
 }
 .add-profile__title {
+  margin-top: 84px;
+  margin-bottom: 89px;
   @media (min-width: @tablet) {
     text-align: center;
   }
+}
+.add-profile__rates-offer {
+  margin-bottom: 14px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    justify-content: flex-start;
+
+
+  }
+}
+.add-profile__rates-offer::before {
+  position: absolute;
+  content: "";
+  background-color: @border-rates-grey;
+  width: 200px;
+  height: 1px;
+  top: -17px;
+  left: 0;
+    @media (min-width: @tablet) {
+      width: 560px;
+
+
+
+  }
+
+}
+.add-profile__rates-list::after {
+  position: absolute;
+  content: "";
+  background-color: @border-rates-grey;
+  width: 200px;
+  height: 1px;
+  bottom: 17px;
+  left: 0;
+      @media (min-width: @tablet) {
+      width: 560px;
+
+// я уже позже поняла, что это некорректная реализация, т.к. серая полоска не будет тянуться с увяличением экрана, верно? переделать?
+// или это норм?
+  }
+}
+.add-profile__rates-price {
+  margin-bottom: 36px;
+}
+.add-profile__number {
+  display: block;
+  font-size: 16px;
+  line-height: 16px;
+  color: @basic-white;
+  background-color: @special-orange;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: -5px;
+  @media (min-width: @tablet) {
+    margin-top: 0;
+    margin-right: 22px;
+
+  }
+
+}
+.add-profile__number--light-orange {
+  background-color: @basic-yellow-dark;
+
+
+}
+.add-profile__number--yellow {
+  background-color: @basic-yellow;
+
 }
