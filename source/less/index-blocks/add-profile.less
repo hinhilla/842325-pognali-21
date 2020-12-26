@@ -4,6 +4,12 @@
   margin-top: -20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  position: relative;
+  z-index: 0;
+
+  @media (min-width: @tablet) {
+    background-color: @basic-background-blue-light;
+  }
 }
 .add-profile__wrapper {
   padding-left: 25px;
@@ -11,14 +17,43 @@
 }
 
 .add-profile__rates-list {
+  position: relative;
   color: @special-grey;
   margin-top: 0;
   line-height: 16px;
   margin-bottom: 17px;
+
+}
+.add-profile__rates-list::after {
+  display: none;
+  content: "";
+  position: absolute;
+  background-color: @like-background-gray;
+  border-radius: 20px;
+  width: 30%;
+  height: 140%;
+  right: 0;
+  top: -50px;
+  @media (min-width: @tablet) {
+    display: block;
+  }
+}
+.add-profile__rates-item:last-child {
+  border-bottom:  1px solid @border-rates-grey;
+
 }
 
 .add-profile__rates-price {
   margin: 0;
+  z-index: 1;
+    @media (min-width: @tablet) {
+  padding-right: 31px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-right: 161px;
+
+  }
 }
 
 .add-profile__rates-link {
@@ -36,12 +71,12 @@
 }
 .add-profile__rates-list {
   position: relative;
-  display: grid;
-  grid-template-columns: auto;
-  @media (min-width: @tablet) {
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-  }
+  // display: grid;
+  // grid-template-columns: auto;
+  // @media (min-width: @tablet) {
+  //   grid-template-columns: auto auto;
+  //   justify-content: space-between;
+  // }
 }
 .add-profile__title {
   margin-top: 84px;
@@ -51,11 +86,12 @@
   }
 }
 .add-profile__rates-offer {
-  margin-bottom: 14px;
+  // margin-bottom: 14px;
   position: relative;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+
   @media (min-width: @tablet) {
     flex-direction: row;
     justify-content: flex-start;
@@ -63,37 +99,52 @@
 
   }
 }
-.add-profile__rates-offer::before {
-  position: absolute;
-  content: "";
-  background-color: @border-rates-grey;
-  width: 200px;
-  height: 1px;
-  top: -17px;
-  left: 0;
-    @media (min-width: @tablet) {
-      width: 560px;
-
+.add-profile__rates-item {
+    width: 100%;
+  border-top: 1px solid @border-rates-grey;
+  padding-top: 17px;
+  padding-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    justify-content: space-between;
 
 
   }
 
 }
-.add-profile__rates-list::after {
-  position: absolute;
-  content: "";
-  background-color: @border-rates-grey;
-  width: 200px;
-  height: 1px;
-  bottom: 17px;
-  left: 0;
-      @media (min-width: @tablet) {
-      width: 560px;
+// .add-profile__rates-offer::before {
+//   position: absolute;
+//   content: "";
+//   background-color: @border-rates-grey;
+//   width: 200px;
+//   height: 1px;
+//   top: -17px;
+//   left: 0;
+//     @media (min-width: @tablet) {
+//       width: 560px;
+
+
+
+//   }
+
+// }
+// .add-profile__rates-list::after {
+//   position: absolute;
+//   content: "";
+//   background-color: @border-rates-grey;
+//   width: 200px;
+//   height: 1px;
+//   bottom: 17px;
+//   left: 0;
+//       @media (min-width: @tablet) {
+//       width: 560px;
 
 // я уже позже поняла, что это некорректная реализация, т.к. серая полоска не будет тянуться с увяличением экрана, верно? переделать?
 // или это норм?
-  }
-}
+//   }
+// }
 .add-profile__rates-price {
   margin-bottom: 36px;
 }
@@ -124,4 +175,20 @@
 .add-profile__number--yellow {
   background-color: @basic-yellow;
 
+}
+.add-profile__rates-list--modal::after {
+  display: none;
+}
+.add-profile__rates-list--modal {
+  padding-left: 25px;
+  padding-right: 25px;
+    @media (min-width: @tablet) {
+  padding-left: 90px;
+  padding-right: 90px;
+
+  }
+
+}
+.add-profile--modal {
+  background-color: @basic-white;
 }

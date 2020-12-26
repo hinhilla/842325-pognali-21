@@ -1,15 +1,52 @@
 .info {
   background-color: @main-blue;
   padding-top: 105px;
-}
+  padding-bottom: 46px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: -20px;
+  position: relative;
+  z-index: -1;
+    @media (min-width: @tablet) {
+      padding-top: 145px;
+      padding-bottom: 84px;
 
+  }
+    @media (min-width: @desktop) {
+    padding-top: 138px;
+
+  }
+}
+.info__wrapper {
+  padding-left: 35px;
+  padding-right: 35px;
+}
 .info__title {
   text-align: center;
+  margin-bottom: 31px;
+    @media (min-width: @tablet) {
+    margin-bottom: 77px;
+
+  }
+  //   @media (min-width: @desktop) {
+  //   margin-bottom: 77px;
+
+  // }
 }
 
 .info__call {
   text-align: center;
   color: @basic-white;
+  margin-bottom: 36px;
+      @media (min-width: @tablet) {
+    margin-bottom: 74px;
+
+  }
+    @media (min-width: @desktop) {
+    margin-bottom: 66px;
+
+  }
+
 }
 
 .info__call--link {
@@ -17,4 +54,43 @@
 }
 .info__form {
   text-align: center;
+  margin-bottom: 36px;
+        @media (min-width: @tablet) {
+    margin-bottom: 66px;
+
+  }
+    @media (min-width: @desktop) {
+    margin-bottom: 77px;
+
+  }
+}
+.info__call--questions {
+    margin-bottom: 40px;
+        @media (min-width: @tablet) {
+    margin-bottom: 66px;
+
+  }
+    @media (min-width: @desktop) {
+    margin-bottom: 83px;
+
+  }
+}
+// .info__user-navigation {
+//       margin-bottom: 46px;
+//         @media (min-width: @tablet) {
+//     margin-bottom: 84px;
+
+//   }
+//     @media (min-width: @desktop) {
+//     margin-bottom: 138px;
+
+//   }
+// }
+.info__user-navigation--item {
+        margin-bottom: 33px;
+        @media (min-width: @tablet) {
+    margin-bottom: 46px;
+
+  }
+
 }

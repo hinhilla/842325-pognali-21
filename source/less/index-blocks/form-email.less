@@ -1,16 +1,65 @@
-.form-email__input {
-  color: rgba(@special-grey, 70%);
+.form-email {
+  min-height: 62px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+      @media (min-width: @tablet) {
+      min-height: 80px;
+  }
+  //   @media (min-width: @desktop) {
+  //
+
+  // }
+}
+  .form-email__input {
+color: fade(@special-grey, 70%);
+width: 100%;
   background-color: @basic-white;
   font-family: "Blogger Sans", arial, sans-serif;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
   border: none;
+   border-bottom-left-radius: 20px;
+   border-top-left-radius: 20px;
+   padding-left: 25px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   padding-right: 40px;
 
 }
 
 .form-email__button {
   border: none;
   background-color: @basic-yellow;
+  min-width: 60px;
+  min-height: 100%;
+   border-radius: 20px;
+   margin-left: -20px;
+   display: flex;
+   align-items: center;
+         @media (min-width: @tablet) {
+      min-width: 60px;
+  }
+    @media (min-width: @desktop) {
+    min-width: 330px;
 
+  }
+
+}
+.form-email__registration {
+  display: none;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  color: @basic-blue-light;
+  padding-left: 36px;
+  padding-top: 30px;
+  padding-bottom: 27px;
+
+    @media (min-width: @desktop) {
+    display: block;
+
+  }
 }

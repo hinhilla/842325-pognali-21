@@ -1,6 +1,22 @@
 .location {
   background-color: @basic-yellow;
-  padding-top: 31px;
+  padding-top: 68px;
+  position: relative;
+  z-index: -2;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: -32px;
+  padding-bottom: 34px;
+    @media (min-width: @tablet) {
+    padding-top: 124px;
+    padding-bottom: 84px;
+
+  }
+    @media (min-width: @desktop) {
+      padding-top: 121px;
+      padding-bottom: 61px;
+
+  }
 }
 
 .location__address {
@@ -9,16 +25,40 @@
   font-weight: 700;
   text-transform: uppercase;
   color: @basic-blue-light;
+  margin-bottom: 40px;
+      @media (min-width: @tablet) {
+     margin-bottom: 67px;
+
+  }
+
 }
 
 .location__button {
+  display: flex;
+  align-items: center;
   text-transform: unset;
   color: @basic-blue-light;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
   border: 3px solid @basic-blue-light;
-  border-radius: 10px;
+  padding-left: 22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 22px;
+  min-height: 62px;
+        @media (min-width: @tablet) {
+  padding-left: 37px;
+  padding-right: 35px;
+  min-height: 80px;
+
+  }
+        @media (min-width: @desktop) {
+  min-width: 61px;
+
+  }
+
+
 }
 .location__wrapper {
   display: flex;

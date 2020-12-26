@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="center">
+    <div class="center--universal">
       <div class="page-header__default">
         <div class="page-header__wrapper page-header__wrapper--active">
           <a class="logo page-header__logo">
@@ -330,37 +330,51 @@
           <div class="add-profile__rates">
             <h3 class="visually-hidden">Предлагаемые тарифы</h3>
             <dl class="add-profile__rates-list">
-              <dt class="add-profile__rates-offer section-paragraph"><span class="add-profile__number">1</span>Базовое
-                размещение</dt>
-              <dd class="add-profile__rates-price section-paragraph">Бесплатно</dd>
-              <dt class="add-profile__rates-offer section-paragraph">
-                <span class="add-profile__number add-profile__number--light-orange">2</span>Вывод на первых позициях
-              </dt>
-              <dd class="add-profile__rates-price section-paragraph">99 руб./мес</dd>
-              <dt class="add-profile__rates-offer section-paragraph"><span
-                  class="add-profile__number add-profile__number--yellow">3</span>Кастомный цвет карточки</dt>
-              <dd class="add-profile__rates-price section-paragraph">59 руб./мес</dd>
+              <div class="add-profile__rates-item">
+                <dt class="add-profile__rates-offer section-paragraph"><span class="add-profile__number">1</span>Базовое
+                  размещение</dt>
+                <dd class="add-profile__rates-price section-paragraph">Бесплатно</dd>
+              </div>
+              <div class="add-profile__rates-item">
+                <dt class="add-profile__rates-offer section-paragraph">
+                  <span class="add-profile__number add-profile__number--light-orange">2</span>Вывод на первых позициях
+                </dt>
+                <dd class="add-profile__rates-price section-paragraph">99 руб./мес</dd>
+              </div>
+              <div class="add-profile__rates-item">
+                <dt class="add-profile__rates-offer section-paragraph"><span
+                    class="add-profile__number add-profile__number--yellow">3</span>Кастомный цвет карточки</dt>
+                <dd class="add-profile__rates-price section-paragraph">59 руб./мес</dd>
+              </div>
             </dl>
             <a class="add-profile__rates-link" href="#">Показать тарифы для бизнеса</a>
           </div>
         </div>
       </div>
     </section>
-    <div class="rates-modal-wrapper rates-modal-wrapper--active">
+    <div class="rates-modal__wrapper rates-modal__wrapper--active add-profile--modal">
       <div class="center">
         <section class="page-main__section rates-modal">
           <h3 class="rates-modal__title section-title">Бизнес-тарифы</h3>
-          <dl class="rates-modal__list">
-            <dt class="rates-modal__offer section-paragraph">Реклама у блоггера</dt>
-            <dd class="rates-modal__rates-price section-paragraph">300 000 руб./пост</dd>
-            <dt class="rates-modal__offer section-paragraph">Накрутка подписчиков</dt>
-            <dd class="rates-modal__rates-price section-paragraph">от 1 руб./шт.</dd>
-            <dt class="rates-modal__offer section-paragraph">Лайки от ботов</dt>
-            <dd class="rates-modal__rates-price section-paragraph">от 20 коп./лайк</dd>
-            <dt class="rates-modal__offer section-paragraph">Ваш продакт-плейсмент</dt>
-            <dd class="rates-modal__rates-price section-paragraph">Индивидуально</dd>
+          <dl class="add-profile__rates-list add-profile__rates-list--modal">
+            <div class="add-profile__rates-item">
+              <dt class="rates-modal__offer section-paragraph">Реклама у блоггера</dt>
+              <dd class="rates-modal__rates-price section-paragraph">300 000 руб./пост</dd>
+            </div>
+            <div class="add-profile__rates-item">
+              <dt class="rates-modal__offer section-paragraph">Накрутка подписчиков</dt>
+              <dd class="rates-modal__rates-price section-paragraph">от 1 руб./шт.</dd>
+            </div>
+            <div class="add-profile__rates-item">
+              <dt class="rates-modal__offer section-paragraph">Лайки от ботов</dt>
+              <dd class="rates-modal__rates-price section-paragraph">от 20 коп./лайк</dd>
+            </div>
+            <div class="add-profile__rates-item">
+              <dt class="rates-modal__offer section-paragraph">Ваш продакт-плейсмент</dt>
+              <dd class="rates-modal__rates-price section-paragraph">Индивидуально</dd>
+            </div>
           </dl>
-          <button class="rates-modal__button">Закрыть окно</button>
+          <button class="rates-modal__button button"><span class="rates-modal__button-text">Закрыть окно</span></button>
         </section>
       </div>
     </div>
@@ -375,14 +389,16 @@
           <form class="info__form form-email" action="https://echo.htmlacademy.ru">
             <input class="form-email__input" type="email" placeholder="E-mail">
             <button class="form-email__button" type="submit"><span
-                class="visually-hidden">Зарегистрироваться</span></button>
+                class="form-email__registration">Регистрация</span></button>
           </form>
-          <p class="info__call section-paragraph section-paragraph--questions">Остались вопросы? <br>Мы с радостью на
+          <p class="info__call info__call--questions section-paragraph section-paragraph--questions">Остались вопросы?
+            <br>Мы с радостью на
             них
-            ответим!</p>
-          <div class="user-navigation user-navigation--column">
+            ответим!
+          </p>
+          <div class="user-navigation user-navigation--column info__user-navigation">
             <ul class="user-navigation__list user-navigation__item--info">
-              <li class="user-navigation__item user-navigation__item--call-us">
+              <li class="user-navigation__item user-navigation__item--call-us info__user-navigation--item">
                 <a class="user-navigation__link" href="tel:88005558628" aria-label="Позвоните нам">
                   <!-- <svg class="user-navigation__icon"></svg>           -->
                   <span class="user-navigation__info user-navigation--info">8 800 555-86-28</span>
@@ -416,7 +432,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer page-footer--index">
     <div class="center">
       <div class="page-footer__flex">
         <a class="page-footer__logo logo">
