@@ -9,26 +9,32 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="page-header page-header--inner">
     <div class="center">
       <div class="page-header__default">
         <nav class="page-header__wrapper page-header__wrapper--active">
-          <a class="logo page-header__logo page-header__logo--active" href="index.html">
-            <img class="page-header__logo-image" src="#" alt="Логотип приложения" width="100" height="15">
+          <a class="logo page-header__logo">
+            <img class="page-header__logo-image" src="img/logo_mobile_white.png" alt="Логотип приложения" width="100"
+              height="15">
           </a>
-          <button
-            class="page-header__toggle page-header__toggle--open page-header__toggle--close page-header__toggle--scroll"><span
-              class="visually-hidden">Открыть меню</span></button>
-          <div class="cite-navigation cite-navigation--hidden">
-            <ul class="cite-navigation__list">
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="#">о сервисе</a>
+          <button class="page-header__toggle">
+            <span class="page-header__toggle-element">
+              <!-- page-header__toggle-element--opened класс будет добавляться,
+                        если меню открыто-->
+              <!-- page-header__toggle-element--scroll класс будет добавляться, если скролл -->
+            </span>
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="site-navigation site-navigation--hidden">
+            <ul class="site-navigation__list">
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">о сервисе</a>
               </li>
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="form.html">направления</a>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="form.html">направления</a>
               </li>
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="catalog.html">попутчики</a>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="catalog.html">попутчики</a>
               </li>
             </ul>
           </div>
@@ -47,7 +53,7 @@
                 </a>
               </li>
               <li class="user-navigation__item user-navigation__item--authorize user-navigation__item--row">
-                <a class="user-navigation__link button" href="#">Авторизация</a>
+                <a class="user-navigation__link user-navigation__link--authorize button" href="#">Авторизация</a>
               </li>
             </ul>
           </div>
@@ -56,23 +62,23 @@
       </div>
       <div class="modal page-header__modal page-header__modal--active">
         <nav class="main-navigation">
-          <div class="main-navigation__list cite-navigation">
-            <ul class="cite-navigation__list">
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="#">о сервисе</a>
+          <div class="main-navigation__list site-navigation">
+            <ul class="site-navigation__list">
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="#">о сервисе</a>
               </li>
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link cite-navigation__link--active">направления</a>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link site-navigation__link--active">направления</a>
               </li>
-              <li class="cite-navigation__item">
-                <a class="cite-navigation__link" href="catalog.html">попутчики</a>
+              <li class="site-navigation__item">
+                <a class="site-navigation__link" href="catalog.html">попутчики</a>
               </li>
             </ul>
           </div>
           <div class="main-navigation__list user-navigation">
             <ul class="user-navigation__list user-navigation__list--column">
               <li class="user-navigation__item user-navigation__item--authorize user-navigation__item--column">
-                <a class="user-navigation__link button" href="#">Авторизация</a>
+                <a class="user-navigation__link user-navigation__link--authorize button" href="#">Авторизация</a>
               </li>
               <li class="user-navigation__item user-navigation__item--call-us user-navigation__item--column">
                 <a class="user-navigation__link" href="tel:88005558628" aria-label="Позвоните нам">
@@ -119,20 +125,30 @@
           <div class="user__wrapper">
             <h2 class="visually-hidden">Информация о пользователе</h2>
             <div class="user__level">
+              <!-- <svg class="user__level-svg" width="100" height="100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.77 26.67A50 50 0 1050 0v3A47 47 0 119.2 26.67H5.76z"
+                  fill="#FF8D30" />
+              </svg> -->
+              <!-- <svg class="user__level-svg" width="60" height="60">
+                <circle class="user__level-circle" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                  fill="transparent" r="28" cx="30" cy="30"></circle>
+              </svg> -->
+
               <span class="user__level-number">80</span>
               <span class="user__level-text">level</span>
             </div>
+
             <img class="user__image" src="#" alt="Фотография пользователя" width="100" height="100">
-            <a class="button button--circle user__button" href="#"><span class="user__button--hide">Сменить
+            <a class="button button--circle user__button" href="#"><span class="user__button--hide">Сменить&nbsp;
               </span>фото</a>
             <div class="user__tags field">
-              <h3 class="field-title">Тэги</h3>
+              <h3 class="field-title field-title--tags">Тэги</h3>
               <textarea class="user__textarea"
                 placeholder="Коротко о себе в виде 5-8 хештэгов">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</textarea>
             </div>
             <div class="user__transport field">
-              <h3 class="field-title">Транспорт</h3>
-              <ul class="transport-list">
+              <h3 class="field-title field-title--transport">Транспорт</h3>
+              <ul class="user__transport-list transport-list">
                 <li class="transport-list__item transport-list__item--choosed">
                   <label class="transport-list__label">
                     <!-- <svg class="transport__icon"></svg> -->
@@ -172,18 +188,18 @@
         <h2 class="section-title section-title--form">Мои планы:</h2>
         <ol class="plans__list">
           <li class="plans__item">
-            <h3 class="plans__title"><span class="plans__number">1.</span>Франция, Италия</h3>
+            <h3 class="plans__title"><span class="plans__number">1.&nbsp;</span><span>Франция, Италия</span></h3>
             <div class="plans__flex">
               <span class="plans__description">3 попутчика</span>
-              <span class="plans__description">26 мар — 29 мар</span>
+              <span class="plans__description plans__description--last">26 мар — 29 мар</span>
               <a class="plans__description plans__description--change" href="">изменить</a>
             </div>
           </li>
           <li class="plans__item">
-            <h3 class="plans__title"><span class="plans__number">2.</span>Таиланд, Индонезия</h3>
+            <h3 class="plans__title"><span class="plans__number">2.&nbsp;</span><span>Таиланд, Индонезия</span></h3>
             <div class="plans__flex">
               <span class="plans__description">1 попутчик</span>
-              <span class="plans__description">1 июл — 15 июл</span>
+              <span class="plans__description plans__description--last">1 июл — 15 июл</span>
               <a class="plans__description plans__description--change" href="">изменить</a>
             </div>
           </li>

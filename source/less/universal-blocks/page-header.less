@@ -1,7 +1,11 @@
 .page-header {
   color: @basic-white;
   background-color: @main-blue;
-  width: 100%;
+  // width: 100%;
+}
+.page-header--inner {
+    border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .page-header__modal {
@@ -17,10 +21,10 @@
 
   }
 }
-.page-header__default {
-  width: 100%;
+// .page-header__default {
 
-}
+
+// }
 
 .page-header__blockquote {
   margin: 0;
@@ -30,12 +34,14 @@
   padding-right: 23px;
   padding-top: 54px;
   padding-bottom: 116px;
-  width: 100%;
+  grid-area: quote;
+  // width: 500px;
   display: block;
   margin-top: -20px;
   // я туплю, почему проценты не работают
   @media (min-width: @tablet) {
   margin-top: 86px;
+  background-color: transparent;
 }
   @media (min-width: @desktop) {
     margin-top: 128px;
@@ -77,6 +83,7 @@
 }
 .page-header__wrapper {
   padding-top: 19px;
+  width: 100%;
   display: grid;
   grid-template-areas:
   "logo button"
@@ -91,6 +98,7 @@
   "quote quote quote";
 }
 @media (min-width: @desktop) {
+  padding-top: 46px;
   grid-template-areas:
   "logo nav user-nav"
   "h1 h1 quote";
