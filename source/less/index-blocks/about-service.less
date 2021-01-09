@@ -1,12 +1,48 @@
 .about-service {
+  position: relative;
   background-color: @main-blue;
+  background-image: url(../img/about-mobile.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 292px 353px;
   color: @basic-white;
-  position: relative;
   z-index: 3;
-  position: relative;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/about-mobile@2x.png);
+
+  }
+    @media (min-width: @tablet) {
+      background-image: url(../img/about-tablet.png);
+       background-position: 0 0;
+
+      background-size: 376px 548px;
+        @media (min-resolution: 2dppx) {
+        background-image: url(../img/about-tablet@2x.png);
+    }
+  }
+    @media (min-width: @desktop) {
+    background-image: url(../img/about-desktop.png);
+     background-position: 0 0;
+
+    background-size: 630px 665px;
+      @media (min-resolution: 2dppx) {
+      background-image: url(../img/about-desktop@2x.png);
+    }
+  }
 }
+// .about-service::before{
+//   position: absolute;
+//   z-index: -1;
+//   content: "";
+//   background-color: @blue-box;
+//   width: 113px;
+//   height: 132px;
+//   border-top-right-radius: 20px;
+//   border-bottom-right-radius: 20px;
+//   // нужно чтобы этот квадратик был под фоном. можно так сделать?
+// }
 
 .about-service__title {
   margin-bottom: 33px;
@@ -54,6 +90,6 @@
 }
 .about-service__wrapper {
   padding-left: 29px;
-  padding-top: 297px;
+  padding-top: 36px;
   padding-bottom: 25px;
 }
