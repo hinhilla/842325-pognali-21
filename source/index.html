@@ -183,7 +183,12 @@
           <ul class="directions__list">
             <li class="directions__item">
               <figure class="directions__figure">
-                <img class="directions__image" src="#" alt="Тайское море" width="270" height="190">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/thailand-desktop.png 1x, img/thailand-desktop@2x.png 2x">
+                  <img class="directions__image" srcset="img/thailand-mobile.jpg 1x, img/thailand-mobile@2x.jpg 2x"
+                    alt="Тайское море">
+                </picture>
                 <figcaption class="directions__figcaption">
                   <h3 class="directions__city">Таиланд</h3>
                   <p class="directions__call">Джунгли зовут!</p>
@@ -193,7 +198,11 @@
             </li>
             <li class="directions__item">
               <figure class="directions__figure">
-                <img class="directions__image" src="#" alt="Французские улицы" width="270" height="190">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/france-desktop.png 1x, img/france-desktop@2x.png 2x">
+                  <img class="directions__image" srcset="img/france-mobile.jpg 1x, img/france-mobile@2x.jpg 2x"
+                    alt="Французские улицы">
+                </picture>
                 <figcaption class="directions__figcaption">
                   <h3 class="directions__city">Франция</h3>
                   <p class="directions__call">Трэ бьен, манифик!</p>
@@ -203,7 +212,11 @@
             </li>
             <li class="directions__item">
               <figure class="directions__figure">
-                <img class="directions__image" src="#" alt="Чешские каналы" width="270" height="190">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/czech-desktop.png 1x, img/czech-desktop@2x.png 2x">
+                  <img class="directions__image" srcset="img/czech-mobile.jpg 1x, img/czech-mobile@2x.jpg 2x"
+                    alt="Чешские каналы">
+                </picture>
                 <figcaption class="directions__figcaption">
                   <h3 class="directions__city">Чехия</h3>
                   <p class="directions__call">Закоулки старой Европы</p>
