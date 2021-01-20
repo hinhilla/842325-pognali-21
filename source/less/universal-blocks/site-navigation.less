@@ -35,8 +35,19 @@
     text-transform: uppercase;
     color: @basic-white;
   }
+}
+.site-navigation__link:hover {
+  color: @basic-yellow;
+  transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.site-navigation__link:focus {
+  opacity: 30%;
 
 }
+
 .site-navigation--hidden {
   display: none;
   @media (min-width: @desktop) {
@@ -57,7 +68,6 @@
     background-color: @basic-white;
     top: 20px;
     left: -105px;
-
 
   }
 }

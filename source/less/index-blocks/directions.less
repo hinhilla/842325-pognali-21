@@ -62,17 +62,21 @@
   }
 }
 .directions__item {
-  background-color: @basic-white;
   border-radius: 10px;
   margin-bottom: 9px;
+  background-color: @basic-white;
+  width: 270px;
         @media (min-width: @tablet) {
       margin-bottom: 11px;
+      border-radius: 20px;
+      width: 618px;
 
 
   }
   @media (min-width: @desktop) {
     grid-template-columns: auto auto;
     margin-bottom: 10px;
+    width: 560px;
 
 
   }
@@ -103,6 +107,7 @@
 }
 
 .directions__number {
+  position: relative;
   color: fade(@basic-blue, 70%);
   grid-column-start: 2;
   grid-row-start: 1;
@@ -112,33 +117,122 @@
 
 
   }
+}
+.directions__number::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  left:-15px;
+  top: 1px;
+  background-image: url("../img/icon-user.svg")
+}
+.directions__image {
+  position: relative;
+  background-color: transparent;
+}
+.directions__figcaption {
+  position: relative;
+}
+.absolut(){
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 24px;
+  background-size: 35px 24px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  left: 25px;
+  top: -11px;
+  @media (min-width: @tablet) {
+  width: 70px;
+  height: 47px;
+  background-size: 70px 47px;
+  left: 400px;
+  top: 45px;
+  }
+  @media (min-width: @desktop) {
+    left: 335px;
+  }
 
 }
+.directions__figcaption--france::before {
+.absolut();
+  background-image: url(../img/france.png);
+    @media (min-resolution: 2dppx) {
+  background-image: url(../img/france@2x.png);
+  }
+}
+.directions__figcaption--thailand::before {
+.absolut();
+  background-image: url(../img/thailand.png);
+      @media (min-resolution: 2dppx) {
+  background-image: url(../img/thailand@2x.png);
+  }
+}
+.directions__figcaption--czechia::before {
+.absolut();
+  background-image: url(../img/czechia.png);
+  @media (min-resolution: 2dppx) {
+  background-image: url(../img/czechia@2x.png);
+  }
+}
+
 
 .directions__figcaption {
-  padding: 24px;
+  padding: 20px;
   border-radius: 10px;
   display: grid;
   grid-template-columns: auto 82px;
+  background-color: @basic-white;
+  margin-top: -10px;
+  z-index: 1;
+  position: relative;
       @media (min-width: @tablet) {
      grid-template-columns: auto;
      border-radius: 20px;
+     margin-top: 0;
 
 
   }
 
 }
+.directions__image {
+  width:270px;
+  height: 110px;
+  @media (min-width:@tablet) {
+    width: 186px;
+    height: 140px;
 
+  }
+}
 .directions__figure {
   margin: 0;
+  border-radius: 10px;
+  background-color: transparent;
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-radius: 20px;
+  height: 140px;
+
+  }
 }
 .directions__wrapper {
+
   display: grid;
   grid-template-columns: auto;
   padding-top: 101px;
   padding-bottom: 34px;
+  padding-left: 35px;
+  padding-right: 35px;
 
     @media (min-width: @tablet) {
+      background-image: url("../img/directions-tablet.png");
+      background-position: 0 156px;
+      background-repeat: no-repeat;
+      background-size: 688px 574px;
       padding-top: 149px;
       padding-bottom: 80px;
 

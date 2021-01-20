@@ -202,11 +202,18 @@ border-bottom-right-radius: 20px;
   width: 270px;
   min-height: 428px;
   margin-bottom: 9px;
-  border-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: @basic-white;
     @media (min-width: @tablet) {
     width: 285px;
     min-height: 483px;
+      border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 
   }
     @media (min-width: @desktop) {
@@ -217,9 +224,13 @@ border-bottom-right-radius: 20px;
 .companions__image {
   width: 270px;
   height: 270px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   @media (min-width: @tablet) {
     width: 285px;
     height: 286px;
+    border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 
   }
 }
@@ -245,4 +256,14 @@ border-bottom-right-radius: 20px;
   width: 280px;
   height: 80px;
   }
+}
+.companions__flags-item {
+  margin-right: 20px;
+}
+
+.companions__level--80 {
+  background-image: url(../img/80.svg);
+}
+.companions__level--99 {
+  background-image: url(../img/99.svg);
 }

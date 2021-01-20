@@ -12,8 +12,39 @@
   }
 }
 .add-profile__wrapper {
+  position: relative;
   padding-left: 25px;
   padding-bottom: 42px;
+}
+.add-profile__wrapper::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/rates.png");
+  width: 100px;
+  height: 100px;
+  right: 0;
+  top: -10px;
+    background-size: 100px 100px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/rates@2x.png");
+ }
+ @media (min-width: @tablet) {
+  right: 50px;
+  top: 400px;
+
+ }
+  @media (min-width: @desktop) {
+    width: 198px;
+    height: 198px;
+  right: -100px;
+  top: 160px;
+  background-image: url("../img/rates-desktop.png");
+    background-size: 198px 198px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/rates-desktop@2x.png");
+ }
+
+ }
 }
 
 .add-profile__rates-list {
@@ -57,18 +88,35 @@
 }
 
 .add-profile__rates-link {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   color: @bright-blue;
   font-weight: 700;
   text-decoration: none;
+
     @media (min-width: @tablet) {
   font-size: 20px;
   line-height: 20px;
+  padding-left: 90px;
   }
 
 
 }
+.add-profile__rates-link::before {
+  @media (min-width: @tablet) {
+     position: absolute;
+  content:"";
+  background-image: url("../img/business-rates-link.svg");
+  width: 68px;
+  height: 68px;
+  left: 0;
+  top: -25px;
+  }
+
+
+}
+
 .add-profile__rates-list {
   position: relative;
   // display: grid;
@@ -79,10 +127,12 @@
   // }
 }
 .add-profile__title {
+  width: 100px;
   margin-top: 84px;
   margin-bottom: 89px;
   @media (min-width: @tablet) {
     text-align: center;
+    width: auto;
   }
 }
 .add-profile__rates-offer {

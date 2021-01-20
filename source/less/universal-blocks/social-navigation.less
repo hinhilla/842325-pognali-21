@@ -5,12 +5,22 @@
   display: flex;
   justify-content: center;
 }
-
-.social-navigation__item--footer {
-  background-color: @basic-yellow;
-}
 .social-navigation__list--modal {
   @media (min-width: @tablet) {
     justify-content: flex-start;
   }
+}
+.social-navigation__link {
+  background-color: @basic-yellow;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.social-navigation__link--white {
+  background-color: @basic-white;
+
 }
