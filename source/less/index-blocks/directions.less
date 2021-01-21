@@ -4,7 +4,7 @@
   position: relative;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  z-index: 2;
+  z-index: 5;
         @media (min-width: @tablet) {
 
 
@@ -139,15 +139,13 @@
   content: "";
   width: 35px;
   height: 24px;
-  background-size: 35px 24px;
-  background-position: 0 0;
+  background-size: 100%;
   background-repeat: no-repeat;
   left: 25px;
   top: -11px;
   @media (min-width: @tablet) {
   width: 70px;
   height: 47px;
-  background-size: 70px 47px;
   left: 400px;
   top: 45px;
   }
@@ -158,23 +156,29 @@
 }
 .directions__figcaption--france::before {
 .absolut();
-  background-image: url(../img/france.png);
+  background-image: url(../img/sprite-flags.png);
+  background-position: 0 45.454545%;
+
     @media (min-resolution: 2dppx) {
-  background-image: url(../img/france@2x.png);
+  background-image: url(../img/sprite-flags@2x.png);
+  background-position: 0 54.545455%;
   }
 }
 .directions__figcaption--thailand::before {
 .absolut();
-  background-image: url(../img/thailand.png);
+  background-image: url(../img/sprite-flags.png);
+  background-position: 0 81.818182%;
       @media (min-resolution: 2dppx) {
-  background-image: url(../img/thailand@2x.png);
+  background-image: url(../img/sprite-flags@2x.png);
   }
 }
 .directions__figcaption--czechia::before {
 .absolut();
-  background-image: url(../img/czechia.png);
+  background-image: url(../img/sprite-flags.png);
+  background-position: 0 27.272727%;
   @media (min-resolution: 2dppx) {
-  background-image: url(../img/czechia@2x.png);
+  background-image: url(../img/sprite-flags@2x.png);
+  background-position: 0 36.363636%;
   }
 }
 
@@ -259,6 +263,7 @@
 .directions__link {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   text-transform: none;
   font-weight: 700;
   font-size: 18px;
@@ -275,8 +280,8 @@
 
 }
   @media (min-width: @desktop) {
-  width: fit-content;
-  padding-right: 103px;
+  min-width: 275px;
+  padding-right: 35px;
   padding-left: 33px;
   padding-top: 33px;
   padding-bottom: 33px;

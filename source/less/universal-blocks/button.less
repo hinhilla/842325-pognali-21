@@ -21,3 +21,25 @@
 .button--white {
   background-color: white;
 }
+.button--orange {
+  color: @basic-blue-light;
+}
+ .button--orange:hover {
+   background-color: @basic-yellow-dark;
+
+ }
+ .button--orange:focus {
+   color: fade(@basic-blue-light, 30%);
+ }
+.button--transparent {
+  background-color: transparent;
+}
+.button--transparent:hover {
+  background-color: @main-blue;
+  color: @basic-white;
+}
+
+.button--transparent:focus {
+  color: fade(@basic-white, 30%);
+  background-color: @main-blue;
+}

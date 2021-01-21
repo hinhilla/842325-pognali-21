@@ -1,7 +1,7 @@
 .about-service{
   position: relative;
   background-color: @main-blue;
-  z-index: 3;
+  z-index: 6;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   background-image: url(../img/about-mobile.png);
@@ -83,7 +83,9 @@
   display: none;
 
   @media (min-width: @tablet) {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 275px;
     min-height: 80px;
     font-weight: 700;

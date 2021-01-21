@@ -6,7 +6,7 @@
   border-bottom-right-radius: 20px;
   margin-top: -20px;
   position: relative;
-  z-index: -1;
+  z-index: 2;
     @media (min-width: @tablet) {
       padding-top: 145px;
       padding-bottom: 84px;
@@ -51,6 +51,12 @@
 
 .info__call--link {
   color: @basic-yellow;
+}
+.info__call--link:hover {
+  color: @special-orange;
+}
+.info__call--link:focus {
+  opacity: 30%;
 }
 .info__form {
   text-align: center;

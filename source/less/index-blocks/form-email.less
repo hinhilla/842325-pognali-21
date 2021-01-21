@@ -13,8 +13,11 @@
   // }
 }
   .form-email__input {
-color: fade(@special-grey, 70%);
-width: 100%;
+    cursor: pointer;
+    outline: none;
+  color: fade(@special-grey, 30%);
+  // не работает в опере
+  width: 100%;
   background-color: @basic-white;
   font-family: "Blogger Sans", arial, sans-serif;
   font-size: 18px;
@@ -29,6 +32,23 @@ width: 100%;
    padding-right: 40px;
 
 }
+.form-email__input:hover {
+  color: fade(@special-grey, 50%);
+    // не работает в опере
+  background-color: @basic-background-blue-light;
+}
+.form-email__input:focus {
+  background-color: transparent;
+  color: @basic-white;
+  border: 4px solid @basic-white;
+}
+// если неверно введены данные, не помню как это сделать на css
+// .form-email__input {
+//   background-color: @basic-white;
+//   border: none;
+//   color: @error;
+// }
+
 
 .form-email__button {
   border: none;

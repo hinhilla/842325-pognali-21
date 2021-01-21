@@ -18,9 +18,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.social-navigation__link:hover {
+  background-color: @basic-yellow-dark;
+}
+.social-navigation__icon--blue {
+  fill: @main-blue;
+}
+.social-navigation__link:focus .social-navigation__icon--blue {
+  opacity: 30%;
 
 }
 .social-navigation__link--white {
   background-color: @basic-white;
 
+}
+.social-navigation__link--white:hover {
+  background-color: @basic-white;
+}
+.social-navigation__link--white:hover .location__icon--blue {
+  opacity: 60%;
+}
+.social-navigation__link--white:focus .location__icon--blue {
+  opacity: 30%;
 }

@@ -2,7 +2,7 @@
   background-color: @basic-yellow;
   padding-top: 68px;
   position: relative;
-  z-index: -2;
+  z-index: 1;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-top: -32px;
@@ -42,7 +42,7 @@
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
-  border: 3px solid @basic-blue-light;
+  border: 3px solid @main-blue;
   padding-left: 22px;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -55,7 +55,8 @@
 
   }
         @media (min-width: @desktop) {
-  min-width: 61px;
+  min-width: 324px;
+  min-height: 80px;
 
   }
 
@@ -87,4 +88,7 @@
 .location__address-wrapper {
   display: flex;
 
+}
+.location__icon--blue {
+  fill: @main-blue;
 }
