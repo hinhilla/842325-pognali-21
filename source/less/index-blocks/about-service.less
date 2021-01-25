@@ -1,25 +1,116 @@
-.about-service {
+.about-service{
+  position: relative;
   background-color: @main-blue;
+  z-index: 6;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-image: url(../img/about-mobile.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 317px auto;
   color: @basic-white;
-  padding-top: 33px;
-}
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/about-mobile@2x.png);
 
+  }
+    @media (min-width: @tablet) {
+      background-image: url(../img/about-tablet.png);
+      background-position: 40px 60px;
+      background-size: 720px 596px;
+      border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+      @media (min-resolution: 2dppx) {
+      background-image: url(../img/about-tablet@2x.png);
+
+    }
+  }
+  @media (min-width: @desktop) {
+    background-image: none;
+
+}
+}
+.about-service__wrapper {
+  position: relative;
+  padding-left: 24px;
+  padding-top: 32px;
+  padding-bottom: 70px;
+   @media (min-width: @tablet) {
+     width: 350px;
+     padding-left: 35px;
+     padding-top: 100px;
+     padding-bottom: 88px;
+   }
+    @media (min-width: @desktop) {
+      padding-top: 90px;
+      padding-left: 70px;
+      padding-bottom: 160px;
+    background-image: url(../img/about-desktop.png);
+     background-position: 0 33px;
+     background-repeat: no-repeat;
+    background-size: 1320px 680px;
+    width: auto;
+      @media (min-resolution: 2dppx) {
+      background-image: url(../img/about-desktop@2x.png);
+    }
+  }
+}
 .about-service__title {
-  margin-bottom: 33px;
+  @media (min-width: @tablet) {
+  }
+  @media (min-width: @desktop) {
+  margin-bottom: 60px;
+  }
 }
 
 .about-service__text {
   color: @basic-white;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 32px;
+
+  }
+   @media (min-width: @desktop) {
+     width: 619px;
+     margin-bottom: 40px;
+
+  }
+
 }
 
 .about-service__call {
   color: @basic-white;
+  @media (min-width: @tablet) {
+    margin-top: 0;
+    margin-bottom: 55px;
+  }
+      @media (min-width: @desktop) {
+    width: 450px;
+    margin-bottom: 90px;
+  }
+
 }
 .about-service__link {
+  // position: relative;
   display: none;
-  @media (min-width: @tablet) {
-    display: block;
 
+  @media (min-width: @tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 275px;
+    min-height: 80px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    padding-left: 33px;
+    padding-top: 29px;
+    padding-bottom: 27px;
+    padding-right: 32px;
+    text-transform: none;
+  }
+    @media (min-width: @desktop) {
+    min-height: 75px;
+    padding-left: 32px;
   }
 }

@@ -4,6 +4,9 @@
 .filter-header__toggle {
   border: none;
   background-color: transparent;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
   @media (min-width: @desktop) {
     display: none;
 
@@ -16,9 +19,11 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  display: none;
+  flex-direction: column;
+  grid-row-start: 2;
   @media (min-width: @tablet) {
-    display: flex;
+    flex-direction: row;
+
 
   }
 
@@ -32,9 +37,13 @@
   color: rgba(@main-blue , 30%);
 
 }
-.filter-header__flex {
-  display: flex;
-  flex-wrap: wrap;
+.filter-header__wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+    @media (min-width: @tablet) {
+    display: flex;
+    flex-wrap: wrap;
 
 
+  }
 }

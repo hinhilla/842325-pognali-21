@@ -23,6 +23,33 @@
   text-transform: uppercase;
   text-align: center;
   width: 100%;
+  display: flex;
+  justify-content: center;
+    padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  align-items: center;
+  min-height: 59px;
+    @media (min-width: @tablet) {
+    min-height: 108px;
+
+  }
+
+
+}
+.rates-modal__button-text {
+  @media (min-width: @tablet) {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+
+  }
+    @media (min-width: @desktop) {
+    line-height: 26px;
+
+  }
+
 }
 .rates-modal__list {
   display: grid;
@@ -35,4 +62,21 @@
 }
 .rates-modal__title {
   text-align: center;
+}
+.rates-modal__wrapper {
+  width: 270px;
+  margin: 0 auto;
+  border-radius: 20px;
+    @media (min-width: @tablet) {
+      width: 688px;
+
+  }
+
+  @media (min-width: @desktop) {
+    width: 750px;
+
+  }
+}
+.rates-modal__wrapper--active {
+  display: none;
 }

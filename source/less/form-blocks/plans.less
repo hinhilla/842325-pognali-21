@@ -1,5 +1,32 @@
 .plans {
   background-color: @special-blue-light;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -30px;
+  padding-top: 25px;
+  padding-bottom: 55px;
+  z-index: 5;
+  position: relative;
+      @media (min-width: @tablet) {
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      margin-top: -37px;
+      padding-top: 55px;
+      padding-right: 35px;
+      padding-left: 37px;
+      padding-bottom: 115px;
+     }
+      @media (min-width: @desktop) {
+      padding-left: 42px;
+      padding-right: 42px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      min-height: 97px;
+
+     }
+
+
+
 }
 .plans__list {
   margin: 0;
@@ -8,38 +35,140 @@
 
 }
 .plans__item {
+  position: relative;
   background-color: @basic-white;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   border-radius: 10px;
-  @media (min-width: @desktop) {
-    flex-direction: row;
+  padding-left: 24px;
+  padding-right: 25px;
+  padding-top: 22px;
+  padding-bottom: 18px;
+  margin-bottom: 10px;
+     @media (min-width: @tablet) {
+    padding-left: 40px;
+      padding-right: 27px;
+    padding-top: 40px;
+  padding-bottom: 14px;
+  min-height: 152px;
+     }
+          @media (min-width: @desktop) {
+    padding-left: 42px;
+  padding-right: 42px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 97px;
+
+     }
+
+  }
+    .plans__item::before {
+    position: absolute;
+    display: none;
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 97px;
+    background-color: @border-blue-light;
+    height: 1px;
+         @media (min-width: @tablet) {
+   display: block;
+     }
+
+
+  }
+
+  // @media (min-width: @desktop) {
+  //   flex-direction: row;
+  // padding-left: 42px;
+  // padding-right: 42px;
+  // padding-top: 36px;
+  // padding-bottom: 36px;
+
+  // }
+.plans__title {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  color: @basic-blue-light;
+  margin-top: 0;
+  margin-bottom: 22px;
+  display: flex;
+   @media (min-width: @tablet) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 24px;
+    margin-bottom: 53px;
 
   }
 
 }
-.plans__title {
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 700;
-  color: @basic-blue-light;
-
-}
 .plans__number {
   font-weight: 500;
+     @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 1;
+  }
+  //     @media (min-width: @desktop) {
+  // }
 }
 .plans__description {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   font-weight: 500;
   text-transform: uppercase;
   color: @basic-blue-light;
   letter-spacing: 0.06em;
+  margin-bottom: 5px;
+    @media (min-width: @tablet) {
+    margin-right: 26px;
+    font-size: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0.1em;
+
+
+
+
+  }
+      @media (min-width: @desktop) {
+    margin-right: 0;
+
+
+  }
+
 }
+.plans__description--last {
+  margin-bottom: 24px;
+      @media (min-width: @tablet) {
+    margin-right: 55px;
+    margin-bottom: 0;
+    letter-spacing: 0.06em;
+
+
+  }
+      @media (min-width: @desktop) {
+    margin-right: 0;
+
+
+  }
+}
+
 .plans__description--change {
   letter-spacing: 0.03em;
-  color: rgba(@basic-black, 30%);
+  color: fade(@basic-black, 30%);
   text-decoration: none;
+  margin-right: 0;
+        @media (min-width: @tablet) {
+  letter-spacing: 0.1em;
+  margin-right: 12px
+  }
+}
+.plans__description--change:hover {
+  color: fade(@basic-black, 60%);
+}
+.plans__description--change:focus {
+  color: fade(@basic-black, 10%);
 }
 .plans__flex {
   display: flex;
@@ -47,6 +176,8 @@
   flex-direction: column;
   @media (min-width: @tablet) {
     flex-direction: row;
+    justify-content: space-between;
+
 
   }
 

@@ -1,33 +1,304 @@
 .add-profile {
   background-color: @background-grey-light;
   padding-top: 37px;
+  margin-top: -20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: @tablet) {
+    background-color: @basic-background-blue-light;
+    margin-top: -50px;
+    padding-top: 90px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+   @media (min-width: @desktop) {
+     padding-top: 123px;
+ }
+}
+.add-profile__wrapper {
+  position: relative;
+  padding-left: 25px;
+  padding-bottom: 38px;
+    @media (min-width: @tablet) {
+    padding-left: 0;
+    padding-bottom: 88px;
+  }
+     @media (min-width: @desktop) {
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-bottom: 190px;
+ }
+
+
+}
+.add-profile__wrapper::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/rates.png");
+  width: 100px;
+  height: 100px;
+  right: 0;
+  top: -10px;
+    background-size: 100px 100px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/rates@2x.png");
+ }
+ @media (min-width: @tablet) {
+  right: 45px;
+  top: 338px;
+
+ }
+  @media (min-width: @desktop) {
+    width: 198px;
+    height: 198px;
+  right: 75px;
+  top: 185px;
+  background-image: url("../img/rates-desktop.png");
+    background-size: 198px 198px;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/rates-desktop@2x.png");
+ }
+
+ }
 }
 
 .add-profile__rates-list {
+  position: relative;
   color: @special-grey;
-  margin: 0;
+  margin-top: 0;
   line-height: 16px;
+  margin-bottom: 42px;
+   @media (min-width: @tablet) {
+  margin-bottom: 53px;
+
+ }
+
 }
+.add-profile__rates-list::after {
+  display: none;
+  content: "";
+  position: absolute;
+  background-color: @like-background-gray;
+  border-radius: 20px;
+  width: 29%;
+  height: 140%;
+  right: 0;
+  top: -40px;
+  @media (min-width: @tablet) {
+    display: block;
+  }
+    @media (min-width: @desktop) {
+     width: 38%;
+  height: 148%;
+  right: 118px;
+  top: -47px;
+
+  }
+}
+// .add-profile__rates-item:last-child {
+//   border-bottom:  1px solid @border-rates-grey;
+
+// }
 
 .add-profile__rates-price {
   margin: 0;
+  z-index: 1;
+    @media (min-width: @tablet) {
+  padding-right: 31px;
+  }
+
+  @media (min-width: @desktop) {
+    padding-right: 210px;
+
+  }
 }
 
 .add-profile__rates-link {
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
   color: @bright-blue;
   font-weight: 700;
   text-decoration: none;
-}
-.add-profile__rates-list {
-  display: grid;
-  grid-template-columns: auto;
-  @media (min-width: @tablet) {
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+
+    @media (min-width: @tablet) {
+  font-size: 20px;
+  line-height: 20px;
+  padding-left: 90px;
   }
+
+
+}
+.add-profile__rates-link:hover {
+  opacity: 0.7;
+}
+.add-profile__rates-link:focus {
+  opacity: 0.3;
+}
+.add-profile__rates-link::before {
+  @media (min-width: @tablet) {
+     position: absolute;
+  content:"";
+  background-image: url("../img/business-rates-link.svg");
+  width: 68px;
+  height: 68px;
+  left: 0;
+  top: -25px;
+  }
+
+
+}
+
+.add-profile__rates-list {
+  position: relative;
+  // display: grid;
+  // grid-template-columns: auto;
+  // @media (min-width: @tablet) {
+  //   grid-template-columns: auto auto;
+  //   justify-content: space-between;
+  // }
 }
 .add-profile__title {
+  width: 100px;
+  margin-top: 32px;
+  margin-bottom: 37px;
   @media (min-width: @tablet) {
     text-align: center;
+    width: auto;
+    margin-bottom: 75px;
+  }
+    @media (min-width: @desktop) {
+    margin-bottom: 132px;
+  }
+
+
+
+}
+.add-profile__rates-offer {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    align-items: center;
+        width: 87%;
+        // надо монять, почему 100% ужимает кружок  и как правильно это исправить
+    border-top: 1px solid @border-rates-grey;
+
+
   }
 }
+.add-profile__rates-item:last-child .add-profile__rates-offer {
+border-bottom: 1px solid @border-rates-grey;
+}
+
+.add-profile__rates-item {
+    width: 100%;
+
+  padding-top: 17px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet) {
+    flex-direction: row;
+    // justify-content: space-between;
+    padding-top: 0;
+
+
+  }
+
+}
+// .add-profile__rates-offer::before {
+//   position: absolute;
+//   content: "";
+//   background-color: @border-rates-grey;
+//   width: 200px;
+//   height: 1px;
+//   top: -17px;
+//   left: 0;
+//     @media (min-width: @tablet) {
+//       width: 560px;
+
+
+
+//   }
+
+// }
+// .add-profile__rates-list::after {
+//   position: absolute;
+//   content: "";
+//   background-color: @border-rates-grey;
+//   width: 200px;
+//   height: 1px;
+//   bottom: 17px;
+//   left: 0;
+//       @media (min-width: @tablet) {
+//       width: 560px;
+
+// я уже позже поняла, что это некорректная реализация, т.к. серая полоска не будет тянуться с увяличением экрана, верно? переделать?
+// или это норм?
+//   }
+// }
+
+.add-profile__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  color: @basic-white;
+  background-color: @special-orange;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  text-align: center;
+  // padding-top: 10px;
+  margin-top: -9px;
+  font-weight: 400;
+  @media (min-width: @tablet) {
+    margin-top: 0;
+    margin-right: 22px;
+    width: 68px;
+    height: 68px;
+    font-size: 28px;
+
+  }
+
+}
+.add-profile__number--light-orange {
+  background-color: @basic-yellow-dark;
+
+
+}
+.add-profile__number--yellow {
+  background-color: @basic-yellow;
+
+}
+.add-profile__rates-list--modal::after {
+  display: none;
+}
+.add-profile__rates-list--modal {
+  padding-left: 25px;
+  padding-right: 25px;
+    @media (min-width: @tablet) {
+  padding-left: 90px;
+  padding-right: 90px;
+
+  }
+
+}
+.add-profile--modal {
+  background-color: @basic-white;
+}
+
+// .add-profile__rates-offer-text {
+//   min-height: 68px;
+// border-top: 1px solid @border-rates-grey;
+// display: flex;
+//     align-items: center;
+// }
+
