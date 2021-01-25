@@ -1,63 +1,180 @@
 .calendar__title {
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1;
   font-weight: 700;
   color: @basic-blue-light;
+  width: 100%;
+  display: flex;
+  border-top: 1px solid @calendar-border;
+  border-bottom: 1px solid @calendar-border;
+  height: 43px;
+  align-items: center;
+  justify-content: center;
+    @media (min-width: @tablet) {
+      font-size: 36px;
+      height: 86px;
+
+
+  }
+  //   @media (min-width: @desktop) {
+
+
+  // }
+
+}
+.calendar__header {
+  position: relative;
+  margin-bottom: 15px;
+      @media (min-width: @tablet) {
+      margin-bottom: 32px;
+
+
+  }
 
 }
 .calendar__day {
-    width: 32px;
-  height: 32px;
-    font-size: 14px;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   text-align: center;
   padding: 0;
-  border-collapse: collapse;
-  // border-collapse не помогает обьединить рамки в одну;
+  text-transform: uppercase;
+  outline: none;
+       @media (min-width: @tablet) {
+      font-size: 18px;
+      line-height: 1;
+
+
+  }
+
+}
+.calendar__week {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+      @media (min-width: @tablet) {
+      font-size: 18px;
+      line-height: 1;
+
+
+  }
+  //   @media (min-width: @desktop) {
+
+
+  // }
+
+
 }
  .calendar__day--weekday {
+    width: 32px;
+  height: 32px;
+  text-align: center;
+  padding: 0;
+  font-weight: 400;
   color: @special-grey;
  }
-
 .calendar__day--weekend {
-  color: @orange-day;
-
-}
-
-.calendar__day--disabled {
-  width: 32px;
+   width: 32px;
   height: 32px;
+  text-align: center;
+  padding: 0;
+  font-weight: 400;
+  color: @orange-day;
+}
+.calendar__day:disabled {
+  width: 100%;
+  height: 100%;
   border: 1px solid @calendar-border;
   color: rgba(@special-grey, 30%);
   background-color: @basic-white;
 }
-
-.calendar__day--chosen {
-  width: 32px;
-  height: 32px;
+.calendar__day:not(:disabled) {
   border: 1px solid @border-blue-light;
+  color: @basic-blue-light;
+  font-weight: 500;
+  background-color: @basic-background-blue-light;
+  cursor: pointer;
+}
+.calendar__day:active, .calendar__day:focus{
+  border: 1px solid @border-blue-light;
+  color: @basic-white;
+  font-weight: 500;
+  background-color: @basic-blue-light;
+}
+
+.calendar__day:not(:disabled):hover {
+  border: 2px solid @orange-day;
   color: @basic-white;
   font-weight: 500;
   background-color: @basic-blue-light;
 
 }
-.calendar__day--not-chosen {
-    width: 32px;
-  height: 32px;
-  border: 1px solid @border-blue-light;
-  color: @basic-blue-light;
-  font-weight: 500;
-  background-color: @basic-background-blue-light;
 
-}
-
-.calendar__day--current {
-  border: 2px solid @orange-day;
-}
 .calendar__table {
   border-collapse: collapse;
 }
 .calendar__cell {
+  width: 32px;
+  height: 31px;
   padding: 0;
+     @media (min-width: @tablet) {
+    width: 77px;
+    height: 69px;
+  }
+
+}
+.calendar__button {
+  // stroke: #CCCCCC;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    outline: none;
+}
+.calendar__button:hover .calendar__svg {
+ opacity: 50%;
+}
+.calendar__button:active .calendar__svg {
+ opacity: 10%;
+}
+.calendar__svg {
+  fill: @basic-black;
+  opacity: 30%;
+  width: 10px;
+  height: 19px;
+   @media (min-width: @tablet) {
+    width: 30px;
+    height: 36px;
+  }
+
+
+
+
+}
+.calendar__button--back {
+  left: 12px;
+  top: 12px;
+  padding-left: 0;
+  padding-right: 10px;
+}
+.calendar__button--next {
+  right: 12px;
+  top: 12px;
+    padding-left: 10px;
+  padding-right: 0;
+}
+.calendar__mobile-hidden {
+  display: none;
+     @media (min-width: @tablet) {
+    display: inline;
+    text-transform: none;
+  }
 }

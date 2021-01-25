@@ -13,6 +13,20 @@
 .page-header--inner {
     border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  min-height: 143px;
+  z-index: 5;
+    position: relative;
+        @media (min-width: @tablet) {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+  //   @media (min-width: @desktop) {
+
+
+  // }
+
+
+
 }
 
 .page-header__modal {
@@ -36,18 +50,20 @@
 .page-header__blockquote {
   margin: 0;
   position: relative;
+  padding-left: 34px;
   padding-top: 48px;
-  padding-left: 25px;
   grid-area: quote;
   display: block;
   margin-top: -20px;
+
   @media (min-width: @tablet) {
-  margin-top: 86px;
   background-color: transparent;
+  padding-top: 0;
+
 }
   @media (min-width: @desktop) {
-    margin-top: 128px;
-    margin-left: auto;
+    margin-top: 119px;
+    padding-left: 250px;
   }
 }
 
@@ -56,13 +72,17 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
+
+  max-width: 186px;
   @media (min-width: @tablet) {
   font-size: 21px;
   line-height: 25px;
+  max-width: 251px;
 }
   @media (min-width: @desktop) {
   font-size: 21px;
   line-height: 24px;
+  max-width: 261px;
 }
 }
 
@@ -73,9 +93,11 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
+
   @media (min-width: @tablet) {
   font-size: 28px;
   line-height: 33px;
+
 }
 @media (min-width: @desktop) {
    line-height: 32px;
@@ -87,6 +109,7 @@
   padding-top: 19px;
   // width: 100%;
   display: grid;
+
   grid-template-areas:
   "logo button"
   "h1 h1"
@@ -100,7 +123,8 @@
   "quote quote quote";
 }
 @media (min-width: @desktop) {
-  padding-top: 46px;
+  grid-template-columns: min-content;
+  padding-top: 44px;
   grid-template-areas:
   "logo nav user-nav"
   "h1 h1 quote";
@@ -146,8 +170,9 @@
   position: relative;
   grid-area: button;
   margin-left: auto;
+  cursor: pointer;
   @media (min-width: @tablet) {
-    margin: auto;
+    margin-right: 76px;
     padding-right: 10px;
 
   }
@@ -210,7 +235,16 @@
     margin: 0;
     margin-left: auto;
   }
+    @media (min-width: @desktop) {
+    padding-top: 5px;
+  }
 
+
+
+}
+.page-header__logo {
+  width: min-content;
+  margin-right: 40px;
 }
 .page-header__logo-image {
   width: 96px;
@@ -218,6 +252,7 @@
   @media (min-width: @tablet) {
     width: 166px;
   height: 42px;
+      margin-top: 3px;
   }
   @media (min-width: @desktop) {
     width: 200px;

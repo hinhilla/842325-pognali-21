@@ -24,14 +24,24 @@
   line-height: 1;
   font-weight: 700;
   border: none;
-   border-bottom-left-radius: 20px;
-   border-top-left-radius: 20px;
+   border-bottom-left-radius: 10px;
+   border-top-left-radius: 10px;
    padding-left: 25px;
    padding-top: 20px;
    padding-bottom: 20px;
    padding-right: 40px;
-
+         @media (min-width: @tablet) {
+      border-bottom-left-radius: 20px;
+   border-top-left-radius: 20px;
+   padding-left: 40px;
+   font-size: 24px;
+   padding-top: 15px;
+  }
 }
+// .form-email__input::placeholder
+//  {
+//   color: red;
+// }
 .form-email__input:hover {
   color: fade(@special-grey, 50%);
     // не работает в опере
@@ -55,7 +65,7 @@
   background-color: @basic-yellow;
   min-width: 60px;
   min-height: 100%;
-   border-radius: 20px;
+   border-radius: 10px;
    margin-left: -20px;
    display: flex;
    align-items: center;
@@ -63,10 +73,13 @@
    background-repeat: no-repeat;
    background-position: center center;
          @media (min-width: @tablet) {
-      min-width: 60px;
+      min-width: 80px;
+      border-radius: 0;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
   }
     @media (min-width: @desktop) {
-    min-width: 330px;
+    min-width: 325px;
     background-position: 277px center;
 
   }
@@ -84,6 +97,7 @@
 
     @media (min-width: @desktop) {
     display: block;
+    padding-top: 26px;
 
   }
 }

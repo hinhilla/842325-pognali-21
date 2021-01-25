@@ -2,19 +2,37 @@
   background-color: @background-grey-light;
   padding-top: 37px;
   margin-top: -20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   position: relative;
   z-index: 3;
 
   @media (min-width: @tablet) {
     background-color: @basic-background-blue-light;
+    margin-top: -50px;
+    padding-top: 90px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
+   @media (min-width: @desktop) {
+     padding-top: 123px;
+ }
 }
 .add-profile__wrapper {
   position: relative;
   padding-left: 25px;
-  padding-bottom: 42px;
+  padding-bottom: 38px;
+    @media (min-width: @tablet) {
+    padding-left: 0;
+    padding-bottom: 88px;
+  }
+     @media (min-width: @desktop) {
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-bottom: 190px;
+ }
+
+
 }
 .add-profile__wrapper::after {
   position: absolute;
@@ -29,15 +47,15 @@
     background-image: url("../img/rates@2x.png");
  }
  @media (min-width: @tablet) {
-  right: 50px;
-  top: 400px;
+  right: 45px;
+  top: 338px;
 
  }
   @media (min-width: @desktop) {
     width: 198px;
     height: 198px;
-  right: -100px;
-  top: 160px;
+  right: 75px;
+  top: 185px;
   background-image: url("../img/rates-desktop.png");
     background-size: 198px 198px;
   @media (min-resolution: 2dppx) {
@@ -52,7 +70,11 @@
   color: @special-grey;
   margin-top: 0;
   line-height: 16px;
-  margin-bottom: 17px;
+  margin-bottom: 42px;
+   @media (min-width: @tablet) {
+  margin-bottom: 53px;
+
+ }
 
 }
 .add-profile__rates-list::after {
@@ -61,18 +83,25 @@
   position: absolute;
   background-color: @like-background-gray;
   border-radius: 20px;
-  width: 30%;
+  width: 29%;
   height: 140%;
   right: 0;
-  top: -50px;
+  top: -40px;
   @media (min-width: @tablet) {
     display: block;
   }
-}
-.add-profile__rates-item:last-child {
-  border-bottom:  1px solid @border-rates-grey;
+    @media (min-width: @desktop) {
+     width: 38%;
+  height: 148%;
+  right: 118px;
+  top: -47px;
 
+  }
 }
+// .add-profile__rates-item:last-child {
+//   border-bottom:  1px solid @border-rates-grey;
+
+// }
 
 .add-profile__rates-price {
   margin: 0;
@@ -82,7 +111,7 @@
   }
 
   @media (min-width: @desktop) {
-    padding-right: 161px;
+    padding-right: 210px;
 
   }
 }
@@ -134,15 +163,21 @@
 }
 .add-profile__title {
   width: 100px;
-  margin-top: 84px;
-  margin-bottom: 89px;
+  margin-top: 32px;
+  margin-bottom: 37px;
   @media (min-width: @tablet) {
     text-align: center;
     width: auto;
+    margin-bottom: 75px;
   }
+    @media (min-width: @desktop) {
+    margin-bottom: 132px;
+  }
+
+
+
 }
 .add-profile__rates-offer {
-  // margin-bottom: 14px;
   position: relative;
   display: flex;
   flex-direction: row-reverse;
@@ -150,21 +185,28 @@
 
   @media (min-width: @tablet) {
     flex-direction: row;
-    justify-content: flex-start;
+    align-items: center;
+        width: 87%;
+        // надо монять, почему 100% ужимает кружок  и как правильно это исправить
+    border-top: 1px solid @border-rates-grey;
 
 
   }
 }
+.add-profile__rates-item:last-child .add-profile__rates-offer {
+border-bottom: 1px solid @border-rates-grey;
+}
+
 .add-profile__rates-item {
     width: 100%;
-  border-top: 1px solid @border-rates-grey;
+
   padding-top: 17px;
-  padding-bottom: 14px;
   display: flex;
   flex-direction: column;
   @media (min-width: @tablet) {
     flex-direction: row;
-    justify-content: space-between;
+    // justify-content: space-between;
+    padding-top: 0;
 
 
   }
@@ -201,24 +243,28 @@
 // или это норм?
 //   }
 // }
-.add-profile__rates-price {
-  margin-bottom: 36px;
-}
+
 .add-profile__number {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   color: @basic-white;
   background-color: @special-orange;
   width: 34px;
   height: 34px;
   border-radius: 50%;
   text-align: center;
-  padding-top: 10px;
-  margin-top: -5px;
+  // padding-top: 10px;
+  margin-top: -9px;
+  font-weight: 400;
   @media (min-width: @tablet) {
     margin-top: 0;
     margin-right: 22px;
+    width: 68px;
+    height: 68px;
+    font-size: 28px;
 
   }
 
@@ -248,3 +294,11 @@
 .add-profile--modal {
   background-color: @basic-white;
 }
+
+// .add-profile__rates-offer-text {
+//   min-height: 68px;
+// border-top: 1px solid @border-rates-grey;
+// display: flex;
+//     align-items: center;
+// }
+

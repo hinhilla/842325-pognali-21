@@ -9,7 +9,12 @@
 </head>
 
 <body class="page__body">
+
   <svg style="display: none;">
+    <symbol id="user-icon" viewBox="0 0 14 14" width="100%" height="100%" preserveAspectRatio="xMinYMin meet">
+      <path opacity=".1"
+        d="M4.38 3.93A2.7 2.7 0 007 6.69a2.7 2.7 0 002.63-2.76A2.7 2.7 0 007 1.17a2.7 2.7 0 00-2.63 2.76zm7.29 8.9h.58v-.61a4.2 4.2 0 00-4.08-4.3H5.83a4.2 4.2 0 00-4.08 4.3v.61h9.92z" />
+    </symbol>
     <symbol id="telephone-icon" viewBox="0 0 18 16" width="100%" height="100%" preserveAspectRatio="xMinYMin meet">
       <path fill-rule="evenodd" clip-rule="evenodd"
         d="M9.5 1.09c-2.8 0-5.6.47-6.62 1.41-.84.78-1.12 2.16-1.22 3.04l-.01.12c0 .34.3.62.65.62l2.57-.2h.07c.35-.02.64-.29.64-.63V4.24c0-.38.32-.68.72-.68h6.4c.4 0 .72.3.72.68v1.21c0 .34.29.61.64.62l.07.01 2.57.2c.36 0 .65-.28.65-.62l-.01-.12c-.1-.88-.38-2.26-1.22-3.04C15.1 1.56 12.3 1.1 9.5 1.1zm0 8.03c-.72 0-1.3.55-1.3 1.23 0 .69.58 1.24 1.3 1.24.72 0 1.3-.55 1.3-1.24 0-.68-.58-1.23-1.3-1.23zm-.98-2.78v-.77a.8.8 0 00-.82-.78.8.8 0 00-.82.78v.77l-4.4 4.45c-.31.28-.5.67-.5 1.1v1.24c0 .69.58 1.24 1.3 1.24h.33v.77c0 .43.37.77.82.77a.8.8 0 00.82-.77v-.77h8.5v.77c0 .43.37.77.82.77a.8.8 0 00.82-.77v-.77h.32c.73 0 1.31-.55 1.31-1.24V11.9c0-.43-.19-.82-.5-1.1l-4.4-4.45v-.77a.8.8 0 00-.82-.78.8.8 0 00-.82.78v.77H8.52zm.98 1.54c1.45 0 2.62 1.1 2.62 2.47a2.55 2.55 0 01-2.62 2.47 2.55 2.55 0 01-2.62-2.47A2.55 2.55 0 019.5 7.88z" />
@@ -253,8 +258,7 @@
           </nav>
           <blockquote class="page-header__blockquote">
             <q class="page-header__quote section-paragraph">Лучшее приложение, <br>что я видел в жизни!</q>
-            <cite class="page-header__cite section-headline">Мурат Эльтазин <br>главный редактор <br>газеты
-              «гаджетлайф»</cite>
+            <cite class="page-header__cite">Мурат Эльтазин <br>главный редактор газеты «гаджетлайф»</cite>
           </blockquote>
         </div>
       </div>
@@ -290,10 +294,10 @@
         <div class="about-service__wrapper">
           <h2 class="about-service__title section-title">О сервисе</h2>
           <p class="about-service__text section-paragraph">
-            Любое путешествие веселее с&nbsp;попутчиками, которые на<br> одной волне с&nbsp;тобой! Делитесь<br> своими
+            Любое путешествие веселее с&nbsp;попутчиками, которые на одной волне с&nbsp;тобой! Делитесь своими
             идеями
             путешествий
-            и черпайте вдохновение в&nbsp;чужих.
+            и&nbsp;черпайте вдохновение в&nbsp;чужих.
           </p>
           <p class="about-service__call section-headline">
             А если найдете кого-то близкого по&nbsp;духу — скорее зовите в&nbsp;совместный трип!
@@ -327,8 +331,13 @@
                 <figcaption class="directions__figcaption directions__figcaption--thailand">
                   <h3 class="directions__city">Таиланд</h3>
                   <p class="directions__call">Джунгли зовут!</p>
-                  <span class="directions__number"><span class="visually-hidden">попутчики по этому
-                      направлению</span>18321</span>
+                  <div class="directions__number">
+                    <span class="visually-hidden">попутчики по этому направлению </span>
+                    <svg class="directions__icon" width="14" height="14">
+                      <use xlink:href="#user-icon"></use>
+                    </svg>
+                    <span>18321</span>
+                  </div>
                 </figcaption>
               </figure>
             </li>
@@ -342,8 +351,13 @@
                 <figcaption class="directions__figcaption directions__figcaption--france">
                   <h3 class="directions__city">Франция</h3>
                   <p class="directions__call">Трэ бьен, манифик!</p>
-                  <span class="directions__number"><span class="visually-hidden">попутчики по этому
-                      направлению</span>12518</span>
+                  <div class="directions__number">
+                    <span class="visually-hidden">попутчики по этому направлению </span>
+                    <svg class="directions__icon" width="14" height="14">
+                      <use xlink:href="#user-icon"></use>
+                    </svg>
+                    </span>12518</span>
+                  </div>
                 </figcaption>
               </figure>
             </li>
@@ -356,9 +370,14 @@
                 </picture>
                 <figcaption class="directions__figcaption directions__figcaption--czechia">
                   <h3 class="directions__city">Чехия</h3>
-                  <p class="directions__call">Закоулки старой Европы</p>
-                  <span class="directions__number"><span class="visually-hidden">попутчики по этому
-                      направлению</span>5326</span>
+                  <p class="directions__call">Закоулки<br class="directions__break"> старой Европы</p>
+                  <div class="directions__number">
+                    <span class="visually-hidden">попутчики по этому направлению </span>
+                    <svg class="directions__icon" width="14" height="14">
+                      <use xlink:href="#user-icon"></use>
+                    </svg>
+                    </span>5326</span>
+                  </div>
                 </figcaption>
               </figure>
             </li>
@@ -377,13 +396,13 @@
         <div class="companions__wrapper">
           <h2 class="companions__title section-title">Попутчики</h2>
           <p class="companions__text section-paragraph">
-            Все мы индивидуальны и у каждого<br> свой взгляд на идеальный отдых.<br> Одному нужен пляж и коктейль,<br> а
-            другому
+            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль,
+            а&nbsp;другому
             маршрут
             для хайкинга.
           </p>
           <p class="companions__call section-headline">
-            Теперь можно легко<br> найти единомышленников!
+            Теперь можно легко<br class="companions__break">найти единомышленников!
           </p>
           <ul class="companions__list">
             <li class="companions__item">
@@ -525,20 +544,25 @@
             <h3 class="visually-hidden">Предлагаемые тарифы</h3>
             <dl class="add-profile__rates-list">
               <div class="add-profile__rates-item">
-                <dt class="add-profile__rates-offer section-paragraph"><span class="add-profile__number">1</span>Базовое
-                  размещение</dt>
-                <dd class="add-profile__rates-price section-paragraph">Бесплатно</dd>
+                <span class="add-profile__number">1</span>
+                <div class="add-profile__rates-offer section-paragraph">
+                  <dt class="add-profile__rates-offer-text">Базовое размещение</dt>
+                  <dd class="add-profile__rates-price section-paragraph">Бесплатно</dd>
+                </div>
               </div>
               <div class="add-profile__rates-item">
-                <dt class="add-profile__rates-offer section-paragraph">
-                  <span class="add-profile__number add-profile__number--light-orange">2</span>Вывод на первых позициях
-                </dt>
-                <dd class="add-profile__rates-price section-paragraph">99 руб./мес</dd>
+                <span class="add-profile__number add-profile__number--light-orange">2</span>
+                <div class="add-profile__rates-offer section-paragraph">
+                  <dt class="add-profile__rates-offer-text">Вывод на первых позициях</dt>
+                  <dd class="add-profile__rates-price section-paragraph">99 руб./мес</dd>
+                </div>
               </div>
               <div class="add-profile__rates-item">
-                <dt class="add-profile__rates-offer section-paragraph"><span
-                    class="add-profile__number add-profile__number--yellow">3</span>Кастомный цвет карточки</dt>
-                <dd class="add-profile__rates-price section-paragraph">59 руб./мес</dd>
+                <span class="add-profile__number add-profile__number--yellow">3</span>
+                <div class="add-profile__rates-offer section-paragraph">
+                  <dt class="add-profile__rates-offer-text">Кастомный цвет карточки</dt>
+                  <dd class="add-profile__rates-price section-paragraph">59 руб./мес</dd>
+                </div>
               </div>
             </dl>
             <a class="add-profile__rates-link" href="#">Показать тарифы для бизнеса</a>
@@ -577,22 +601,28 @@
         <div class="info__wrapper">
           <h2 class="visually-hidden">Регистрация и контакты</h2>
           <p class="info__title section-title">Заинтересовались?</p>
-          <p class="info__call section-paragraph">Зарегистрируйтесь, <br>это быстро и бесплатно! <br>Уже
+          <p class="info__call section-paragraph">Зарегистрируйтесь,
+            <!-- <br сlass="info__break"> -->
+            это быстро и бесплатно!
+            <br>Уже
             зарегистрированы?
-            Тогда <br>скорее <a href="#" class="info__call--link">авторизуйтесь.</a></p>
+            Тогда
+            <!-- <br сlass="info__break"> -->
+            скорее <a href="#" class="info__call--link">авторизуйтесь.</a>
+          </p>
           <form class="info__form form-email" action="https://echo.htmlacademy.ru">
             <input class="form-email__input" type="email" placeholder="E-mail">
             <button class="form-email__button" type="submit"><span
                 class="form-email__registration">Регистрация</span></button>
           </form>
           <p class="info__call info__call--questions section-paragraph section-paragraph--questions">Остались вопросы?
-            <br>Мы с радостью на
+            <br class="info__break">Мы с радостью на
             них
             ответим!
           </p>
           <div class="user-navigation user-navigation--column info__user-navigation">
             <ul class="user-navigation__list user-navigation__list--info">
-              <li class="user-navigation__item user-navigation__item--call-us info__user-navigation--item">
+              <li class="user-navigation__item user-navigation__item--call-us user-navigation__item--info">
                 <a class="user-navigation__link" href="tel:88005558628" aria-label="Позвоните нам">
                   <span class="user-navigation__circle user-navigation__circle--info">
                     <svg class="user-navigation__icon--yellow user-navigation__icon--telephone" width="15.7"
@@ -603,7 +633,7 @@
                   <span class="user-navigation__info user-navigation--info">8 800 555-86-28</span>
                 </a>
               </li>
-              <li class="user-navigation__item user-navigation__item--text-us user-navigation__item--column">
+              <li class="user-navigation__item user-navigation__item--text-us user-navigation__item--info">
                 <a class="user-navigation__link" href="mailto:mail@htmlacademy.ru" aria-label="Напишите нам">
                   <span class=" user-navigation__circle user-navigation__circle--info">
                     <svg class="user-navigation__icon--yellow user-navigation__icon--mail-info" width="18.28"
@@ -629,7 +659,7 @@
                 <use xlink:href="#location-icon"></use>
               </svg>
             </div>
-            <address class="location__address">ул. Большая <br>Конюшенная, 19/8</address>
+            <address class="location__address">ул. Большая <br class="location__break">Конюшенная, 19/8</address>
           </div>
           <a class="location__button button button--square button--transparent" href="#">
             <span>Проложить маршрут</span>
@@ -645,7 +675,7 @@
       <div class="center--universal">
         <iframe class="location__iframe"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533261!2d30.32085871607062!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605357948864!5m2!1sru!2sru"
-          width="320" height="424" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          width="320" height="365" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </section>
   </main>
@@ -694,7 +724,7 @@
 
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy">
             <span class="copyright__text">Разработано</span>
-            <svg class="favicon" width="27" height="33">
+            <svg class="copyright__favicon" width="27" height="33">
               <use xlink:href=" #favicon"></use>
             </svg>
           </a>

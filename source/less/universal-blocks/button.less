@@ -9,13 +9,21 @@
   border: none;
   padding: 0;
 }
-
+.button:hover {
+  background-color: @basic-yellow-dark;
+}
+.button:focus {
+  color: fade(@basic-blue, 30%);
+}
 .button--circle {
   border-radius: 20px;
 }
 
 .button--square {
   border-radius: 10px;
+  @media (min-width: @tablet) {
+    border-radius: 20px;
+  }
 
 }
 .button--white {

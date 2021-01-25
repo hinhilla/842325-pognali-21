@@ -2,58 +2,49 @@
   background-color: @basic-background-blue-light;
   margin-top: -25px;
   position: relative;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   z-index: 5;
-        @media (min-width: @tablet) {
-
+    @media (min-width: @tablet) {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 
   }
 
 }
 
 .directions__title {
-  margin-bottom: 19px;
+  margin-bottom: 20px;
+  padding-left: 24px;
       @media (min-width: @tablet) {
-      margin-bottom: 76px;
-
-
+      margin-bottom: 58px;
+      padding-left: 0;
   }
-  // @media (min-width: @desktop) {
-  //   grid-template-columns: auto auto;
-  //   margin-bottom: 76px;
-
-// возможно так и не понадобится
-  // }
+  @media (min-width: @desktop) {
+    // grid-template-columns: auto auto;
+    margin-bottom: 30px;
+  }
 
 }
 
 .directions__text {
   color: @special-grey;
-  margin-bottom: 72px;
+  margin-bottom: 63px;
+  padding-left: 24px;
       @media (min-width: @tablet) {
-      margin-bottom: 113px;
+      margin-bottom: 103px;
+      padding-left: 0;
 
 
   }
   @media (min-width: @desktop) {
     grid-template-columns: auto auto;
-    margin-bottom: 107px;
+    margin-bottom: 66px;
 
 
   }
 }
 
-.directions__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 25px;
-  @media (min-width: @desktop) {
-    margin-right: 170px;
-
-  }
-}
 .directions__item:last-child {
     @media (min-width: @desktop) {
     box-shadow: inset 0 -80px 100px -70px @basic-background-blue-light;
@@ -91,13 +82,19 @@
   color: fade(@special-grey, 70%);
   grid-column-start: 1;
   margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
     @media (min-width: @tablet) {
   margin-bottom: 25px;
+  font-size: 20px;
+  line-height: 1;
+  margin-bottom: 12px;
 
 
   }
   @media (min-width: @desktop) {
-    argin-bottom: 32px;
+    margin-bottom: 23px;
 
 
 
@@ -107,25 +104,51 @@
 }
 
 .directions__number {
-  position: relative;
+  display: flex;
   color: fade(@basic-blue, 70%);
   grid-column-start: 2;
   grid-row-start: 1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 6px;
+  padding-right: 5px;
       @media (min-width: @tablet) {
      grid-column-start: 1;
      grid-row-start: 3;
+     font-size: 20px;
+     padding-top: 0;
+     padding-left: 0;
+
 
 
   }
 }
-.directions__number::before {
-  position: absolute;
-  content: "";
+// .directions__number::before {
+//   position: absolute;
+//   content: "";
+//   width: 14px;
+//   height: 14px;
+//   left:-20px;
+//   top: 9px;
+//   background-image: url("../img/icon-user.svg");
+//   @media (min-width: @tablet) {
+//     height: ;
+
+//   }
+// }
+.directions__icon {
   width: 14px;
   height: 14px;
-  left:-15px;
-  top: 1px;
-  background-image: url("../img/icon-user.svg")
+  fill: @main-blue;
+  opacity: 30%;
+      margin-right: 5px;
+  @media (min-width: @tablet) {
+    height: 24px;
+    width: 24px;
+
+  }
+
 }
 .directions__image {
   position: relative;
@@ -147,7 +170,8 @@
   width: 70px;
   height: 47px;
   left: 400px;
-  top: 45px;
+  top: 18px;
+
   }
   @media (min-width: @desktop) {
     left: 335px;
@@ -187,15 +211,22 @@
   padding: 20px;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: auto 82px;
+  grid-template-columns: auto min-content;
   background-color: @basic-white;
-  margin-top: -10px;
+  margin-top: -14px;
   z-index: 1;
   position: relative;
       @media (min-width: @tablet) {
      grid-template-columns: auto;
      border-radius: 20px;
      margin-top: 0;
+     padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    // padding-bottom: 25px;
+      @media (min-width: @desktop) {
+    padding-top: 22px;
+  }
 
 
   }
@@ -227,38 +258,48 @@
 
   display: grid;
   grid-template-columns: auto;
-  padding-top: 101px;
+  padding-top: 93px;
   padding-bottom: 34px;
-  padding-left: 35px;
   padding-right: 35px;
 
     @media (min-width: @tablet) {
       background-image: url("../img/directions-tablet.png");
-      background-position: 0 156px;
+      background-position: 0 105px;
       background-repeat: no-repeat;
       background-size: 688px 574px;
-      padding-top: 149px;
+      padding-top: 95px;
       padding-bottom: 80px;
+      padding-right: 35px;
+      padding-left: 35px;
+
 
 
   }
   @media (min-width: @desktop) {
     grid-template-columns: auto auto;
-    padding-top: 246px;
-    padding-bottom: 138px;
+    padding-top: 190px;
+    padding-bottom: 102px;
+    padding-right: 175px;
+    padding-left: 69px;
 
 
   }
 }
 .directions__list {
-
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 19px;
+      @media (min-width: @tablet) {
+   margin-bottom: 33px;
+  }
   @media (min-width: @desktop) {
+    margin-right: 170px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 4;
   }
-
 }
 .directions__link {
   display: flex;
@@ -270,38 +311,49 @@
   line-height: 1;
   color: @basic-blue-light;
   padding-left: 23px;
-  padding-top: 23px;
-  padding-right: 32px;
+  padding-top: 20px;
+  padding-right: 20px;
   min-height: 62px;
-  padding-bottom: 24px;
-        @media (min-width: @tablet) {
-    min-height: 82px;
-    font-size: 24px;
-
+  padding-bottom: 23px;
+    @media (min-width: @tablet) {
+      min-height: 82px;
+      font-size: 24px;
+      padding-left: 30px;
+      padding-top: 25px;
+      padding-right: 28px;
 }
-  @media (min-width: @desktop) {
-  min-width: 275px;
-  padding-right: 35px;
-  padding-left: 33px;
-  padding-top: 33px;
-  padding-bottom: 33px;
-  min-height: 80px;
-
+    @media (min-width: @desktop) {
+      width: 275px;
+      padding-right: 35px;
+      padding-left: 33px;
+      padding-top: 33px;
+      padding-bottom: 33px;
+      height: 80px;
   }
-
 }
 .directions__city {
-  margin-top: 0;
-  margin-bottom: 12px;
-      @media (min-width: @tablet) {
-  margin-bottom: 15px;
-
-
+  margin-top: 6px;
+  margin-bottom: 2px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+    @media (min-width: @tablet) {
+      margin-bottom: 10px;
+      margin-top: 0;
+      font-size: 24px;
   }
-  @media (min-width: @desktop) {
-
-
-
+    @media (min-width: @desktop) {
+      margin-bottom: 0;
   }
-
+}
+.directions__break {
+  display: none;
+  @media (min-width:@tablet) {
+    display: inline-block;
+  }
+}
+.directions__item:last-child .directions__call {
+    @media (min-width:@tablet) {
+    margin-bottom: 0;
+  }
 }
