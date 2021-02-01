@@ -32,10 +32,12 @@
 
 
         @media (min-width: @tablet) {
-    //  width: 369px;
      padding-left: 25px;
   }
-  // text-overflow: ellipsis;
+      @media (min-width: @tablet) {
+     width: 730px;
+  }
+
 }
 .add-country__name:hover {
   border-color: @hover-border-grey;
@@ -52,6 +54,11 @@
     padding-top: 2px;
     min-width: 165px;
   }
+            @media (min-width: @desktop) {
+          margin-left: 35px;
+  }
+
+
 
 }
 .add-country::after {
@@ -68,6 +75,9 @@
           height: 14px;
           right: 133px;
           top: 26px;
+  }
+            @media (min-width: @desktop) {
+          right: 220px;
   }
 }
 .add-country::before {
@@ -192,6 +202,11 @@ background-color: transparent;
     top: 0;
     left: 395px;
   }
+    @media (min-width: @desktop) {
+    left: 773px;
+    height: 225px;
+  }
+
 }
 
 
@@ -223,14 +238,21 @@ background-color: transparent;
             @media (min-width: @tablet) {
      left: 56%;
      top: 20px;
+            }
+              @media (min-width: @desktop) {
+     left: 66%;
 
   }
 
 
 }
 .add-country__open-modal--empty {
-   right: 1px;
+    right: 1px;
+  top: 3px;
+  @media (min-width: @tablet) {
+  right: 1px;
   top: 19px;
+  }
 }
 .add-country__open-modal-svg {
   fill: @basic-black;
@@ -265,8 +287,10 @@ background-color: transparent;
     width: 40px;
     height: 40px;
   }
-  // @media (min-width: @desktop) {
-  // }
+  @media (min-width: @desktop) {
+    right: -3px;
+    top: 16px;
+  }
 
 
 
@@ -294,13 +318,21 @@ opacity: 5%;
 // }
 .add-country__name--empty {
   width: 369px;
+            @media (min-width: @desktop) {
+    width: 730px;
+  }
+
 }
 .add-country__flag--empty {
   display: none;
 }
-// .add-country--last:before {
-//   display: none;
-// }
+.add-country--last:before {
+  display: none;
+            @media (min-width: @tablet) {
+    display: block;
+  }
+
+}
 .add-country__title-button:hover {
 background-color: @special-blue-light;
 }

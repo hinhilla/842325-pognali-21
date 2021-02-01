@@ -1,17 +1,28 @@
-// .cards {
+.cards {
+width: 100%;
 
-// }
+}
 .cards__list {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
 }
 .cards__name {
+  position: relative;
   margin: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1;
   color: @basic-blue-light;
+                    @media (min-width: @tablet) {
+                      font-size: 30px;
+
+
+
+
+      }
+
 }
 .cards__like-button {
   width: 30px;
@@ -19,6 +30,14 @@
   border: none;
   border-radius: 50%;
   background-color: @like-background-gray;
+    @media (min-width: @tablet) {
+    width: 50px;
+    height: 50px;
+
+
+
+}
+
 }
 .cards__like-button--liked {
   background-color: @like-background-liked;
@@ -29,12 +48,29 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @basic-blue;
+      @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 15px;
+
+
+
+}
+
 }
 .cards__tags-text {
   font-size: 15px;
   line-height: 18px;
   color: @special-grey;
   margin: 0;
+  margin-bottom: 14px;
+  @media (min-width: @tablet) {
+  font-size: 20px;
+  line-height: 1;
+  color: @basic-black;
+  }
+
+
 }
 .cards__title {
   margin: 0;
@@ -42,11 +78,22 @@
   font-size: 15px;
   line-height: 18px;
   color: @special-grey;
+  margin-bottom: 17px;
+  padding-left: 10px;
+    @media (min-width: @tablet) {
+  padding-left: 42px;
+  }
+
+
 }
 .cards__country-list {
   list-style: none;
   margin: 0;
   padding: 0;
+    @media (min-width: @tablet) {
+  display: flex;
+  }
+
 
 }
 .cards__country-name {
@@ -55,6 +102,11 @@
   line-height: 16px;
   color: @basic-blue-light;
   text-transform: uppercase;
+ padding-top: 4px;
+     @media (min-width: @tablet) {
+  font-size: 20px;
+  line-height: 1;
+  }
 
 }
 .cards__level-number {
@@ -69,8 +121,24 @@ line-height: 14px;
 color: rgba(@basic-black, 40%)
 }
 .cards__item {
+  position: relative;
   background-color: @basic-white;
   border-radius: 20px;
+  padding-top: 15px;
+padding-bottom: 25px;
+padding-left: 18px;
+margin-bottom: 10px;
+padding-right: 15px;
+    @media (min-width: @tablet) {
+padding-top: 35px;
+    padding-bottom: 20px;
+    padding-left: 34px;
+    margin-bottom: 37px;
+
+  }
+
+
+
 }
 .cards__pagination-button {
   background-color: transparent;
@@ -81,35 +149,120 @@ color: rgba(@basic-black, 40%)
   padding: 0;
   display: flex;
   background-color: @basic-white;
+  justify-content: space-between;
   border-radius: 20px;
+  margin-bottom: 45px;
 
+}
+.cards__pagination-item {
+  width: 50%;
 }
 .cards__name {
   grid-area: name;
+  max-width: 106px;
+  @media (min-width: @tablet) {
+  max-width: none;
+  }
+
+
+}
+.cards__name::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: @special-pink;
+  top: 9px;
+  left: 110%;
+    @media (min-width: @tablet) {
+    width: 8px;
+  height: 8px;
+  top: 11px;
+    left: 0;
+    right: 30px;
+  }
+
+
+
 }
 .cards__image {
+
   grid-area: photo;
+  width: 70px;
+  height: 70px;
+  @media (min-width: @tablet) {
+    width: 190px;
+    height: 190px;
+    margin-right: 35px;
+
+  }
+    @media (min-width: @desktop) {
+    width: 285px;
+    height: 285px;
+
+  }
 }
 .cards__likes {
   grid-area: like;
+  position: absolute;
+  top: -31px;
+    left: -38px;
+  @media (min-width: @tablet) {
+   position: static;
+   display: flex;
+   align-items: flex-end;
+
+  }
+
 }
 .cards__tags {
   grid-area: tags;
+  max-width: 177px;
+    padding-left: 9px;
+    margin-top:10px ;
+  @media (min-width: @tablet) {
+        max-width: 235px;
+        padding-left: 0;
+        margin-top: 0;
+  }
+
 }
 .cards__flags {
   grid-area: flags;
+  padding-left: 7px;
+  margin-bottom: 2px;
+    @media (min-width: @tablet) {
+padding-left: 0;
+  margin-top: 20px;
+  }
+
 }
 .cards__transport {
   grid-area: transport;
+
 }
 .cards__level {
   grid-area: level;
+  position: relative;
 }
 .cards__button {
   grid-area: button;
+  margin-top: 21px;
+    min-height: 40px;
+    padding: 10px;
+  @media (min-width: @tablet) {
+      width: 150px;
+      height: 50px;
+      margin-top: 10px;
+      border-radius: 25px;
+
+    }
+
 }
 .cards__item {
   display: grid;
+  grid-template-columns: auto auto 60px;
   grid-template-areas:
   "photo name name"
    "photo like like"
@@ -118,6 +271,8 @@ color: rgba(@basic-black, 40%)
    "transport transport level"
    "button button button";
    @media (min-width: @tablet) {
+     grid-template-columns: min-content min-content 100px 163px;
+     grid-template-rows: 50px 83px min-content min-content;
      grid-template-areas:
      "photo name name transport"
      "photo tags tags transport"
@@ -130,4 +285,264 @@ color: rgba(@basic-black, 40%)
      "photo tags tags flags flags"
      "photo button like transport level";
    }
+}
+
+.cards__like-button {
+  stroke: @main-blue;
+  stroke-opacity: 50%;
+  fill:transparent;
+  margin-right: 5px;
+     @media (min-width: @tablet) {
+margin-right: 0px;
+   }
+
+}
+.cards__like-button--liked {
+  fill: @special-red;
+  stroke: @special-red;
+}
+.cards__country-flag {
+  background-image: url(../img/sprite-flags.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+    width: 26px;
+  height: 18px;
+  display: block;
+  margin-right: 14px;
+  @media (min-resolusion: 2dppx) {
+     background-image: url(../img/sprite-flags@2x.png);
+margin-right: 13px;
+
+  }
+       @media (min-width: @tablet) {
+    width: 35px;
+  height: 24px;
+   }
+}
+.cards__country-item--sri-Lanka .cards__country-flag{
+  background-position: 0 72.727273%;
+
+
+}
+.cards__country-item--thailand .cards__country-flag{
+  background-position: 0 81.818182%;
+
+}
+.cards__country-item--seychelles .cards__country-flag{
+  background-position: 0 63.636364%;
+
+}
+.cards__country-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+       @media (min-width: @tablet) {
+  margin-right: 25px;
+   }
+
+
+}
+.cards__transport-item {
+  background-color: @basic-background-blue-light;
+       @media (min-width: @tablet) {
+     background-color: transparent;
+     width: 30px;
+     height: 32px;
+   }
+
+}
+.cards__transport-list {
+  padding-top: 8px;
+  padding-left: 3px;
+     @media (min-width: @tablet) {
+     flex-direction: column;
+     padding-top: 0;
+     margin-left: 106px;
+   }
+
+
+
+
+}
+.cards__level-wrapper {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+   top: 26px;
+    right: 6px;
+         @media (min-width: @tablet) {
+    width: 60px;
+    height: 60px;
+    top: 2px;
+    right: 9px;
+   }
+
+}
+.cards__level-svg {
+      width: 45px;
+    height: 45px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+           @media (min-width: @tablet) {
+  width: 60px;
+  height: 60px;
+   }
+}
+
+.cards__level-level {
+  display: none;
+     @media (min-width: @tablet) {
+     display: block;
+   }
+
+}
+.cards__title--level {
+  margin-bottom: 8px;
+  position: relative;
+       @media (min-width: @tablet) {
+     display: none;
+   }
+
+}
+.cards__country-item--belgium .cards__country-flag{
+  background-position: 0 9.090909%;
+    @media (min-resolusion: 2dppx) {
+    background-position: 0 18.181818%;
+    }
+
+
+}
+.cards__country-item--czechia .cards__country-flag{
+background-position: 0 27.272727%;
+    @media (min-resolusion: 2dppx) {
+background-position: 0 36.363636%;
+    }
+
+
+}
+.cards__country-item--usa .cards__country-flag{
+background-position: 0 100%;
+
+}
+.cards__country-item--australia .cards__country-flag{
+  background-position: 0 0%;
+      @media (min-resolusion: 2dppx) {
+background-position: 0 9.090909%;
+    }
+
+}
+.cards__country-item-dominicana .cards__country-flag{
+  background-position: 0 36.363636%;
+      @media (min-resolusion: 2dppx) {
+background-position: 0 45.454545%;
+    }
+
+}
+.cards__country--uk .cards__country-flag{
+  background-position: 0 90.909091%;
+
+
+}
+.cards__country-item--germany .cards__country-flag{
+  background-position: 0 54.545455%;
+      @media (min-resolusion: 2dppx) {
+background-position: 0 0%;
+    }
+
+}
+.cards__level-svg--25 {
+  left: 22px;
+}
+.cards__level-svg--50 {
+  left: 20px;
+}
+.cards__pagination-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  line-height: 30px;
+  color: @basic-blue-light;
+  margin-bottom: 20px;
+}
+.cards__pagination-svg {
+  stroke: @basic-blue-light;
+  margin-right: 10px;
+}
+.cards__pagination-triangle {
+  fill: @basic-blue-light;
+}
+.cards__pagination-triangle--back {
+  transform: rotate(90deg);
+}
+.cards__pagination-triangle--next {
+  transform: rotate(-90deg);
+}
+.cards__pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 51px;
+  width: 100%;
+}
+.cards__pagination-link--new-page {
+  border-left: 1px solid @basic-background-blue-light;
+}
+.cards__title--transport {
+  position: relative;
+       @media (min-width: @tablet) {
+     display: none;
+   }
+}
+.cards__title--transport::after {
+   position: absolute;
+  content: "";
+  height: 1px;
+  background-color: @basic-background-blue-light;
+  top: 9px;
+  right: -4px;
+  width: 92px;
+
+}
+.cards__title--flags {
+  position: relative;
+         @media (min-width: @tablet) {
+     line-height: 16px;
+   }
+
+}
+.cards__title--flags::after {
+  width: 138px;
+  top: 9px;
+  right: -15px;
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: @basic-background-blue-light;
+
+}
+.cards__title--level::after {
+  width: 12px;
+  top: 9px;
+  right: -9px;
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: @basic-background-blue-light;
+}
+.cards__heart {
+  width: 9px;
+  height: 9px;
+       @media (min-width: @tablet) {
+      width: 20px;
+  height: 20px;
+   }
+
 }

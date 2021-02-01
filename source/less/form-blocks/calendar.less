@@ -26,7 +26,7 @@
   position: relative;
   margin-bottom: 15px;
       @media (min-width: @tablet) {
-      margin-bottom: 32px;
+      margin-bottom: 20px;
 
 
   }
@@ -117,6 +117,7 @@
   border-collapse: collapse;
 }
 .calendar__cell {
+  position: relative;
   width: 32px;
   height: 31px;
   padding: 0;
@@ -124,6 +125,14 @@
     width: 77px;
     height: 69px;
   }
+       @media (min-width: @desktop) {
+    width: 143px;
+    height: 71px;
+  }
+
+
+
+
 
 }
 .calendar__button {
@@ -160,16 +169,39 @@
 
 }
 .calendar__button--back {
-  left: 12px;
-  top: 12px;
+  left: 0;
+  top: 0;
   padding-left: 0;
   padding-right: 10px;
+     @media (min-width: @tablet) {
+    left: 12px;
+  top: 12px;
+  }
+      @media (min-width: @desktop) {
+  left: -4px;
+    top: 17px;
+  }
+
+
 }
 .calendar__button--next {
-  right: 12px;
-  top: 12px;
+  right: 0;
+    top: 0px;
     padding-left: 10px;
   padding-right: 0;
+         @media (min-width: @tablet) {
+    right: 12px;
+  top: 12px;
+  }
+
+
+      @media (min-width: @desktop) {
+  right: -4px;
+    top: 17px;
+  }
+
+
+
 }
 .calendar__mobile-hidden {
   display: none;
@@ -177,4 +209,54 @@
     display: inline;
     text-transform: none;
   }
+}
+
+.calendar__day {
+        @media (min-width: @desktop) {
+  display: flex;
+  padding-top: 12px;
+  padding-left: 14px;
+}
+}
+.calendar__day--weekday,
+.calendar__day--weekend {
+          @media (min-width: @desktop) {
+   text-align: start;
+  padding-left: 17px;
+  padding-bottom: 20px;
+}
+}
+.calendar__day--in::before{
+            @media (min-width: @desktop) {
+   position: absolute;
+    content: "Заезд";
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 62px;
+    height: 33px;
+    background-color: #1D2E5B;
+    color: #ffffff;
+    bottom: 0;
+    left: 6px;
+    text-transform: none;
+}
+
+}
+.calendar__day--out::before{
+              @media (min-width: @desktop) {
+   position: absolute;
+    content: "Выезд";
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 62px;
+    height: 33px;
+    background-color: #1D2E5B;
+    color: #ffffff;
+    bottom: 0;
+    left: 6px;
+    text-transform: none;
+}
+
 }

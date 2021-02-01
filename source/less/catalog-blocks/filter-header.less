@@ -1,5 +1,23 @@
 .filter-header {
   background-color: @like-background-gray;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  min-height: 66px;
+  padding-top: 28px;
+  padding-bottom: 10px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  @media (min-width: @tablet) {
+    padding-top: 114px;
+        margin-top: -50px;
+        padding-bottom: 60px;
+        border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-bottom: 40px;
+
+  }
+
+
 }
 .filter-header__toggle {
   border: none;
@@ -7,6 +25,10 @@
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
+  padding-right: 0;
+  padding-bottom: 5px;
+  display: flex;
+  padding: 0;
   @media (min-width: @desktop) {
     display: none;
 
@@ -35,15 +57,69 @@
   line-height: 18px;
   text-transform: uppercase;
   color: rgba(@main-blue , 30%);
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 1px;
+
+
+  }
 
 }
+.filter-header__country-link--current {
+  color: @main-blue;
+}
 .filter-header__wrapper {
+
   display: grid;
   grid-template-columns: auto auto;
     @media (min-width: @tablet) {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
 
 
   }
 }
+.filter-header__country-list--hidden {
+  display: none;
+      @media (min-width: @tablet) {
+    display: flex;
+  }
+}
+.filter-header__filter-icon {
+  fill: @main-blue;
+  margin-right: 10px;
+}
+.filter-header__filter-button {
+  fill: @main-blue;
+  width: 30px;
+  height: 6px;
+}
+.filter-header__title-wrapper {
+  display: flex;
+  align-items: center;
+        @media (min-width: @tablet) {
+    display: none;
+  }
+}
+.filter-header__country-item {
+margin-right: 29px;
+}
+
+.filter-header__mobile-hidden {
+display: none;
+        @media (min-width: @tablet) {
+     margin-right: 28px;
+    display: block;
+     font-size: 20px;
+    line-height: 1px;
+     color: @main-blue;
+     text-transform: uppercase;
+      font-weight: 700;
+  }
+
+}
+

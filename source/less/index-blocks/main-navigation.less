@@ -1,0 +1,179 @@
+.main-navigation {
+  display: grid;
+  grid-template-areas:
+  "logo button"
+  "site-nav site-nav"
+  "authorize authorize"
+  "user-nav user-nav"
+  "social-nav social-nav";
+  grid-template-columns: auto auto auto min-content;
+  padding-bottom: 30px;
+  @media (min-width: @tablet) {
+  grid-template-areas:
+  "logo button authorize"
+  "site-nav site-nav site-nav"
+  "user-nav user-nav user-nav"
+  "social-nav social-nav social-nav";
+  padding-bottom: 75px;
+
+  }
+    @media (min-width: @desktop) {
+  grid-template-areas:
+  "logo site-nav user-nav authorize"
+
+  }
+}
+.main-navigation__logo {
+  grid-area: logo;
+    @media (min-width: @desktop) {
+  margin-left: 22px;
+  }
+
+
+}
+.main-navigation__circle-modal--call-us {
+      @media (min-width: @desktop) {
+        background-color: @special-orange;
+
+  }
+}
+.main-navigation__icon--telephone-mini {
+        @media (min-width: @desktop) {
+        fill: @basic-blue;
+
+  }
+
+}
+
+// .main-navigation__circle-modal--call-us:hover {
+//         @media (min-width: @desktop) {
+//         fill: fade(@basic-blue,30%);
+//         }
+//   }
+.main-navigation__circle-modal--text-us {
+        @media (min-width: @desktop) {
+          background-color: @basic-yellow-dark;
+
+  }
+
+}
+
+.main-navigation__site-navigation {
+  grid-area: site-nav;
+  margin-bottom: 80px;
+
+
+}
+.main-navigation__link-authorize {
+  grid-area: authorize;
+  min-height: 50px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  text-align: center;
+  padding: 8px;
+  padding-top: 12px;
+  min-width: 190px;
+  margin-bottom: 50px;
+  @media (min-width: @tablet) {
+    width: 188px;
+    height: 50px;
+    padding-top: 16px;
+    font-size: 20px;
+    margin-left: auto;
+  }
+    @media (min-width: @desktop) {
+margin-top: 10px;
+  }
+
+}
+.main-navigation__user-navigation {
+  grid-area: user-nav;
+  margin-bottom: 30px;
+    @media (min-width: @tablet) {
+  padding-left: 57px;
+  margin-bottom: 112px;
+  }
+      @media (min-width: @desktop) {
+padding-top:10px;
+  }
+}
+.main-navigation__social-navigation {
+  grid-area: social-nav;
+  @media (min-width: @tablet) {
+  padding-left: 57px;
+  }
+  @media (min-width: @desktop) {
+  display: none;
+
+  }
+}
+.main-navigation__link-authorize:hover {
+background-color: @basic-yellow-dark;
+}
+.main-navigation__link-authorize:focus {
+color: fade(@basic-blue, 30%);
+}
+.main-navigation__social-icon--facebook {
+  width: 11px;
+  height: 21px;
+  @media (min-width: @tablet) {
+  width: 14px;
+  height: 28px;
+  }
+}
+.main-navigation__social-icon--vkontakte {
+  width: 23px;
+  height: 12px;
+  @media (min-width: @tablet) {
+  width: 31px;
+  height: 16px;
+  }
+
+}
+.main-navigation__social-icon--instagram {
+    width: 18px;
+  height: 18px;
+  @media (min-width: @tablet) {
+  width: 24px;
+  height: 24px;
+  }
+}
+.main-navigation__icon--telephone {
+      width: 16px;
+  height: 15px;
+  @media (min-width: @tablet) {
+  width: 28px;
+  height: 26px;
+  }
+      @media (min-width: @desktop) {
+  display: none;
+  }
+
+}
+.main-navigation__icon--telephone-mini {
+  display: none;
+        @media (min-width: @desktop) {
+  display: block;
+  width: 18px;
+  height: 18px;
+  }
+}
+.main-navigation__link--text-us:focus .main-navigation__icon--mail-modal{
+        @media (min-width: @desktop) {
+        fill: fade(@basic-blue,30%);
+        }
+      }
+.main-navigation__link--call-us:focus .main-navigation__icon--telephone-mini {
+        @media (min-width: @desktop) {
+        fill: fade(@basic-blue,30%);
+        }
+      }
+.main-navigation__link--text-us:hover .main-navigation__circle-modal--text-us {
+   background-color: @special-orange;
+
+}
+.main-navigation__link--call-us:hover .main-navigation__circle-modal--call-us {
+ background-color: @orange-hover;
+}

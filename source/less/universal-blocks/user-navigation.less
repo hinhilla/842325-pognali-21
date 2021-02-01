@@ -36,6 +36,7 @@
 }
 .user-navigation__list--row {
   display: flex;
+  justify-content: flex-end;
 }
 .user-navigation--hidden {
   display: none;
@@ -43,23 +44,7 @@
     display: block;
   }
 }
-.user-navigation__link {
-  display: flex;
-  align-items: center;
 
-}
-.user-navigation__circle--modal {
-  background-color: @dark-blue;
-  margin-right: 16px;
-  min-width: 45px;
-  min-height: 45px;
-    @media (min-width: @tablet) {
-  min-width: 68px;
-  min-height: 68px;
-  margin-right: 23px;
-  }
-
-}
 .user-navigation__circle--call-us {
   background-color: @special-orange;
 }
@@ -181,15 +166,15 @@
 color: fade(@basic-blue, 30%);
 }
 .user-navigation__circle {
-  width: 45px;
-  height: 45px;
+  min-width: 45px;
+  min-height: 45px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   @media (min-width: @tablet) {
-    width: 68px;
-    height: 68px;
+    min-width: 68px;
+    min-height: 68px;
   }
 
 }
@@ -239,28 +224,38 @@ height: 12.5px;
     height: 25px;
   }
 }
-// .user-navigation__list--modal {
+.user-navigation__list--modal {
+      @media (min-width: @desktop) {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-// }
+}
 .user-navigation__icon--telephone-mini {
   width: 18px;
   height: 18px;
 }
 .user-navigation__circle--header {
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   @media (min-width: @desktop) {
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
   }
 }
 .user-navigation__icon--mail-modal {
-    width: 18.28px;
-  height: 12.5px;
-  @media (min-width: @desktop) {
-    width: 27.62px;
-    height: 18.89px;
+    width: 19px;
+  height: 13px;
+  @media (min-width: @tablet) {
+    width: 28px;
+    height: 19px;
   }
+    @media (min-width: @desktop) {
+    width: 16px;
+    height: 14px;
+    fill:@basic-blue;
+  }
+
 }
 .user-navigation__circle--info {
   background-color: @dark-blue;
@@ -280,3 +275,25 @@ height: 12.5px;
 // .user-navigation__item--info {
 //   padding-left: 55px;
 // }
+.user-navigation__info--modal {
+    @media (min-width: @desktop) {
+    display: none;
+  }
+}
+.user-navigation__circle--modal {
+  background-color: @dark-blue;
+  margin-right: 16px;
+  min-width: 45px;
+  min-height: 45px;
+    @media (min-width: @tablet) {
+  min-width: 68px;
+  min-height: 68px;
+  margin-right: 23px;
+  }
+      @media (min-width: @desktop) {
+  min-width: 50px;
+  min-height: 50px;
+  margin-right: 0;
+  }
+
+}

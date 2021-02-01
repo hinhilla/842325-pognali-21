@@ -7,26 +7,119 @@ letter-spacing: 0.06em;
 color: @basic-blue-light;
 text-align: center;
 border: none;
+width: 100%;
+display: flex;
+justify-content: center;
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 10px;
+scroll-padding-bottom: 10px;
+align-items: center;
+
+          @media (min-width: @tablet) {
+font-size: 20px;
+line-height: 1;
+letter-spacing: 0.04em;
+  }
+
+
+}
+.range__label {
+  width: 50%;
 }
 .range__output {
+  position: relative;
   border: 1px solid @border-blue-light;
   border-radius: 4px;
   background-color: @basic-white;
+  display: flex;
+  height: 35px;
+  margin-bottom: 22px;
+  margin-top: 9px;
+
+
+          @media (min-width: @tablet) {
+height: 46px;
+width: 148px;
+  }
+
+}
+.range__output::before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 35px;
+  background-image: url(../img/range-decor.svg);
+  top: 0;
+  left: 46%;
+  background-repeat: no-repeat;
+  background-size: 16px 35px;
+          @media (min-width: @tablet) {
+  width: 21px;
+    height: 46px;
+    background-size: 21px 46px;
+    left: 43%;
+  }
+
 
 }
 .range__scale {
   background-color: rgba(@basic-blue-light, 20%);
   width: 220px;
   height: 2px;
+            @media (min-width: @tablet) {
+  width: 281px;
+  }
+
 }
 .range__bar {
   background-color: @basic-blue-light;
   width: 138px;
   height: 2px;
+  position: absolute;
+  left: 33%;
+              @media (min-width: @tablet) {
+  width: 166px;
+  left: 37%;
+  }
 }
 .range__toggle {
   width: 10px;
   height: 10px;
   background-color:@basic-blue-light;
   border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+                @media (min-width: @tablet) {
+  width: 13px;
+  height: 13px;
+  }
+
+}
+.range__toggle--left {
+top: -7px;
+    left: 35%;
+
+}
+.range__toggle--right {
+top: -7px;
+    left: 96%;
+}
+.range__controls {
+  position: relative;
+    @media (min-width: @tablet) {
+  margin-right: 60px;
+  }
+
+
+
+}
+.range {
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+  }
 }

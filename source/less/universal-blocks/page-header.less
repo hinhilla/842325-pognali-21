@@ -33,15 +33,18 @@
   position: absolute;
   width: 100%;
   z-index: 1;
-  padding-right: 25px;
+  padding-top: 25px;
   padding-left: 25px;
+  padding-right: 25px;
   background-color: @basic-white;
+  display: none;
   @media (min-width: @tablet) {
-    padding-right: 57px;
-    padding-left: 57px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
   }
   @media (min-width: @desktop) {
-    display: none;
+    padding-right: 60px;
 
   }
 }
@@ -163,10 +166,16 @@
   border: none;
   background-color: transparent;
   margin: 0;
-  padding-top: 4px;
+  // если пригодятся в другом месте
+  // padding-top: 4px;
+  // padding-bottom: 10px;
+  // padding-left: 10px;
+  // padding-right: 2px;
+
+  padding-top: 8px;
   padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 2px;
+  padding-left: 3px;
+  padding-right: 0px;
   position: relative;
   grid-area: button;
   margin-left: auto;
@@ -177,6 +186,22 @@
 
   }
   @media (min-width: @desktop) {
+    display: none;
+  }
+}
+.page-header__toggle--modal {
+    @media (min-width: @tablet) {
+     margin-right: 67px;
+  padding-right: 0;
+  width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-top: 19px;
+
+  }
+
+      @media (min-width: @desktop) {
     display: none;
   }
 }
@@ -229,7 +254,7 @@
   grid-area: user-nav;
   margin-top: 246px;
     position: relative;
-   z-index: 1;
+  //  z-index: 1;
 
   @media (min-width: @tablet) {
     margin: 0;
@@ -259,6 +284,18 @@
     height: 52px;
   }
 }
+.page-header__logo-image--modal {
+  width: 100px;
+    @media (min-width: @tablet) {
+    width: 164px;
+    height: 42px;
+    // margin-top: 3px;
+    }
+    @media (min-width: @desktop) {
+    width: 198px;
+    height: 60px;
+    }
+}
 .page-header__cite {
   margin-top: 19px;
   @media (min-width: @tablet) {
@@ -267,19 +304,16 @@
 
 }
 
-.page-header__modal {
-  padding-top: 45px;
-  padding-left: 25px;
-  padding-right: 25px;
-  // background-color: @basic-white;
-}
+
 
 .page-header__modal--active {
-  display: none;
+  display: block;
   @media (min-width: @desktop) {
-    display: none;
+  display: none;
+
   }
 }
+
 
 .page-header--index {
   position: relative;
@@ -350,4 +384,56 @@
     }
 
   }
+}
+.page-header--form {
+      @media (min-width: @desktop) {
+      position: static;
+  z-index: 0;
+    }
+
+}
+.page-header__link-text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  color:@basic-white;
+  margin-right: 28px;
+  }
+.page-header__link {
+  display: none;
+  @media (min-width: @tablet) {
+  display: flex;
+  text-decoration: none;
+  margin-right: 35px;
+  padding-top: 70px;
+  }
+}
+.page-header__link-svg {
+  fill: @basic-white;
+   width: 32px;
+  height: 16px;
+
+}
+.page-header__wrapper-link {
+  @media (min-width: @tablet) {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }}
+.page-header__modal--scroll {
+  display: block;
+  height: 73px;
+  overflow: hidden;
+    @media (min-width: @tablet) {
+      display: block;
+    height: 132px;
+  }
+    @media (min-width: @desktop) {
+      display: block;
+ height: 96px;
+    padding-top: 10px;
+
+  }
+
 }

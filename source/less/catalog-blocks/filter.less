@@ -3,17 +3,47 @@
   margin: 0;
   font-weight: 700;
   font-size: 22px;
-  line-height: 22px;
+  line-height: 1;
   letter-spacing: 0.02em;
   color: @basic-blue-light;
+  margin-bottom: 33px;
+    @media (min-width: @tablet) {
+    font-size: 30px;
+    letter-spacing: 0;
+    margin-bottom: 68px;
+
+
+  }
 }
 .filter {
   background-color: @basic-yellow;
+  border-radius: 20px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 100%;
+  margin-bottom: 25px;
+    @media (min-width: @tablet) {
+      padding-top: 37px;
+    padding-left: 33px;
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+
+  }
+
+
 }
 .filter__fieldset {
   border: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 10px;
+      @media (min-width: @tablet) {
+
+  margin-bottom: 45px;
+  }
+
 }
 .filter__list {
   margin: 0;
@@ -25,3 +55,15 @@
 
 }
 
+.filter__button {
+  width: 230px;
+  margin-left: -6px;
+    @media (min-width: @tablet) {
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+
+  }
+
+
+}
